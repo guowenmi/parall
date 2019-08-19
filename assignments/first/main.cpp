@@ -43,7 +43,7 @@ bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
 U_LL_INT countInCircleNumber (U_LL_INT seed, int processorNumber, unsigned long int loopNumber);
 
-U_LL_INT A = a;
+U_LL_INT A = 1;
 U_LL_INT C = 1;
 
 // 5 * 8
@@ -67,9 +67,10 @@ int main(int argc,char* argv[]) {
     double time0 = MPI_Wtime();
 
     // calculating A and C
-    for (int i = 1; i < numproc; i++)
+    for (int i = 0; i < numproc; i++)
         A = A * a;
     A = A % m;
+
     double time1 = MPI_Wtime();
     std::cout << __LINE__ << ", A = " << A << ", cost time = " << (time1 - time0) << std::endl;
 
@@ -177,6 +178,9 @@ void getRandom(int randomNumber) {
 
     for (int i = 0; i < randomNumber; i++) {
         n_next = (a * n_prev + c) % m;
+
+        std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
+
         randomArray[i] = n_next;
         n_prev = n_next;
     }
@@ -198,7 +202,6 @@ U_LL_INT radius = 2 << 16;
 
 bool pointIsInCircle (U_LL_INT randomNumber){
 
-
     U_LL_INT x = randomNumber % radius;
     U_LL_INT y = randomNumber / radius;
 
@@ -210,5 +213,3 @@ bool pointIsInCircle (U_LL_INT randomNumber){
 
     return false;
 }
-
-
