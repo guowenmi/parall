@@ -39,7 +39,7 @@ U_LL_INT sumInCircle = 0;
 bool isInCircle = false;
 double pi;
 
-void getRandom(U_LL_INT sampleNumber);
+void getRandom(int sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
 
