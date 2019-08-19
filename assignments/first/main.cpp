@@ -41,7 +41,7 @@ double pi;
 void getRandom(int sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
-U_LL_INT countInCircleNumber (int processorId, unsigned long int loopNumber);
+U_LL_INT countInCircleNumber (int processorId, int processorNumber, unsigned long int loopNumber);
 
 U_LL_INT A = a;
 U_LL_INT C = 1;
@@ -104,7 +104,7 @@ int main(int argc,char* argv[]) {
         std::cout << __LINE__ << std::endl;
 
         // do master's task
-        countInCircleNumber (0, loopNumber);
+        countInCircleNumber (0, numproc, loopNumber);
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
@@ -132,7 +132,7 @@ int main(int argc,char* argv[]) {
         for (int i = 0; i < numproc; i ++){
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
             MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
-            countInCircleNumber (0, loopNumber);
+            countInCircleNumber (0, numproc, loopNumber);
             MPI_Send(&isInCircle, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
         }
     }
@@ -140,18 +140,18 @@ int main(int argc,char* argv[]) {
 }
 
 
-U_LL_INT countInCircleNumber (int processorId, unsigned long int loopNumber){
+U_LL_INT countInCircleNumber (int processorId, int numproc, unsigned long int loopNumber){
     for (unsigned long int index = 0; index < loopNumber;){
 
         std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
-        time1 = MPI_Wtime();
+        double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
             currRandom = randomArray[processorId];}
         else {
             currRandom = getRandomInLeapfrog (currRandom);}
 
-        time0 = MPI_Wtime();
+        double time0 = MPI_Wtime();
         std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
 
         if (pointIsInCircle(currRandom))
