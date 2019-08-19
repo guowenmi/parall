@@ -39,7 +39,7 @@ U_LL_INT sumInCircle = 0;
 bool isInCircle = false;
 double pi;
 
-U_LL_INT getRandom(U_LL_INT sampleNumber);
+void getRandom(U_LL_INT sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
 
@@ -57,16 +57,22 @@ int main(int argc,char* argv[]) {
     int myid = MPI::COMM_WORLD.Get_rank(); // get my id
     int numproc = MPI::COMM_WORLD.Get_size(); // get the number of processors
 
+    std::cout << "numproc = " << numproc << std::endl;
+
     std::cout << "This is id " << myid << " out of " << numproc << std::endl;
 
     // Get the number the user wants
     // is also the number of sample
     U_LL_INT N = atoi(argv[1]); // is there a question due to different types?
 
+    std::cout << __LINE__ << std::endl;
+
     // calculating A and C
     for (int i = 1; i < numproc; i++)
         A = A * a;
     A = A % m;
+
+    std::cout << __LINE__ << std::endl;
 
     U_LL_INT tmpA = 1;
     for (int i = 1; i < numproc; i++) {
@@ -75,18 +81,23 @@ int main(int argc,char* argv[]) {
     }
     C = (c * C) % m;
 
+    std::cout << __LINE__ << std::endl;
+
     getRandom (numproc);// generate the random as seeds
 
     if (myid == 0) { // master. need to distribute and gather
 
         double startTime = MPI_Wtime();
+        std::cout << __LINE__ << std::endl;
 
         for (unsigned long int index = 0; index < N / numproc; index ++){
             // Master sends currRandom to slaves
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
             for (int i = 1; i < numproc; i++){
-                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
+//                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
+                MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
             }
+            std::cout << __LINE__ << std::endl;
 
             // Partial result for node 0
             if (index < numproc) {
@@ -98,6 +109,7 @@ int main(int argc,char* argv[]) {
 
             if (pointIsInCircle(currRandom))
                 sumInCircle = sumInCircle + 1;
+            std::cout << __LINE__ << std::endl;
 
             //Master waits to receive 'sum1' from slave
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
@@ -107,6 +119,7 @@ int main(int argc,char* argv[]) {
                     sumInCircle = sumInCircle + 1;
             }
         }
+        std::cout << __LINE__ << ", N = " << N << std::endl;
 
         pi = sumInCircle / N ;
 
