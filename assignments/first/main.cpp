@@ -109,16 +109,17 @@ int main(int argc,char* argv[]) {
         // do master's task
         sumInCircle = countInCircleNumber(randomArray[0], myid, numproc, loopNumber);
 
-        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
+        std::cout << __LINE__ << ", myid = 0, sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
         // gather all slaves' result and deal with
         for (int i = 1; i < numproc; i ++){
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
-            MPI_Recv(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            U_LL_INT slaveInCircleSum = 0;
+            MPI_Recv(&slaveInCircleSum, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-            sumInCircle = sumInCircle + isInCircle;
+            sumInCircle = sumInCircle + slaveInCircleSum;
 
-            std::cout << __LINE__ << ", MPI_Recv from = " << i << ", isInCircle = " << isInCircle << ", sumInCircle" << sumInCircle << std::endl;
+            std::cout << __LINE__ << ", MPI_Recv from = " << i << ", slaveInCircleSum = " << slaveInCircleSum << ", sumInCircle = " << sumInCircle << std::endl;
 
         }
 
