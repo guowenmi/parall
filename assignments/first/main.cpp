@@ -41,7 +41,7 @@ double pi;
 void getRandom(int sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
-U_LL_INT countInCircleNumber (U_LL_INT seed, int processorNumber, unsigned long int loopNumber);
+U_LL_INT countInCircleNumber (U_LL_INT seed, int processorid, int processorNumber, unsigned long int loopNumber);
 
 U_LL_INT A = 1;
 U_LL_INT C = 1;
@@ -107,7 +107,7 @@ int main(int argc,char* argv[]) {
         std::cout << __LINE__ << std::endl;
 
         // do master's task
-        sumInCircle = countInCircleNumber(randomArray[0], numproc, loopNumber);
+        sumInCircle = countInCircleNumber(randomArray[0], myid, numproc, loopNumber);
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
@@ -134,7 +134,7 @@ int main(int argc,char* argv[]) {
         MPI_Recv (&currRandom, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         //    MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
 
-        U_LL_INT result = countInCircleNumber (currRandom, numproc, loopNumber);
+        U_LL_INT result = countInCircleNumber (currRandom, myid, numproc, loopNumber);
 
         // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
         MPI_Send(&result, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
@@ -146,10 +146,12 @@ int main(int argc,char* argv[]) {
 }
 
 
-U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int numproc, unsigned long int loopNumber){
+U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc, unsigned long int loopNumber){
+
+    std::cout << __LINE__ << ", processorId = " << processorId << ", randomSeed = " << randomSeed << ", loopNumber = " << loopNumber << std::endl;
 
     U_LL_INT sum = 0;
-    for (unsigned long int index = 0; index < loopNumber;){
+    for (unsigned long int index = processorId; index < loopNumber;){
 
         std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
@@ -168,10 +170,12 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int numproc, unsigned long in
             sum = sum + 1;
 
         time1 = MPI_Wtime();
-        std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
+    //    std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
         index = index + numproc;
     }
+
+    std::cout << __LINE__ << ", processorId = " << processorId << ", sumInCircle = " << sum << std::endl;
 
     return sum;
 }
