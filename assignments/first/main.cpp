@@ -120,7 +120,7 @@ int main(int argc,char* argv[]) {
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
-        pi = 4 * (sumInCircle / N) ;
+        pi = 4.0 * sumInCircle / N ;
 
         double endTime = MPI_Wtime ();
 
