@@ -52,7 +52,7 @@ U_LL_INT randomArray [40];
 //always use argc and argv, as mpirun will pass the appropriate parms.
 int main(int argc,char* argv[]) {
 
-    std::cout << __LINE__ << ", This is at the begin of main " << std::endl;
+    std::cout << __LINE__ << ", hello, This is at the begin of main " << std::endl;
 
     MPI::Init(argc, argv);
 
