@@ -120,7 +120,7 @@ int main(int argc,char* argv[]) {
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
-        pi = 4 * sumInCircle / N ;
+        pi = 4 * (sumInCircle / N) ;
 
         double endTime = MPI_Wtime ();
 
@@ -212,7 +212,7 @@ bool pointIsInCircle (U_LL_INT randomNumber){
     U_LL_INT x = randomNumber % radius;
     U_LL_INT y = randomNumber / radius;
 
-    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
+//    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
     if (x * x + y * y <= radius * radius)
