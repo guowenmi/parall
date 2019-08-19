@@ -158,7 +158,7 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
     U_LL_INT sum = 0;
     for (unsigned long int index = processorId; index < loopNumber;){
 
-        std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
+    //    std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
