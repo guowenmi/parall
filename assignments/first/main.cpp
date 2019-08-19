@@ -101,6 +101,16 @@ int main(int argc,char* argv[]) {
             for (int i = 1; i < numproc; i++){
 //                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
                 MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
+
+                // receive
+
+                std::cout << __LINE__ << ", i = " << i << ", numproc = " << numproc << std::endl;
+
+                MPI::COMM_WORLD.Recv(&isInCircle, 1, MPI::INT, i, 0);
+                if (isInCircle)
+                    sumInCircle = sumInCircle + 1;
+
+                std::cout << __LINE__ << ", isInCircle = " << isInCircle << ", sumInCircle = " << sumInCircle << std::endl;
             }
 
             std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
@@ -124,19 +134,7 @@ int main(int argc,char* argv[]) {
             time1 = MPI_Wtime();
             std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
-            //Master waits to receive 'sum1' from slave
-            //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
-            for (int i = 1; i < numproc; i++) {
 
-                std::cout << __LINE__ << ", i = " << i << ", numproc = " << numproc << std::endl;
-
-                MPI::COMM_WORLD.Recv(&isInCircle, 1, MPI::INT, i, 0);
-                if (isInCircle)
-                    sumInCircle = sumInCircle + 1;
-
-                std::cout << __LINE__ << ", isInCircle = " << isInCircle << ", sumInCircle = " << sumInCircle << std::endl;
-
-            }
         }
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
