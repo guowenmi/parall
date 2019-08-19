@@ -100,7 +100,7 @@ int main(int argc,char* argv[]) {
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
             for (int i = 1; i < numproc; i++){
 //                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
-                MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
+                MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
             }
 
             std::cout << __LINE__ << ", currRandom = " << currRandom << std::endl;
@@ -163,7 +163,7 @@ int main(int argc,char* argv[]) {
             std::cout << __LINE__ << ", index = " << index << ", isInCircle = " << isInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
             // Slave sends 'isInCircle' to master
-            MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
+            MPI_Send(&isInCircle, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
         }
     }
     MPI::Finalize();
