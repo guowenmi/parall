@@ -85,7 +85,7 @@ int main(int argc,char* argv[]) {
             // Master sends currRandom to slaves
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
             for (int i = 1; i < numproc; i++) {
-                MPI_Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD); // MPI::COMM_WORLD.Send
+                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0); // MPI::COMM_WORLD.Send
             }
 
             // Partial result for node 0
@@ -102,7 +102,7 @@ int main(int argc,char* argv[]) {
             //Master waits to receive 'sum1' from slave
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
             for (int i = 1; i < numproc; i++) {
-                MPI_Recv(&isInCircle, 1, MPI::INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                MPI::COMM_WORLD.Recv(&isInCircle, 1, MPI::INT, i, 0);
                 if (isInCircle)
                     sumInCircle = sumInCircle + 1;
             }
@@ -120,7 +120,7 @@ int main(int argc,char* argv[]) {
         for (unsigned long int index = 0; index < N / numproc; index ++) {
             // Slave waits to receive 'currRandom' from master
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
-            MPI_Recv(&randomArray, 1, MPI::INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); // MPI::COMM_WORLD.Recv
+            MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
 
             if (index < numproc) {
                 currRandom = randomArray[myid];
@@ -132,7 +132,7 @@ int main(int argc,char* argv[]) {
             bool isInCircle = pointIsInCircle(slaveRandom);
 
             // Slave sends 'isInCircle' to master
-            MPI_Send(&isInCircle, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+            MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
         }
     }
     MPI::Finalize();
