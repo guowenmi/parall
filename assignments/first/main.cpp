@@ -115,7 +115,11 @@ int main(int argc,char* argv[]) {
         for (int i = 1; i < numproc; i ++){
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
             MPI_Recv(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
             sumInCircle = sumInCircle + isInCircle;
+
+            std::cout << __LINE__ << ", MPI_Recv from = " << i << ", isInCircle = " << isInCircle << ", sumInCircle" << sumInCircle << std::endl;
+
         }
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
@@ -186,7 +190,7 @@ void getRandom(int randomNumber) {
     for (int i = 0; i < randomNumber; i++) {
         n_next = (a * n_prev + c) % m;
 
-        std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
+    //    std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
 
         randomArray[i] = n_next;
         n_prev = n_next;
