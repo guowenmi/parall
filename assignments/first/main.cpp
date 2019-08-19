@@ -29,7 +29,7 @@
 
 typedef unsigned long long int U_LL_INT;
 U_LL_INT a = 1664525;
-U_LL_INT m = 2 << 32;
+U_LL_INT m = 18446744073709551615;//2 << 32;
 U_LL_INT c = 1013904223;
 U_LL_INT n_prev = 12345; // seed, it will be used as n[0]
 U_LL_INT insideCircleSum = 0;
