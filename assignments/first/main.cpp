@@ -133,14 +133,12 @@ int main(int argc,char* argv[]) {
 
     //    currRandom = &randomSeed;
 
-        for (int i = 0; i < numproc; i ++){
-            countInCircleNumber (currRandom, numproc, loopNumber);
+        countInCircleNumber (currRandom, numproc, loopNumber);
 
-            // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
-            MPI_Send(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
+        // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
+        MPI_Send(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
 
-            std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
-        }
+        std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
     }
 
     MPI::Finalize();
