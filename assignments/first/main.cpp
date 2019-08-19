@@ -41,6 +41,7 @@ double pi;
 void getRandom(int sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
+U_LL_INT countInCircleNumber (int processorId, unsigned long int loopNumber);
 
 U_LL_INT A = a;
 U_LL_INT C = 1;
@@ -74,7 +75,6 @@ int main(int argc,char* argv[]) {
     double time1 = MPI_Wtime();
     std::cout << __LINE__ << ", A = " << A << ", cost time = " << (time1 - time0) << std::endl;
 
-
     U_LL_INT tmpA = 1;
     for (int i = 1; i < numproc; i++) {
         tmpA = tmpA * a;
@@ -87,55 +87,36 @@ int main(int argc,char* argv[]) {
 
     getRandom (numproc);// generate the random as seeds
 
+    unsigned long int loopNumber = N ; // numproc ;
+
     time1 = MPI_Wtime();
     std::cout << __LINE__ << ", getRandom =  cost time = " << (time1 - time0)<< std::endl;
 
     if (myid == 0) { // master. need to distribute and gather
 
+        // send seeds to all slaves
+        for (int i = 1; i < numproc; i ++){
+            // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
+            MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD);
+        }
+
         double startTime = MPI_Wtime();
         std::cout << __LINE__ << std::endl;
 
-        for (unsigned long int index = 0; index < N / numproc; index ++){
-            // Master sends currRandom to slaves
+        // do master's task
+        countInCircleNumber (0, loopNumber);
+
+        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
+
+        // gather all slave
+        for (int i = 1; i < numproc; i ++){
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
-            for (int i = 1; i < numproc; i++){
-//                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
-                MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
+        //    MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD);
+            MPI::COMM_WORLD.Recv(&isInCircle, 1, MPI::INT, i, 0);
 
-                // receive
-
-                std::cout << __LINE__ << ", i = " << i << ", numproc = " << numproc << std::endl;
-
-                MPI::COMM_WORLD.Recv(&isInCircle, 1, MPI::INT, i, 0);
-                if (isInCircle)
-                    sumInCircle = sumInCircle + 1;
-
-                std::cout << __LINE__ << ", isInCircle = " << isInCircle << ", sumInCircle = " << sumInCircle << std::endl;
-            }
-
-            std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
-            time1 = MPI_Wtime();
-            // Partial result for node 0
-            if (index < numproc) {
-                currRandom = randomArray[0];
-            }
-            else {
-                currRandom = getRandomInLeapfrog (currRandom);
-            }
-
-            time0 = MPI_Wtime();
-            std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
-
-            if (pointIsInCircle(currRandom))
-                sumInCircle = sumInCircle + 1;
-            std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << std::endl;
-
-
-            time1 = MPI_Wtime();
-            std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
-
-
+            sumInCircle = sumInCircle + isInCircle;
         }
+
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
         pi = sumInCircle / N ;
@@ -146,31 +127,42 @@ int main(int argc,char* argv[]) {
 
     } else /* if (myid == 1) */ {
         // slaves. are processes of all slaves same? need to test
+        U_LL_INT sumInCircleSlave = 0;
 
-        for (unsigned long int index = 0; index < N / numproc; index ++) {
-            // Slave waits to receive 'currRandom' from master
+        for (int i = 0; i < numproc; i ++){
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
             MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
-
-            if (index < numproc) {
-                currRandom = randomArray[myid];
-            } else {
-                currRandom = getRandomInLeapfrog(currRandom);
-            }
-            U_LL_INT slaveRandom = getRandomInLeapfrog(currRandom);
-
-            time0 = MPI_Wtime();
-
-            bool isInCircle = pointIsInCircle(slaveRandom);
-
-            time1 = MPI_Wtime();
-            std::cout << __LINE__ << ", index = " << index << ", isInCircle = " << isInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
-
-            // Slave sends 'isInCircle' to master
+            countInCircleNumber (0, loopNumber);
             MPI_Send(&isInCircle, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
         }
     }
     MPI::Finalize();
+}
+
+
+U_LL_INT countInCircleNumber (int processorId, unsigned long int loopNumber){
+    for (unsigned long int index = 0; index < loopNumber;){
+
+        std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
+        time1 = MPI_Wtime();
+        // Partial result for node 0
+        if (index < numproc) {
+            currRandom = randomArray[processorId];}
+        else {
+            currRandom = getRandomInLeapfrog (currRandom);}
+
+        time0 = MPI_Wtime();
+        std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
+
+        if (pointIsInCircle(currRandom))
+            sumInCircle = sumInCircle + 1;
+        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << std::endl;
+
+        time1 = MPI_Wtime();
+        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
+
+        index = index + numproc;
+    }
 }
 
 
