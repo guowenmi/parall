@@ -138,8 +138,11 @@ int main(int argc,char* argv[]) {
 
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
             MPI_Send(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
+
+            std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
         }
     }
+
     MPI::Finalize();
 }
 
