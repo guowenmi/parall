@@ -56,9 +56,9 @@ int main(int argc,char* argv[]) {
     int myid = MPI::COMM_WORLD.Get_rank(); // get my id
     int numproc = MPI::COMM_WORLD.Get_size(); // get the number of processors
 
-    std::cout << "numproc = " << numproc << std::endl;
+    std::cout << __LINE__ <<  ", numproc = " << numproc << std::endl;
 
-    std::cout << "This is id " << myid << " out of " << numproc << std::endl;
+    std::cout << __LINE__ << ", This is id " << myid << " out of " << numproc << std::endl;
 
     // Get the number the user wants
     // is also the number of sample
@@ -132,13 +132,13 @@ int main(int argc,char* argv[]) {
                     sumInCircle = sumInCircle + 1;
             }
         }
-        std::cout << __LINE__ << ", N = " << N << std::endl;
+        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
         pi = sumInCircle / N ;
 
         double endTime = MPI_Wtime ();
 
-        std::cout << "The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
+        std::cout << __LINE__ << "The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
 
     } else /* if (myid == 1) */ {
         // slaves. are processes of all slaves same? need to test
