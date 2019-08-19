@@ -41,7 +41,7 @@ double pi;
 void getRandom(int sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
-U_LL_INT countInCircleNumber (int processorId, int processorNumber, unsigned long int loopNumber);
+U_LL_INT countInCircleNumber (U_LL_INT seed, int processorNumber, unsigned long int loopNumber);
 
 U_LL_INT A = a;
 U_LL_INT C = 1;
@@ -97,14 +97,14 @@ int main(int argc,char* argv[]) {
         // send seeds to all slaves
         for (int i = 1; i < numproc; i ++){
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
-            MPI_Send(&randomArray, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD);
+            MPI_Send(&randomArray[i], 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD);
         }
 
         double startTime = MPI_Wtime();
         std::cout << __LINE__ << std::endl;
 
         // do master's task
-        countInCircleNumber (0, numproc, loopNumber);
+        countInCircleNumber(randomArray[0], numproc, loopNumber);
 
         std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
@@ -127,11 +127,14 @@ int main(int argc,char* argv[]) {
         // slaves. are processes of all slaves same? need to test
         U_LL_INT sumInCircleSlave = 0;
 
+        //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
+        MPI_Recv (&currRandom, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        //    MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
+
+    //    currRandom = &randomSeed;
+
         for (int i = 0; i < numproc; i ++){
-            //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
-            MPI_Recv (&randomArray, 1, MPI_UNSIGNED_LONG_LONG, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            //    MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
-            countInCircleNumber (0, numproc, loopNumber);
+            countInCircleNumber (currRandom, numproc, loopNumber);
 
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
             MPI_Send(&isInCircle, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
@@ -141,14 +144,15 @@ int main(int argc,char* argv[]) {
 }
 
 
-U_LL_INT countInCircleNumber (int processorId, int numproc, unsigned long int loopNumber){
+U_LL_INT countInCircleNumber (int randomSeed, int numproc, unsigned long int loopNumber){
     for (unsigned long int index = 0; index < loopNumber;){
 
         std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
-            currRandom = randomArray[processorId];}
+            currRandom = randomSeed ; //randomArray[processorId];
+        }
         else {
             currRandom = getRandomInLeapfrog (currRandom);}
 
