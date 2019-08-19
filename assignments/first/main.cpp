@@ -144,7 +144,7 @@ int main(int argc,char* argv[]) {
 }
 
 
-U_LL_INT countInCircleNumber (int randomSeed, int numproc, unsigned long int loopNumber){
+U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int numproc, unsigned long int loopNumber){
     for (unsigned long int index = 0; index < loopNumber;){
 
         std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
