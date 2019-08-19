@@ -134,8 +134,6 @@ int main(int argc,char* argv[]) {
         MPI_Recv (&currRandom, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         //    MPI::COMM_WORLD.Recv(&randomArray, 1, MPI::INT, 0, 0); // MPI::COMM_WORLD.Recv
 
-    //    currRandom = &randomSeed;
-
         U_LL_INT result = countInCircleNumber (currRandom, numproc, loopNumber);
 
         // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
@@ -163,13 +161,14 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int numproc, unsigned long in
             currRandom = getRandomInLeapfrog (currRandom);}
 
         double time0 = MPI_Wtime();
-        std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
+    //    std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
 
-        if (pointIsInCircle(currRandom))
+        bool isInCircleTmp = pointIsInCircle(currRandom);
+        if (isInCircleTmp)
             sum = sum + 1;
 
         time1 = MPI_Wtime();
-        std::cout << __LINE__ << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
+        std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
         index = index + numproc;
     }
