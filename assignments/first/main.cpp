@@ -65,7 +65,7 @@ int main(int argc,char* argv[]) {
     // is also the number of sample
     U_LL_INT N = atoi(argv[1]); // is there a question due to different types?
 
-    std::cout << __LINE__ << ", m = " << m << std::endl;
+    std::cout << __LINE__ << ", a = " << a << ", m = " << m << std::endl;
 
     // calculating A and C
     for (int i = 1; i < numproc; i++)
