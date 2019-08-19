@@ -32,7 +32,6 @@ U_LL_INT a = 1664525;
 U_LL_INT m = 4294967296;//2 << 32;
 U_LL_INT c = 1013904223;
 U_LL_INT n_prev = 12345; // seed, it will be used as n[0]
-U_LL_INT insideCircleSum = 0;
 U_LL_INT currRandom = 0;
 U_LL_INT n_next;
 U_LL_INT sumInCircle = 0;
@@ -66,13 +65,15 @@ int main(int argc,char* argv[]) {
     U_LL_INT N = atoi(argv[1]); // is there a question due to different types?
 
     std::cout << __LINE__ << ", a = " << a << ", m = " << m << std::endl;
+    double time0 = MPI_Wtime();
 
     // calculating A and C
     for (int i = 1; i < numproc; i++)
         A = A * a;
     A = A % m;
+    double time1 = MPI_Wtime();
+    std::cout << __LINE__ << ", A = " << A << ", cost time = " << (time1 - time0) << std::endl;
 
-    std::cout << __LINE__ << std::endl;
 
     U_LL_INT tmpA = 1;
     for (int i = 1; i < numproc; i++) {
@@ -81,9 +82,13 @@ int main(int argc,char* argv[]) {
     }
     C = (c * C) % m;
 
-    std::cout << __LINE__ << std::endl;
+    time0 = MPI_Wtime();
+    std::cout << __LINE__ << ", C = " << C << ", cost time = " << (time1 - time0)<< std::endl;
 
     getRandom (numproc);// generate the random as seeds
+
+    time1 = MPI_Wtime();
+    std::cout << __LINE__ << ", getRandom =  cost time = " << (time1 - time0)<< std::endl;
 
     if (myid == 0) { // master. need to distribute and gather
 
@@ -97,8 +102,9 @@ int main(int argc,char* argv[]) {
 //                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
                 MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
             }
-            std::cout << __LINE__ << std::endl;
 
+            std::cout << __LINE__ << ", currRandom = " << currRandom << std::endl;
+            time1 = MPI_Wtime();
             // Partial result for node 0
             if (index < numproc) {
                 currRandom = randomArray[0];
@@ -107,9 +113,16 @@ int main(int argc,char* argv[]) {
                 currRandom = getRandomInLeapfrog (currRandom);
             }
 
+            time0 = MPI_Wtime();
+            std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
+
             if (pointIsInCircle(currRandom))
                 sumInCircle = sumInCircle + 1;
             std::cout << __LINE__ << std::endl;
+
+
+            time1 = MPI_Wtime();
+            std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
             //Master waits to receive 'sum1' from slave
             //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
@@ -142,7 +155,12 @@ int main(int argc,char* argv[]) {
             }
             U_LL_INT slaveRandom = getRandomInLeapfrog(currRandom);
 
+            time0 = MPI_Wtime();
+
             bool isInCircle = pointIsInCircle(slaveRandom);
+
+            time1 = MPI_Wtime();
+            std::cout << __LINE__ << ", index = " << index << ", isInCircle = " << isInCircle << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
             // Slave sends 'isInCircle' to master
             MPI::COMM_WORLD.Send(&isInCircle, 1, MPI_INT, 0, 0);
