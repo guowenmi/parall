@@ -25,7 +25,7 @@
 #include <iostream>
 #include <stdint.h>
 
-#include "mpi.h"
+#include <mpi.h>
 
 typedef unsigned long long int U_LL_INT;
 U_LL_INT a = 1664525;
@@ -81,11 +81,11 @@ int main(int argc,char* argv[]) {
 
         double startTime = MPI_Wtime();
 
-        for (unsigned long int index = 0; index < N / numproc; index ++) {
+        for (unsigned long int index = 0; index < N / numproc; index ++){
             // Master sends currRandom to slaves
             // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
-            for (int i = 1; i < numproc; i++) {
-                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0); // MPI::COMM_WORLD.Send
+            for (int i = 1; i < numproc; i++){
+                MPI::COMM_WORLD.Send(&randomArray, 1, MPI::MPI_UNSIGNED_LONG_LONG, i, 0);
             }
 
             // Partial result for node 0
