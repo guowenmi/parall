@@ -54,7 +54,6 @@ int main(int argc,char* argv[]) {
 
     std::cout << __LINE__ << ", This is at the begin of main " << std::endl;
 
-
     MPI::Init(argc, argv);
 
     // What is my ID and how many processes are in this pool?
@@ -129,7 +128,7 @@ int main(int argc,char* argv[]) {
 
         double endTime = MPI_Wtime ();
 
-        std::cout << __LINE__ << "The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
+        std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
 
     } else /* if (myid == 1) */ {
         // slaves. are processes of all slaves same? need to test
@@ -220,7 +219,7 @@ bool pointIsInCircle (U_LL_INT randomNumber){
 //    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
-    if (x * x + y * y <= radius * radius)
+    if (x * x + y * y < radius * radius)
         return true;
 
     return false;
