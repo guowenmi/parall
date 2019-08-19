@@ -23,8 +23,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#include <stdatomic.h>
-#include <stdint.h>
 
 #include "mpi.h"
 
