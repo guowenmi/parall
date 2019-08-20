@@ -205,7 +205,7 @@ void getRandom(U_LL_INT randomNumber) {
  * @return
  */
 U_LL_INT getRandomInLeapfrog(U_LL_INT random_prev) {
-    std::cout << __LINE__ << ", A = " << A << ", random_prev = " << random_prev << ", C = " << C << std::endl;
+//    std::cout << __LINE__ << ", A = " << A << ", random_prev = " << random_prev << ", C = " << C << std::endl;
 
     return (A * random_prev + C) % m;
 //    return result;
