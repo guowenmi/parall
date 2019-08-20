@@ -152,7 +152,7 @@ int main(int argc,char* argv[]) {
 
 U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc, unsigned long int loopNumber){
 
-    std::cout << __LINE__ << ", processorId = " << processorId << ", randomSeed = " << randomSeed << ", loopNumber = " << loopNumber << std::endl;
+    std::cout << __LINE__ << ", processorId = " << processorId << ", randomSeed = " << randomSeed << ", numproc = " << numproc << ", loopNumber = " << loopNumber << std::endl;
 
     U_LL_INT sum = 0;
     for (unsigned long int index = processorId; index < loopNumber;){
@@ -161,10 +161,10 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
         double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
-            currRandom = randomSeed ; //randomArray[processorId];
+            currRandom = randomSeed; //randomArray[processorId];
+        } else {
+            currRandom = getRandomInLeapfrog (currRandom);
         }
-        else {
-            currRandom = getRandomInLeapfrog (currRandom);}
 
         double time0 = MPI_Wtime();
     //    std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
@@ -205,6 +205,8 @@ void getRandom(int randomNumber) {
  * @return
  */
 U_LL_INT getRandomInLeapfrog(U_LL_INT random_prev) {
+    std::cout << __LINE__ << ", A = " << A << ", random_prev = " << random_prev << ", C = " << C << std::endl;
+
     return (A * random_prev + C) % m;
 //    return result;
 }
