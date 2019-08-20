@@ -54,6 +54,8 @@ int main(int argc,char* argv[]) {
 
     std::cout << __LINE__ << ", hello, This is at the begin of main " << std::endl;
 
+    double time0 = MPI_Wtime();
+
     MPI::Init(argc, argv);
 
     // What is my ID and how many processes are in this pool?
@@ -67,14 +69,13 @@ int main(int argc,char* argv[]) {
     U_LL_INT N = atoll(argv[1]); // is there a question due to different types?
 
     std::cout << __LINE__ << ", a = " << a << ", m = " << m << std::endl;
-    double time0 = MPI_Wtime();
 
     // calculating A and C
     for (int i = 0; i < numproc; i++)
         A = A * a;
     A = A % m;
 
-    double time1 = MPI_Wtime();
+
     std::cout << __LINE__ << ", A = " << A << ", cost time = " << (time1 - time0) << std::endl;
 
     U_LL_INT tmpA = 1;
@@ -147,6 +148,11 @@ int main(int argc,char* argv[]) {
     }
 
     MPI::Finalize();
+
+    double time1 = MPI_Wtime();
+
+    std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (time1 - time0) << std::endl;
+
 }
 
 
