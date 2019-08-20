@@ -185,7 +185,7 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
 }
 
 
-void getRandom(int randomNumber) {
+void getRandom(U_LL_INT randomNumber) {
 
     for (int i = 0; i < randomNumber; i++) {
         n_next = (a * n_prev + c) % m;
