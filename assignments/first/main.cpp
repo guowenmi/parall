@@ -38,10 +38,10 @@ U_LL_INT sumInCircle = 0;
 bool isInCircle = false;
 double pi;
 
-void getRandom(int sampleNumber);
+void getRandom(U_LL_INT sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
 U_LL_INT getRandomInLeapfrog(U_LL_INT random0);
-U_LL_INT countInCircleNumber (U_LL_INT seed, int processorid, int processorNumber, unsigned long int loopNumber);
+U_LL_INT countInCircleNumber (U_LL_INT seed, int processorid, int processorNumber, U_LL_INT loopNumber);
 
 U_LL_INT A = 1;
 U_LL_INT C = 1;
@@ -89,7 +89,7 @@ int main(int argc,char* argv[]) {
 
     getRandom (numproc);// generate the random as seeds
 
-    unsigned long int loopNumber = N ; // numproc ;
+    U_LL_INT loopNumber = N ; // numproc ;
 
     time1 = MPI_Wtime();
     std::cout << __LINE__ << ", getRandom cost time = " << (time1 - time0)<< std::endl;
@@ -150,12 +150,12 @@ int main(int argc,char* argv[]) {
 }
 
 
-U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc, unsigned long int loopNumber){
+U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc, U_LL_INT loopNumber){
 
     std::cout << __LINE__ << ", processorId = " << processorId << ", randomSeed = " << randomSeed << ", numproc = " << numproc << ", loopNumber = " << loopNumber << std::endl;
 
     U_LL_INT sum = 0;
-    for (unsigned long int index = processorId; index < loopNumber;){
+    for (U_LL_INT index = processorId; index < loopNumber;){
 
     //    std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
@@ -211,7 +211,7 @@ U_LL_INT getRandomInLeapfrog(U_LL_INT random_prev) {
 //    return result;
 }
 
-U_LL_INT radius = 2 << 16;
+U_LL_INT radius = 65536; //2 << 16;
 
 bool pointIsInCircle (U_LL_INT randomNumber){
 
