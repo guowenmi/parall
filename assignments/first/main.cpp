@@ -64,7 +64,7 @@ int main(int argc,char* argv[]) {
 
     // Get the number the user wants
     // is also the number of sample
-    U_LL_INT N = atoi(argv[1]); // is there a question due to different types?
+    U_LL_INT N = atoll(argv[1]); // is there a question due to different types?
 
     std::cout << __LINE__ << ", a = " << a << ", m = " << m << std::endl;
     double time0 = MPI_Wtime();
