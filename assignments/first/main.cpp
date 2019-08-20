@@ -75,7 +75,7 @@ int main(int argc,char* argv[]) {
         A = A * a;
     A = A % m;
 
-
+    double time1 = MPI_Wtime();
     std::cout << __LINE__ << ", A = " << A << ", cost time = " << (time1 - time0) << std::endl;
 
     U_LL_INT tmpA = 1;
@@ -149,7 +149,7 @@ int main(int argc,char* argv[]) {
 
     MPI::Finalize();
 
-    double time1 = MPI_Wtime();
+    time1 = MPI_Wtime();
 
     std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (time1 - time0) << std::endl;
 
