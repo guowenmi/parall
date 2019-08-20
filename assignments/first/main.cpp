@@ -209,14 +209,14 @@ U_LL_INT getRandomInLeapfrog(U_LL_INT random_prev) {
 //    return result;
 }
 
-U_LL_INT radius = 2 << 16 / 2;
+U_LL_INT radius = 2 << 16;
 
 bool pointIsInCircle (U_LL_INT randomNumber){
 
     U_LL_INT x = randomNumber % radius;
     U_LL_INT y = randomNumber / radius;
 
-    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
+//    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
     if (x * x + y * y < radius * radius)
