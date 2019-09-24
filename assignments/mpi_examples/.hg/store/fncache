@@ -1,0 +1,15 @@
+data/broadcast.c.i
+data/doit.stdout.i
+data/first.cpp.i
+data/first.pbs.i
+data/gather.cpp.i
+data/alltoall.c.i
+data/broadcast.cpp.i
+data/gather.c.i
+data/doit.pbs.i
+data/bucket.c.i
+data/scatter.c.i
+data/second.c.i
+data/second.pbs.i
+data/first.c.i
+data/scatter.cpp.i

@@ -1,0 +1,6 @@
+Read from /var/spool/torque/aux//30702.mighty.local
+This job runs on these processors:
+compute-0-4 compute-0-4
+This is id 0 out of 2
+This is id 1 out of 2
+The final result is 987459712

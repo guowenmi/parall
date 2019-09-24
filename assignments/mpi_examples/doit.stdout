@@ -1,0 +1,83 @@
+compute-0-20 compute-0-20 compute-0-20 compute-0-20 compute-0-19 compute-0-19 compute-0-19 compute-0-19 compute-0-18 compute-0-18 compute-0-18 compute-0-18 compute-0-17 compute-0-17 compute-0-17 compute-0-17
+Read from /var/spool/torque/aux//3487.mighty.local
+id=2 N=0 before broadcast
+id=3 N=0 before broadcast
+id=0 N=1234 before broadcast
+id=1 N=0 before broadcast
+id=13 N=0 before broadcast
+id=14 N=0 before broadcast
+id=9 N=0 before broadcast
+id=15 N=0 before broadcast
+id=10 N=0 before broadcast
+id=10 N=1234 after broadcast
+id=10 first=771 last=847
+id=10 before reduce: sum=62293 result=0
+id=12 N=0 before broadcast
+id=11 N=0 before broadcast
+id=11 N=1234 after broadcast
+id=11 first=848 last=924
+id=11 before reduce: sum=68222 result=0
+id=11 after reduce: sum=68222 result=0
+id=8 N=0 before broadcast
+id=8 N=1234 after broadcast
+id=8 first=617 last=693
+id=8 before reduce: sum=50435 result=0
+id=10 after reduce: sum=62293 result=0
+id=9 N=1234 after broadcast
+id=9 first=694 last=770
+id=9 before reduce: sum=56364 result=0
+id=9 after reduce: sum=56364 result=0
+id=0 N=1234 after broadcast
+id=0 first=1 last=77
+id=0 before reduce: sum=3003 result=0
+id=2 N=1234 after broadcast
+id=2 first=155 last=231
+id=2 before reduce: sum=14861 result=0
+id=2 after reduce: sum=14861 result=0
+id=1 N=1234 after broadcast
+id=1 first=78 last=154
+id=1 before reduce: sum=8932 result=0
+id=1 after reduce: sum=8932 result=0
+id=3 N=1234 after broadcast
+id=3 first=232 last=308
+id=3 before reduce: sum=20790 result=0
+id=3 after reduce: sum=20790 result=0
+id=5 N=0 before broadcast
+id=6 N=0 before broadcast
+id=7 N=0 before broadcast
+id=4 N=0 before broadcast
+id=6 N=1234 after broadcast
+id=6 first=463 last=539
+id=6 before reduce: sum=38577 result=0
+id=6 after reduce: sum=38577 result=0
+id=4 N=1234 after broadcast
+id=4 first=309 last=385
+id=4 before reduce: sum=26719 result=0
+id=4 after reduce: sum=26719 result=0
+id=7 N=1234 after broadcast
+id=7 first=540 last=616
+id=7 before reduce: sum=44506 result=0
+id=7 after reduce: sum=44506 result=0
+id=5 N=1234 after broadcast
+id=5 first=386 last=462
+id=5 before reduce: sum=32648 result=0
+id=5 after reduce: sum=32648 result=0
+id=13 N=1234 after broadcast
+id=13 first=1002 last=1078
+id=13 before reduce: sum=80080 result=0
+id=13 after reduce: sum=80080 result=0
+id=14 N=1234 after broadcast
+id=14 first=1079 last=1155
+id=14 before reduce: sum=86009 result=0
+id=14 after reduce: sum=86009 result=0
+id=12 N=1234 after broadcast
+id=12 first=925 last=1001
+id=12 before reduce: sum=74151 result=0
+id=15 N=1234 after broadcast
+id=15 first=1156 last=1232
+id=15 before reduce: sum=91938 result=0
+id=15 after reduce: sum=91938 result=0
+id=0 after reduce: sum=3003 result=759528
+Sum= 759528
+id=12 after reduce: sum=74151 result=0
+id=8 after reduce: sum=50435 result=0

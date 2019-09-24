@@ -1,0 +1,6 @@
+#PBS -j oe -o doit.stdout -l nodes=4:ppn=4 -q pp
+echo `cat $PBS_NODEFILE`
+
+echo Read from $PBS_NODEFILE
+
+mpiexec -machinefile $PBS_NODEFILE /home/ian/mpi_examples/broadcast 1234

@@ -1,0 +1,10 @@
+#PBS -j oe -o first.stdout -l nodes=1:ppn=2 -q pp
+
+echo Read from $PBS_NODEFILE
+
+echo This job runs on these processors:
+echo `cat $PBS_NODEFILE`
+
+# Make the appropriate changes to this line
+mpiexec -machinefile $PBS_NODEFILE -np 2 /home/s19026416/mpi_examples/first 1000000
+

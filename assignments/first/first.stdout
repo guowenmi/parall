@@ -1,0 +1,16 @@
+Read from /var/spool/torque/aux//30923.mighty.local
+This job runs on these processors:
+compute-0-4
+55, hello, This is at the begin of main 
+65, This is id 0 out of 1
+71, a = 1664525, m = 4294967296
+79, A = 1664525, cost time = 0.00472999
+89, C = 1013904223, cost time = -2.69413e-05
+96, getRandom cost time = 5.96046e-06
+107
+161, processorId = 0, randomSeed = 87628868, numproc = 1, loopNumber = 10000
+188, processorId = 0, sumInCircle = 7858
+112, myid = 0, sumInCircle = 7858, N = 10000
+126, sumInCircle = 7858, N = 10000
+132, The pi is 3.1432, cost time is 0.00243902
+154, The pi is 3.1432, cost time is 0.00390697
