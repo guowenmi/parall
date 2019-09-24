@@ -36,7 +36,7 @@ int main(int argc,char* argv[])
     int result = sum0 + sum1;
 
     std::cout << "The final result is " << result << std::endl;
-  } 
+  }
 
   else if (myid == 1) {
 
