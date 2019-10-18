@@ -73,12 +73,12 @@ int main(int argc, char **argv)
     if(0==curr_rank)
     {
         original=data_loading(argv[1]);
-        cout<< "original = " << original[0] << ", original size = " << original.size () <<endl;
+        cout<< "original = " << original[0] << ", original_len = " << original_len <<endl;
 
-        curr_proc_data_size=original_len/proc_number;
+        curr_proc_data_size = original_len/proc_number;
         cout<< "curr_proc_data_size = " << curr_proc_data_size<<endl;
-
     }
+
     MPI_Bcast(&original_len, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     MPI_Bcast(&curr_proc_data_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     proc_data=new long[curr_proc_data_size];
@@ -186,15 +186,16 @@ int main(int argc, char **argv)
     MPI_Gatherv(result, count, MPI_LONG, sorted, recv_cnt, displs, MPI_LONG, 0, MPI_COMM_WORLD);
     exec_time+=MPI_Wtime();
     cout<<"time of curr_rank "<<curr_rank<<":"<<exec_time<<endl;
+
     //print the sorted data on curr_rank 0
-//	if(0==curr_rank)
-//	{
-//		for(long i=0;i<original_len;i++)
-//		{
-//			cout<<sorted[i]<<" ";
-//		}
-//		cout<<endl;
-//	}
+	if(0==curr_rank)
+	{
+		for(long i=0;i<original_len;i++)
+		{
+			cout<<sorted[i]<<" ";
+		}
+		cout<<endl;
+	}
 
     MPI_Finalize();
     return 0;
