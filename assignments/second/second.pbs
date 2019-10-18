@@ -1,3 +1,6 @@
 #PBS -j oe -o second.stdout -l nodes=1:ppn=4 -q pp
 
-mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/second 10000
+#mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/second 10000
+
+mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/bucket_sort smallset.txt
+
