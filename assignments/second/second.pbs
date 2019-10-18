@@ -2,5 +2,5 @@
 
 #mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/second 10000
 
-mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/bucket_sort smallset.txt
+mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/second/bucket_sort smallset.txt
 
