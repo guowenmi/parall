@@ -23,7 +23,7 @@ long *data_loading(char *dir)
     read.open(dir, ios::in);
     getline(read, temp);
     long size=atol(temp.c_str());
-    cout<<size<<endl;
+    cout<< "size = " << size << endl;
     original_len=size;
     long *array=new long[size+1];
     long i=0;
@@ -73,8 +73,10 @@ int main(int argc, char **argv)
     if(0==curr_rank)
     {
         original=data_loading(argv[1]);
+        cout<< "original = " << original[0] << ", original size = " << original.size () <<endl;
+
         curr_proc_data_size=original_len/proc_number;
-        cout<<curr_proc_data_size<<endl;
+        cout<< "curr_proc_data_size = " << curr_proc_data_size<<endl;
 
     }
     MPI_Bcast(&original_len, 1, MPI_LONG, 0, MPI_COMM_WORLD);
