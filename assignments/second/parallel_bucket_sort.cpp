@@ -50,7 +50,7 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
 
 
 //IncOrder for qsort
-unsigned long IncOrder(const void *e1, const void *e2)
+int IncOrder(const void *e1, const void *e2)
 {
     return (*((unsigned long *)e1)-*((unsigned long *)e2));
 }
@@ -181,7 +181,7 @@ int main(int argc, char **argv)
 
     //Gather the results to rank 0
     int *recv_cnt=new int[processes_number];
-    unsigned long *sorted=new long[number_size];
+    unsigned long *sorted=new unsigned long[number_size];
     int *displs=new int[processes_number];
 
     MPI_Gather(&count, 1, MPI_LONG, recv_cnt, 1, MPI_LONG, 0, MPI_COMM_WORLD);
