@@ -50,9 +50,9 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
 
 
 //IncOrder for qsort
-int IncOrder(const void *e1, const void *e2)
+unsigned long IncOrder(const void *e1, const void *e2)
 {
-    return (*((long *)e1)-*((long *)e2));
+    return (*((unsigned long *)e1)-*((unsigned long *)e2));
 }
 
 int main(int argc, char **argv)
@@ -62,13 +62,13 @@ int main(int argc, char **argv)
         cout<<"Please check your input"<<endl;
         exit(0);
     }
-    long curr_proc_data_size;//size of data on the current process
-    long *proc_data;//data on the current process
-    long *original;//the unsorted data
+    unsigned long curr_proc_data_size;//size of data on the current process
+    unsigned long *proc_data;//data on the current process
+    unsigned long *original;//the unsorted data
 //    long *final_sorted_data;//the sorted data
-    long *pivot_list;//the pivot list
-    long *proc_buckets;//the buckets in the current process
-    long *final_buckets;//the bucket after alltoall function
+    unsigned long *pivot_list;//the pivot list
+    unsigned long *proc_buckets;//the buckets in the current process
+    unsigned long *final_buckets;//the bucket after alltoall function
     double cost_time;
 
     MPI_Init(&argc, &argv); //initial
@@ -89,30 +89,30 @@ int main(int argc, char **argv)
     }
     MPI_Bcast(&number_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     MPI_Bcast(&curr_proc_data_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
-    proc_data=new long[curr_proc_data_size];
+    proc_data=new unsigned long[curr_proc_data_size];
 
 //    final_sorted_data=new long[number_size];
-    pivot_list=new long[processes_number];
+    pivot_list=new unsigned long[processes_number];
     MPI_Scatter(original, curr_proc_data_size, MPI_LONG, proc_data, curr_proc_data_size, MPI_LONG, 0, MPI_COMM_WORLD);
 
     //initial local sort
-    qsort(proc_data, curr_proc_data_size, sizeof(long), IncOrder);
+    qsort(proc_data, curr_proc_data_size, sizeof(unsigned long), IncOrder);
 
     MPI_Gather(proc_data, 1, MPI_LONG, pivot_list, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     if(0==curr_rank)
     {
-        qsort(pivot_list, processes_number, sizeof(long), IncOrder);
+        qsort(pivot_list, processes_number, sizeof(unsigned long), IncOrder);
     }
 
-    proc_buckets=new long[number_size];
+    proc_buckets=new unsigned long[number_size];
 
     //initialize proc_buckets
-    for(long i=0;i<number_size;i++)
+    for(unsigned long i=0;i<number_size;i++)
     {
         proc_buckets[i]=INF;
     }
 
-    long *index=new long[processes_number];
+    unsigned long *index=new unsigned long[processes_number];
 
     //initialize index
     for(int i=0;i<processes_number;i++)
@@ -123,7 +123,7 @@ int main(int argc, char **argv)
 
 
     //update proc_buckets
-    for(long i=0;i<curr_proc_data_size;i++)
+    for(unsigned long i=0;i<curr_proc_data_size;i++)
     {
         for(int j=0;j<processes_number-1;j++)
         {
@@ -146,8 +146,8 @@ int main(int argc, char **argv)
     MPI_Type_commit(&BUCKETS);
 
 
-    final_buckets=new long[processes_number*curr_proc_data_size];
-    for(long i=0;i<number_size;i++)
+    final_buckets=new unsigned long[processes_number*curr_proc_data_size];
+    for(unsigned long i=0;i<number_size;i++)
     {
         final_buckets[i]=0;
     }
@@ -157,18 +157,18 @@ int main(int argc, char **argv)
 
     MPI_Type_free(&BUCKETS);
 
-    long *result;
-    long count=0;
-    for(long i=0;i<number_size;i++)
+    unsigned long *result;
+    unsigned long count=0;
+    for(unsigned long i=0;i<number_size;i++)
     {
         if(final_buckets[i]!=INF)
         {
             count++;
         }
     }
-    result=new long[count];
+    result=new unsigned long[count];
     count=0;
-    for(long i=0;i<number_size;i++)
+    for(unsigned long i=0;i<number_size;i++)
     {
         if(final_buckets[i]!=INF)
         {
@@ -176,12 +176,12 @@ int main(int argc, char **argv)
         }
     }
 
-    qsort(result, count, sizeof(long), IncOrder);
+    qsort(result, count, sizeof(unsigned long), IncOrder);
 
 
     //Gather the results to rank 0
     int *recv_cnt=new int[processes_number];
-    long *sorted=new long[number_size];
+    unsigned long *sorted=new long[number_size];
     int *displs=new int[processes_number];
 
     MPI_Gather(&count, 1, MPI_LONG, recv_cnt, 1, MPI_LONG, 0, MPI_COMM_WORLD);
