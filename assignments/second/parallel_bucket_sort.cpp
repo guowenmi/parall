@@ -34,14 +34,15 @@ int curr_rank;//rank of the current process
 int processes_number;//number of processes
 int MASTER_RANK = 0; // the master's rank
 
-//generate the unsorted data
-unsigned long *generate_array_with_random(unsigned long min, unsigned long max, unsigned long size){
-    std::tr1::default_random_engine e;
-    std::tr1::uniform_int_distribution<unsigned> u(min, max);
+//generate the unsorted data, range (0, max)
+unsigned long *generate_array_with_random(unsigned long max, unsigned long size){
+//    std::tr1::default_random_engine e;
+//    std::tr1::uniform_int_distribution<unsigned> u(min, max);
 
     unsigned long *array = new unsigned long [size];
     for (unsigned long i = 0; i < size; i ++) {
-        array[i] = u(e);
+    //    array[i] = u(e);
+        array[i] = rand() % max + 1;
         cout << "array_random_number = " << array [i] << endl;
     }
     return array;
@@ -82,7 +83,7 @@ int main(int argc, char **argv)
     {
         number_size = atoll(argv[1]);
 
-        original = generate_array_with_random (0, number_size, number_size);
+        original = generate_array_with_random (number_size, number_size);
         curr_proc_data_size = number_size/processes_number;
         cout << curr_proc_data_size << endl;
     }
