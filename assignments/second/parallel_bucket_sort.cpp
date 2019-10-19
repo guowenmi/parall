@@ -29,7 +29,7 @@
 #define INF (-1)
 using namespace std;
 
-unsigned int number_size;//length of the unsorted data
+unsigned long number_size;//length of the unsorted data
 int curr_rank;//rank of the current process
 int processes_number;//number of processes
 int MASTER_RANK = 0; // the master's rank
