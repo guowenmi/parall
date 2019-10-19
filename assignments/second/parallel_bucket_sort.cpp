@@ -74,7 +74,8 @@ int main(int argc, char **argv)
     MPI_Init(&argc, &argv); //initial
 
     // TODO  is it need?
-    MPI_Barrier(MPI_COMM_WORLD); //Blocks until all processes in the communicator have reached this routine
+    //Blocks until all processes in the communicator have reached this routine
+//    MPI_Barrier(MPI_COMM_WORLD);
     cost_time=-MPI_Wtime();
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
     MPI_Comm_size(MPI_COMM_WORLD, &processes_number);
