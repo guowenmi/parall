@@ -43,7 +43,7 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
     for (unsigned long i = 0; i < size; i ++) {
     //    array[i] = u(e);
         array[i] = rand() % max + 1;
-        cout << "array_random_number = " << array [i] << endl;
+    //    cout << "array_random_number = " << array [i] << endl;
     }
     return array;
 }
