@@ -24,7 +24,7 @@
 #include <string.h>
 #include <time.h>
 #include <cstdlib>
-#include <random>
+#include <tr1/random>
 
 #define INF (-1)
 using namespace std;
@@ -35,16 +35,16 @@ int processes_number;//number of processes
 int MASTER_RANK = 0; // the master's rank
 
 //generate the unsorted data
-unsigned long *initial_unsorted_numbers(unsigned long min, unsigned long max, unsigned long size){
-    default_random_engine e;
-    uniform_int_distribution<unsigned> u(min, max);
+unsigned long *generate_array_with_random(unsigned long min, unsigned long max, unsigned long size){
+    str::tr1::default_random_engine e;
+    str::tr1::uniform_int_distribution<unsigned> u(min, max);
 
     unsigned long *array = new unsigned long [size];
     for (unsigned long i = 0; i < size; i ++) {
         array[i] = u(e);
         cout << "array_random_number = " << array [i] << endl;
     }
-    return 0;
+    return array;
 }
 
 
@@ -71,6 +71,8 @@ int main(int argc, char **argv)
     double cost_time;
 
     MPI_Init(&argc, &argv); //initial
+
+    // TODO  is it need?
     MPI_Barrier(MPI_COMM_WORLD); //Blocks until all processes in the communicator have reached this routine
     cost_time=-MPI_Wtime();
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
@@ -80,9 +82,9 @@ int main(int argc, char **argv)
     {
         number_size = atoll(argv[1]);
 
-        original=initial_unsorted_numbers (0, number_size, number_size);
+        original = generate_array_with_random (0, number_size, number_size);
         curr_proc_data_size = number_size/processes_number;
-        cout<<curr_proc_data_size<<endl;
+        cout << curr_proc_data_size << endl;
     }
     MPI_Bcast(&number_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     MPI_Bcast(&curr_proc_data_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
