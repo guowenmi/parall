@@ -85,8 +85,9 @@ int main(int argc, char **argv)
 
         original = generate_array_with_random (number_size, number_size);
         curr_proc_data_size = number_size/processes_number;
-        cout << curr_proc_data_size << endl;
+        cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
     }
+
     MPI_Bcast(&number_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     MPI_Bcast(&curr_proc_data_size, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     proc_data=new unsigned long[curr_proc_data_size];
@@ -121,7 +122,6 @@ int main(int argc, char **argv)
     }
     MPI_Bcast(pivot_list, processes_number, MPI_LONG, 0, MPI_COMM_WORLD);
 
-
     //update proc_buckets
     for(unsigned long i=0;i<curr_proc_data_size;i++)
     {
@@ -144,7 +144,6 @@ int main(int argc, char **argv)
     MPI_Datatype BUCKETS;
     MPI_Type_contiguous(curr_proc_data_size, MPI_LONG, &BUCKETS);
     MPI_Type_commit(&BUCKETS);
-
 
     final_buckets=new unsigned long[processes_number*curr_proc_data_size];
     for(unsigned long i=0;i<number_size;i++)
@@ -193,12 +192,12 @@ int main(int argc, char **argv)
 
     MPI_Gatherv(result, count, MPI_LONG, sorted, recv_cnt, displs, MPI_LONG, 0, MPI_COMM_WORLD);
     cost_time+=MPI_Wtime();
-    cout<<"time of curr_rank "<<curr_rank<<":"<<cost_time<<endl;
+    cout << "time of curr_rank " << curr_rank << " : " << cost_time<<endl;
 
     //print the sorted data on curr_rank 0
-	if(0==curr_rank)
+	if(0 == curr_rank)
 	{
-		for(long i=0;i<number_size;i++)
+		for(long i = 0; i < number_size; i++)
 		{
 			cout<<sorted[i]<<" ";
 		}
