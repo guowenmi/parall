@@ -43,7 +43,7 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
     for (unsigned long i = 0; i < size; i ++) {
     //    array[i] = u(e);
         array[i] = rand() % max + 1;
-    //    cout << "array_random_number = " << array [i] << endl;
+        cout << "array_random_number = " << array [i] << endl;
     }
     return array;
 }
@@ -101,7 +101,7 @@ int main(int argc, char **argv)
     pivot_list=new unsigned long[processes_size];
     MPI_Scatter(original_data, curr_proc_data_size, MPI_LONG, curr_proc_data, curr_proc_data_size, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
 
-    for (int i = 0; i < curr_proc_data_size; i ++){
+    for (unsigned long i = 0; i < curr_proc_data_size; i ++){
         cout << "after scatter rank " << curr_rank << " : curr_proc_data [i] = " << curr_proc_data [i] << cost_time<<endl;
     }
 
