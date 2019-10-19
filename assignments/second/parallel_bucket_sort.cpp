@@ -36,8 +36,8 @@ int MASTER_RANK = 0; // the master's rank
 
 //generate the unsorted data
 unsigned long *generate_array_with_random(unsigned long min, unsigned long max, unsigned long size){
-    str::tr1::default_random_engine e;
-    str::tr1::uniform_int_distribution<unsigned> u(min, max);
+    std::tr1::default_random_engine e;
+    std::tr1::uniform_int_distribution<unsigned> u(min, max);
 
     unsigned long *array = new unsigned long [size];
     for (unsigned long i = 0; i < size; i ++) {
