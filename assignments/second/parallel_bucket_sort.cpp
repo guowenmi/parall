@@ -60,6 +60,12 @@ void display(unsigned long *array, unsigned long size) {
     cout << endl;
 }
 
+void display_int_array(int *array, int size) {
+    for(int i = 0; i<size; i++)
+        cout << array[i] << " ";
+    cout << endl;
+}
+
 int main(int argc, char **argv)
 {
     if(argc!=2)
@@ -162,8 +168,9 @@ int main(int argc, char **argv)
     recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, recv_bucket_alltoallv, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
-    cout << "the rank of this processor is " << curr_rank << endl;
+    cout << "After alltoallv, the rank of this processor is " << curr_rank << endl;
     display(recv_bucket_alltoallv, number_size);
+    display_int_array(recv_displs, buckets_number);
 
 //
 //    vector<unsigned long> bucket[processes_number];
@@ -275,17 +282,20 @@ int main(int argc, char **argv)
 
 
     //step 6, Gather the results to rank 0
-    int *recv_cnt = new int[processes_number]; // receive count from processes
+    int *recv_cnt = new int[buckets_number]; // receive count from processes
     unsigned long *sorted = new unsigned long[number_size]; // sorted numbers
-    int *final_displs = new int[processes_number]; // final displaces
+    int *final_displs = new int[buckets_number]; // final displaces
 
     // gather the count from each process.
     MPI_Gather(&recv_total_count, 1, MPI_INT, recv_cnt, 1, MPI_INT, MASTER_RANK, MPI_COMM_WORLD);
     final_displs[0]=0;
     for(int i = 1; i < buckets_number; i++)
     {
-        final_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
+        final_displs[i] = recv_displs[i-1] + recv_cnt[i-1];
     }
+
+    cout << "Line: " << __LINE__ << ", display final_displs, rank : " << curr_rank << endl;
+    display(final_displs, processes_number);
 
     MPI_Gatherv(result, recv_total_count, MPI_LONG, sorted, recv_cnt, final_displs, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
