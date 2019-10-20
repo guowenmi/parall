@@ -127,10 +127,10 @@ int main(int argc, char **argv)
 
     // update small_buckets
     // curr_proc_data --> small_buckets
-//    int buckets_number = processes_number;
-//    unsigned long *bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(long));
-//    // new unsigned long [buckets_number * curr_proc_data_size]
-//
+    int buckets_number = processes_number;
+    unsigned long *bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(long));
+    // new unsigned long [buckets_number * curr_proc_data_size]
+
 //    //initialize number of items, used to storte the size of numbers in small buckets
 //    int *nitems = (int*)calloc(buckets_number, sizeof(int));
 //    unsigned long step = number_size/processes_number;
