@@ -151,8 +151,8 @@ int main(int argc, char **argv)
 
     cout << "After curr_rank = " << curr_rank << ", " << __LINE__ << endl;
 
-     step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
-     firstly, need to let all processores know how many numbers should recv from each processor
+    // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
+    // firstly, need to let all processores know how many numbers should recv from each processor
     int* recv_count_alltoallv = (int*)calloc(buckets_number, sizeof(int));
  //   int send_count, recv_count = 1;
     MPI_Alltoall(nitems, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MPI_COMM_WORLD);
