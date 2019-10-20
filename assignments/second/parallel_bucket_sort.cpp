@@ -73,7 +73,7 @@ int main(int argc, char **argv)
     unsigned long *original_data;//the unsorted data
 //    long *final_sorted_data;//the sorted data
     unsigned long *pivot_list;//the pivot list
-    unsigned long *small_buckets_per_process;//the buckets in the current process
+    unsigned long *small_buckets;//the buckets in the current process
     unsigned long *final_buckets;//the bucket after alltoallv function
     double cost_time;
 
@@ -89,9 +89,10 @@ int main(int argc, char **argv)
 
     cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
 
+
+    // step 1, initial the number
     if(curr_rank == MASTER_RANK)
     {
-        // step 1, initial the number
         original_data = generate_array_with_random (number_size, number_size);
     }
 
@@ -111,25 +112,12 @@ int main(int argc, char **argv)
         cout << "after scatter rank " << curr_rank << " : curr_proc_data [i] = " << curr_proc_data [i] << cost_time<<endl;
     }
 
-    //initial local sort
-//    qsort(curr_proc_data, curr_proc_data_size, sizeof(unsigned long), IncOrder);
-
     // step 3, each processor loops each number to determine which small bucket they should in.
-
-/*
-    MPI_Gather(curr_proc_data, 1, MPI_LONG, pivot_list, 1, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
-    if(curr_rank == MASTER_RANK)
-    {
-        qsort(pivot_list, processes_number, sizeof(unsigned long), IncOrder);
-    }
-*/
-
-    small_buckets_per_process = new unsigned long[number_size];
-
-    //initialize small_buckets_per_process
+    //initialize small_buckets
+    small_buckets = new unsigned long[number_size];
     for(unsigned long i = 0; i < number_size; i++)
     {
-        small_buckets_per_process[i] = INF;
+        small_buckets[i] = INF;
     }
 
     //initialize index, used to record the size of numbers in small buckets
@@ -139,13 +127,12 @@ int main(int argc, char **argv)
         index[i] = 0;
     }
 
-    // update small_buckets_per_process
-    // curr_proc_data --> small_buckets_per_process
-    // TODO
+    // update small_buckets
+    // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
     unsigned long* bucket = calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
 
-    // store the number in each small bucket
+    //initialize number of items, used to storte the size of numbers in small buckets
     int* nitems = calloc(buckets_number, sizeof(int));
     unsigned long step = number_size/processes_number;
 
@@ -174,7 +161,6 @@ int main(int argc, char **argv)
     // use alltoallv to communicate numbers in each processores
     unsigned long* big_bucket = calloc(N, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
-    // TODO
 
     cout << "the rank of this processor is " << curr_rank << endl;
     display(arr, n);
@@ -227,41 +213,42 @@ int main(int argc, char **argv)
 
 //    MPI_Bcast(pivot_list, processes_number, MPI_LONG, 0, MPI_COMM_WORLD);
 
-    //update small_buckets_per_process
-    for(unsigned long i = 0; i < curr_proc_data_size; i++)
-    {
-        for(int j = 0; j < processes_number - 1; j++)
-        {
-            if(curr_proc_data[i] >= pivot_list[j] && curr_proc_data[i] < pivot_list[j+1])
-            {
-                small_buckets_per_process[j*curr_proc_data_size+index[j]] = curr_proc_data[i];
-                index[j] = index[j] + 1;
-            }
-        }
+    //update small_buckets
+//    for(unsigned long i = 0; i < curr_proc_data_size; i++)
+//    {
+//        for(int j = 0; j < processes_number - 1; j++)
+//        {
+//            if(curr_proc_data[i] >= pivot_list[j] && curr_proc_data[i] < pivot_list[j+1])
+//            {
+//                small_buckets[j*curr_proc_data_size+index[j]] = curr_proc_data[i];
+//                index[j] = index[j] + 1;
+//            }
+//        }
+//
+//        if(curr_proc_data[i]>=pivot_list[processes_number-1])
+//        {
+//            small_buckets[(processes_number-1)*curr_proc_data_size+index[processes_number-1]]=curr_proc_data[i];
+//            index[processes_number-1]=index[processes_number-1]+1;
+//        }
+//    }
+//
+//    //creation of a new datatype BUCKETS
+//    MPI_Datatype BUCKETS;
+//    MPI_Type_contiguous(curr_proc_data_size, MPI_LONG, &BUCKETS);
+//    MPI_Type_commit(&BUCKETS);
+//
+//    final_buckets=new unsigned long[processes_number*curr_proc_data_size];
+//    for(unsigned long i=0;i<number_size;i++)
+//    {
+//        final_buckets[i]=0;
+//    }
+//
+//    //the alltoall function to get the final buckets in processes
+//    MPI_Alltoall(small_buckets, 1, BUCKETS, final_buckets, 1, BUCKETS, MPI_COMM_WORLD);
+//    MPI_Type_free(&BUCKETS);
 
-        if(curr_proc_data[i]>=pivot_list[processes_number-1])
-        {
-            small_buckets_per_process[(processes_number-1)*curr_proc_data_size+index[processes_number-1]]=curr_proc_data[i];
-            index[processes_number-1]=index[processes_number-1]+1;
-        }
-    }
 
-    //creation of a new datatype BUCKETS
-    MPI_Datatype BUCKETS;
-    MPI_Type_contiguous(curr_proc_data_size, MPI_LONG, &BUCKETS);
-    MPI_Type_commit(&BUCKETS);
-
-    final_buckets=new unsigned long[processes_number*curr_proc_data_size];
-    for(unsigned long i=0;i<number_size;i++)
-    {
-        final_buckets[i]=0;
-    }
-
-    //the alltoall function to get the final buckets in processes
-    MPI_Alltoall(small_buckets_per_process, 1, BUCKETS, final_buckets, 1, BUCKETS, MPI_COMM_WORLD);
-
-    MPI_Type_free(&BUCKETS);
-
+    // step 5, each process sorts its own numbers.
     unsigned long *result;
     unsigned long count=0;
     for(unsigned long i=0;i<number_size;i++)
@@ -285,7 +272,7 @@ int main(int argc, char **argv)
     qsort(result, count, sizeof(unsigned long), IncOrder);
 
 
-    //Gather the results to rank 0
+    //step 6, Gather the results to rank 0
     int *recv_cnt = new int[processes_number];
     unsigned long *sorted = new unsigned long[number_size];
     int *displs = new int[processes_number];
