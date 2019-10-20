@@ -146,16 +146,16 @@ int main(int argc, char **argv)
 
     // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
     // firstly, need to let all processores know how many numbers should recv from each processor
-    unsigned long* recv_count_alltoallv = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
+    int* recv_count_alltoallv = (int*)calloc(buckets_number, sizeof(int));
  //   int send_count, recv_count = 1;
     MPI_Alltoall(nitems, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MPI_COMM_WORLD);
 
     // calculate the place
-    unsigned long* send_displs = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
-    unsigned long* recv_displs = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
+    int* send_displs = (int*)calloc(buckets_number, sizeof(int));
+    int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
     for (int i = 1; i < buckets_number; i++){
-        send_displs[i] = i * curr_proc_data;
-        recv_displs[i] = recv_displs[i-1]+recv_count_alltoallv[i-1];
+        send_displs[i] = i * curr_proc_data_size;
+        recv_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
     }
 
     // use alltoallv to communicate numbers in each processores
@@ -163,7 +163,7 @@ int main(int argc, char **argv)
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
     cout << "the rank of this processor is " << curr_rank << endl;
-    display(big_bucket, recv_count_alltoallv);
+    display(big_bucket, number_size);
 
 //
 //    vector<unsigned long> bucket[processes_number];
