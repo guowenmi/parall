@@ -44,6 +44,7 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
     return array;
 }
 
+/*
 float *generate_random_number (int min, int max, int size){
 
     const float xmin = 10.0;
@@ -57,6 +58,7 @@ float *generate_random_number (int min, int max, int size){
 
     return data;
 }
+ */
 
 //IncOrder for qsort
 int IncOrder(const void *e1, const void *e2)
@@ -151,7 +153,7 @@ int main(int argc, char **argv)
 
     //initialize number of items, used to storte the size of numbers in small buckets
     int *nitems = malloc(buckets_number * sizeof(int));
-    for (i = 0; i < buckets_number; ++i)
+    for (int i = 0; i < buckets_number; ++i)
         nitems[i] = 0;
     unsigned long step = number_size/processes_number;
 
