@@ -157,7 +157,7 @@ int main(int argc, char **argv)
  //   int send_count, recv_count = 1;
     MPI_Alltoall(nitems, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MPI_COMM_WORLD);
 
-     calculate the place
+    // calculate the place
     int* send_displs = (int*)calloc(buckets_number, sizeof(int));
     int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
     // send_diapls[0] and recv_displs[0] are both equal to 0, so here
