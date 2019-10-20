@@ -152,6 +152,9 @@ int main(int argc, char **argv)
     // calculate the place
     int* send_displs = (int*)calloc(buckets_number, sizeof(int));
     int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
+    // send_diapls[0] and recv_displs[0] are both equal to 0, so here
+    send_displs[0] = 0;
+    recv_displs[0] = 0;
     for (int i = 1; i < buckets_number; i++){
         send_displs[i] = i * curr_proc_data_size;
         recv_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
