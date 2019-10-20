@@ -31,7 +31,7 @@ using namespace std;
 
 unsigned long number_size;//length of the unsorted data
 int curr_rank;//rank of the current process
-int processes_size;//the number of processes
+int processes_number;//the number of processes
 int MASTER_RANK = 0; // the master's rank
 
 //generate the unsorted data, range (0, max)
@@ -55,6 +55,12 @@ int IncOrder(const void *e1, const void *e2)
     return (*((unsigned long *)e1)-*((unsigned long *)e2));
 }
 
+void display(unsigned long *array, unsigned long size) {
+    for(unsigned long i = 0; i<size; i++)
+        cout << array[i] << " ";
+    cout << endl;
+}
+
 int main(int argc, char **argv)
 {
     if(argc!=2)
@@ -67,7 +73,7 @@ int main(int argc, char **argv)
     unsigned long *original_data;//the unsorted data
 //    long *final_sorted_data;//the sorted data
     unsigned long *pivot_list;//the pivot list
-    unsigned long *proc_buckets;//the buckets in the current process
+    unsigned long *small_buckets_per_process;//the buckets in the current process
     unsigned long *final_buckets;//the bucket after alltoallv function
     double cost_time;
 
@@ -77,9 +83,9 @@ int main(int argc, char **argv)
 //    MPI_Barrier(MPI_COMM_WORLD);
     cost_time = - MPI_Wtime();
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
-    MPI_Comm_size(MPI_COMM_WORLD, &processes_size);
+    MPI_Comm_size(MPI_COMM_WORLD, &processes_number);
     number_size = atoll(argv[1]); // the size of numbers need to be sorted, an input parameter
-    curr_proc_data_size = number_size / processes_size; // the number of numbers is total_number / processers
+    curr_proc_data_size = number_size / processes_number; // the number of numbers is total_number / processers
 
     cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
 
@@ -98,7 +104,7 @@ int main(int argc, char **argv)
     // step 2, scatter evenly to all processes.
     curr_proc_data = new unsigned long[curr_proc_data_size];
 //    final_sorted_data=new long[number_size];
-    pivot_list=new unsigned long[processes_size];
+    pivot_list=new unsigned long[processes_number];
     MPI_Scatter(original_data, curr_proc_data_size, MPI_LONG, curr_proc_data, curr_proc_data_size, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
 
     for (unsigned long i = 0; i < curr_proc_data_size; i ++){
@@ -108,44 +114,135 @@ int main(int argc, char **argv)
     //initial local sort
 //    qsort(curr_proc_data, curr_proc_data_size, sizeof(unsigned long), IncOrder);
 
+    // step 3, each processor loops each number to determine which small bucket they should in.
+
+/*
     MPI_Gather(curr_proc_data, 1, MPI_LONG, pivot_list, 1, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     if(curr_rank == MASTER_RANK)
     {
-        qsort(pivot_list, processes_size, sizeof(unsigned long), IncOrder);
+        qsort(pivot_list, processes_number, sizeof(unsigned long), IncOrder);
+    }
+*/
+
+    small_buckets_per_process = new unsigned long[number_size];
+
+    //initialize small_buckets_per_process
+    for(unsigned long i = 0; i < number_size; i++)
+    {
+        small_buckets_per_process[i] = INF;
     }
 
-    proc_buckets=new unsigned long[number_size];
-
-    //initialize proc_buckets
-    for(unsigned long i=0;i<number_size;i++)
+    //initialize index, used to record the size of numbers in small buckets
+    unsigned long *index = new unsigned long[processes_number];
+    for(int i = 0; i < processes_number; i++)
     {
-        proc_buckets[i]=INF;
+        index[i] = 0;
     }
 
-    unsigned long *index=new unsigned long[processes_size];
+    // update small_buckets_per_process
+    // curr_proc_data --> small_buckets_per_process
+    // TODO
+    int buckets_number = processes_number;
+    unsigned long* bucket = calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
 
-    //initialize index
-    for(int i=0;i<processes_size;i++)
+    // store the number in each small bucket
+    int* nitems = calloc(buckets_number, sizeof(int));
+    unsigned long step = number_size/processes_number;
+
+    for (i=0; i < curr_proc_data_size; i++)
     {
-        index[i]=0;
+        int bktno = floor(curr_proc_data[i]/step);// in which bucket
+        int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
+        bucket[idx] = curr_proc_data[i];
+        ++nitems[bktno];
     }
-    MPI_Bcast(pivot_list, processes_size, MPI_LONG, 0, MPI_COMM_WORLD);
 
-    //update proc_buckets
-    for(unsigned long i=0;i<curr_proc_data_size;i++)
+    // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
+    // firstly, need to let all processores know how many numbers should recv from each processor
+    int* recv_count_alltoallv = (int*)calloc(buckets_number, sizeof(int));
+ //   int send_count, recv_count = 1;
+    MPI_Alltoall(nitems, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MPI_COMM_WORLD);
+
+    // calculate the place
+    int* send_displs = (int*)calloc(buckets_number, sizeof(int));
+    int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
+    for (i=1; i<buckets_number; i++){
+        send_displs[i] = i * curr_proc_data;
+        recv_displs[i] = recv_displs[i-1]+recv_count_alltoallv[i-1];
+    }
+
+    // use alltoallv to communicate numbers in each processores
+    unsigned long* big_bucket = calloc(N, sizeof(unsigned long));
+    MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
+    // TODO
+
+    cout << "the rank of this processor is " << curr_rank << endl;
+    display(arr, n);
+
+//
+//    vector<unsigned long> bucket[processes_number];
+//    int position = 0;
+//    for(unsigned long i = 0; i<curr_proc_data_size; i++)  {          //put elements into different buckets
+//        position = floor (curr_proc_data[i] / number_size * (processes_number - 1));
+//        bucket[position].push_back(curr_proc_data[i]);
+//    }
+//
+//    unsigned long index = 0;
+//    for(int i = 0; i < processes_number; i++) {
+//        while(!bucket[i].empty()) {
+//            curr_proc_data[index++] = *(bucket[i].begin());
+//            bucket[i].erase(bucket[i].begin());
+//        }
+//    }
+//
+//    display(arr, n);
+
+
+//
+//    // from bucket.c
+//    int i, count;
+//
+//    // The range covered by one bucket
+//    float stepsize = number_size / processes_number ; //(x2 - x1) / nbuckets;
+//
+//    // The number of items thrown into each bucket. We would expect each
+//    // bucket to have a similar number of items, but they won't be
+//    // exactly the same. So we keep track of their numbers here.
+//    int *nitems = malloc(processes_number * sizeof(int));
+//    for (i = 0; i < processes_number; ++i) nitems[i] = 0;
+//
+//    // Toss the data items into the correct bucket
+//    for (i = 0; i < curr_proc_data_size; ++i) {
+//
+//        // What bucket does this data value belong to?
+//        int bktno = (int) floor(curr_proc_data[i]  / stepsize);
+//        int idx = bktno * curr_proc_data_size + nitems[bktno];
+//
+//        // Put the data value into this bucket
+//        bucket[idx] = data[i];
+//        ++nitems[bktno];
+//    }
+//    // from bucket.c
+
+
+//    MPI_Bcast(pivot_list, processes_number, MPI_LONG, 0, MPI_COMM_WORLD);
+
+    //update small_buckets_per_process
+    for(unsigned long i = 0; i < curr_proc_data_size; i++)
     {
-        for(int j=0;j<processes_size-1;j++)
+        for(int j = 0; j < processes_number - 1; j++)
         {
-            if(curr_proc_data[i]>=pivot_list[j]&&curr_proc_data[i]<pivot_list[j+1])
+            if(curr_proc_data[i] >= pivot_list[j] && curr_proc_data[i] < pivot_list[j+1])
             {
-                proc_buckets[j*curr_proc_data_size+index[j]]=curr_proc_data[i];
-                index[j]=index[j]+1;
+                small_buckets_per_process[j*curr_proc_data_size+index[j]] = curr_proc_data[i];
+                index[j] = index[j] + 1;
             }
         }
-        if(curr_proc_data[i]>=pivot_list[processes_size-1])
+
+        if(curr_proc_data[i]>=pivot_list[processes_number-1])
         {
-            proc_buckets[(processes_size-1)*curr_proc_data_size+index[processes_size-1]]=curr_proc_data[i];
-            index[processes_size-1]=index[processes_size-1]+1;
+            small_buckets_per_process[(processes_number-1)*curr_proc_data_size+index[processes_number-1]]=curr_proc_data[i];
+            index[processes_number-1]=index[processes_number-1]+1;
         }
     }
 
@@ -154,14 +251,14 @@ int main(int argc, char **argv)
     MPI_Type_contiguous(curr_proc_data_size, MPI_LONG, &BUCKETS);
     MPI_Type_commit(&BUCKETS);
 
-    final_buckets=new unsigned long[processes_size*curr_proc_data_size];
+    final_buckets=new unsigned long[processes_number*curr_proc_data_size];
     for(unsigned long i=0;i<number_size;i++)
     {
         final_buckets[i]=0;
     }
 
     //the alltoall function to get the final buckets in processes
-    MPI_Alltoall(proc_buckets, 1, BUCKETS, final_buckets, 1, BUCKETS, MPI_COMM_WORLD);
+    MPI_Alltoall(small_buckets_per_process, 1, BUCKETS, final_buckets, 1, BUCKETS, MPI_COMM_WORLD);
 
     MPI_Type_free(&BUCKETS);
 
@@ -189,13 +286,13 @@ int main(int argc, char **argv)
 
 
     //Gather the results to rank 0
-    int *recv_cnt = new int[processes_size];
+    int *recv_cnt = new int[processes_number];
     unsigned long *sorted = new unsigned long[number_size];
-    int *displs = new int[processes_size];
+    int *displs = new int[processes_number];
 
     MPI_Gather(&count, 1, MPI_LONG, recv_cnt, 1, MPI_LONG, 0, MPI_COMM_WORLD);
     displs[0]=0;
-    for(int i=1;i<processes_size;i++)
+    for(int i=1;i<processes_number;i++)
     {
         displs[i]=displs[i-1]+recv_cnt[i-1];
     }
