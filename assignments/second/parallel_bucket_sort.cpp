@@ -139,7 +139,7 @@ int main(int argc, char **argv)
     {
         int bktno = floor(curr_proc_data[i]/step);// in which small bucket
         int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
-        bucket[idx] = curr_proc_data[i];
+        bucket[idx] = 0;//curr_proc_data[i];
     //    ++nitems[bktno];
     }
 
