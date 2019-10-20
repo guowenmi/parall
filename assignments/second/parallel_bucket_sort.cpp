@@ -139,14 +139,14 @@ int main(int argc, char **argv)
     {
         bucket[i] = INF;
     }
-//
-//    for (int i = 0; i < curr_proc_data_size; i++)
-//    {
-//        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
-//        int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
-//        bucket[idx] = curr_proc_data[i];
-//    //    ++nitems[bktno];
-//    }
+
+    for (int i = 0; i < curr_proc_data_size; i++)
+    {
+        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
+        int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
+        bucket[idx] = curr_proc_data[i];
+    //    ++nitems[bktno];
+    }
 
     // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
     // firstly, need to let all processores know how many numbers should recv from each processor
