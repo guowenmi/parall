@@ -159,7 +159,7 @@ int main(int argc, char **argv)
     }
 
     // use alltoallv to communicate numbers in each processores
-    unsigned long* recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
+    recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, recv_bucket_alltoallv, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
     cout << "the rank of this processor is " << curr_rank << endl;
