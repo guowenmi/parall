@@ -73,7 +73,7 @@ int main(int argc, char **argv)
 //    long *final_sorted_data;//the sorted data
     unsigned long *pivot_list;//the pivot list
     unsigned long *small_buckets;//the buckets in the current process
-    unsigned long *final_buckets;//the bucket after alltoallv function
+    unsigned long *recv_bucket_alltoallv;//the bucket after alltoallv function
     double cost_time;
 
     MPI_Init(&argc, &argv); //initial
@@ -138,7 +138,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < curr_proc_data_size; i++)
     {
-        int bktno = floor(curr_proc_data[i]/step);// in which bucket
+        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
         int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
         bucket[idx] = curr_proc_data[i];
         ++nitems[bktno];
@@ -159,11 +159,11 @@ int main(int argc, char **argv)
     }
 
     // use alltoallv to communicate numbers in each processores
-    unsigned long* big_bucket = (unsigned long*)calloc(number_size, sizeof(unsigned long));
-    MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
+    unsigned long* recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
+    MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, recv_bucket_alltoallv, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
     cout << "the rank of this processor is " << curr_rank << endl;
-    display(big_bucket, number_size);
+    display(recv_bucket_alltoallv, number_size);
 
 //
 //    vector<unsigned long> bucket[processes_number];
@@ -253,7 +253,7 @@ int main(int argc, char **argv)
     unsigned long count=0;
     for(unsigned long i=0;i<number_size;i++)
     {
-        if(final_buckets[i]!=INF)
+        if(recv_bucket_alltoallv[i]!=INF)
         {
             count++;
         }
@@ -263,15 +263,15 @@ int main(int argc, char **argv)
     count = 0;
     for(unsigned long i=0;i<number_size;i++)
     {
-        if(final_buckets[i]!=INF)
+        if(recv_bucket_alltoallv[i]!=INF)
         {
-            result[count++] = final_buckets[i];
+            result[count++] = recv_bucket_alltoallv[i];
         }
     }
 
     // just use qsort of stdlib
     qsort(result, count, sizeof(unsigned long), IncOrder);
-    
+
     //step 6, Gather the results to rank 0
     int *recv_cnt = new int[processes_number];
     unsigned long *sorted = new unsigned long[number_size];
