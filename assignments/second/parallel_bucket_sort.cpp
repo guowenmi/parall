@@ -48,7 +48,6 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
     return array;
 }
 
-
 //IncOrder for qsort
 int IncOrder(const void *e1, const void *e2)
 {
