@@ -127,7 +127,7 @@ int main(int argc, char **argv)
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
-    unsigned long *bucket = new unsigned long [buckets_number * curr_proc_data_size];
+    unsigned long *bucket = new unsigned long [number_size];
             //(unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
     // new unsigned long [buckets_number * curr_proc_data_size]
 
@@ -135,13 +135,18 @@ int main(int argc, char **argv)
     int *nitems = (int*)calloc(buckets_number, sizeof(int));
     unsigned long step = number_size/processes_number;
 
-    for (int i = 0; i < curr_proc_data_size; i++)
+    for(unsigned long i = 0; i < number_size; i++)
     {
-        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
-        int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
-        bucket[idx] = 0;//curr_proc_data[i];
-    //    ++nitems[bktno];
+        bucket[i] = INF;
     }
+//
+//    for (int i = 0; i < curr_proc_data_size; i++)
+//    {
+//        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
+//        int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
+//        bucket[idx] = curr_proc_data[i];
+//    //    ++nitems[bktno];
+//    }
 
     // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
     // firstly, need to let all processores know how many numbers should recv from each processor
