@@ -269,9 +269,9 @@ int main(int argc, char **argv)
         }
     }
 
+    // just use qsort of stdlib
     qsort(result, count, sizeof(unsigned long), IncOrder);
-
-
+    
     //step 6, Gather the results to rank 0
     int *recv_cnt = new int[processes_number];
     unsigned long *sorted = new unsigned long[number_size];
