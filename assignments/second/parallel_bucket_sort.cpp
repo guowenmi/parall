@@ -152,7 +152,7 @@ int main(int argc, char **argv)
 //    for (i = 0; i < ntotal; ++i) bucket[i] = 0;
 
     //initialize number of items, used to storte the size of numbers in small buckets
-    int *nitems = malloc(buckets_number * sizeof(int));
+    int *nitems = (int *)malloc(buckets_number * sizeof(int));
     for (int i = 0; i < buckets_number; ++i)
         nitems[i] = 0;
     unsigned long step = number_size/processes_number;
