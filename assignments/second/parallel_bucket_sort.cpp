@@ -131,10 +131,10 @@ int main(int argc, char **argv)
     unsigned long *bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(long));
     // new unsigned long [buckets_number * curr_proc_data_size]
 
-//    //initialize number of items, used to storte the size of numbers in small buckets
-//    int *nitems = (int*)calloc(buckets_number, sizeof(int));
-//    unsigned long step = number_size/processes_number;
-//
+    //initialize number of items, used to storte the size of numbers in small buckets
+    int *nitems = (int*)calloc(buckets_number, sizeof(int));
+    unsigned long step = number_size/processes_number;
+
 //    for (int i = 0; i < curr_proc_data_size; i++)
 //    {
 //        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
