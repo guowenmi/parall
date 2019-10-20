@@ -295,7 +295,7 @@ int main(int argc, char **argv)
     }
 
     cout << "Line: " << __LINE__ << ", display final_displs, rank : " << curr_rank << endl;
-    display(final_displs, processes_number);
+    display_int_array(final_displs, processes_number);
 
     MPI_Gatherv(result, recv_total_count, MPI_LONG, sorted, recv_cnt, final_displs, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
