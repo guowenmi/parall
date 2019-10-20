@@ -125,13 +125,6 @@ int main(int argc, char **argv)
         small_buckets[i] = INF;
     }
 
-    //initialize index, used to record the size of numbers in small buckets
-    unsigned long *index = new unsigned long[processes_number];
-    for(int i = 0; i < processes_number; i++)
-    {
-        index[i] = 0;
-    }
-
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
@@ -164,96 +157,17 @@ int main(int argc, char **argv)
         recv_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
     }
 
+    cout << "Line: " << __LINE__ << ", Before alltoallv send_displs and recv_displs, the rank of this processor is " << curr_rank << endl;
+    display_int_array(send_displs, buckets_number);
+    display_int_array(recv_displs, buckets_number);
+
     // use alltoallv to communicate numbers in each processores
     recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, recv_bucket_alltoallv, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
-    cout << "After alltoallv, the rank of this processor is " << curr_rank << endl;
+    cout << "Line: " << __LINE__ << ", After alltoallv, the rank of this processor is " << curr_rank << endl;
     display(recv_bucket_alltoallv, number_size);
     display_int_array(recv_displs, buckets_number);
-
-//
-//    vector<unsigned long> bucket[processes_number];
-//    int position = 0;
-//    for(unsigned long i = 0; i<curr_proc_data_size; i++)  {          //put elements into different buckets
-//        position = floor (curr_proc_data[i] / number_size * (processes_number - 1));
-//        bucket[position].push_back(curr_proc_data[i]);
-//    }
-//
-//    unsigned long index = 0;
-//    for(int i = 0; i < processes_number; i++) {
-//        while(!bucket[i].empty()) {
-//            curr_proc_data[index++] = *(bucket[i].begin());
-//            bucket[i].erase(bucket[i].begin());
-//        }
-//    }
-//
-//    display(arr, n);
-
-
-//
-//    // from bucket.c
-//    int i, count;
-//
-//    // The range covered by one bucket
-//    float stepsize = number_size / processes_number ; //(x2 - x1) / nbuckets;
-//
-//    // The number of items thrown into each bucket. We would expect each
-//    // bucket to have a similar number of items, but they won't be
-//    // exactly the same. So we keep track of their numbers here.
-//    int *nitems = malloc(processes_number * sizeof(int));
-//    for (i = 0; i < processes_number; ++i) nitems[i] = 0;
-//
-//    // Toss the data items into the correct bucket
-//    for (i = 0; i < curr_proc_data_size; ++i) {
-//
-//        // What bucket does this data value belong to?
-//        int bktno = (int) floor(curr_proc_data[i]  / stepsize);
-//        int idx = bktno * curr_proc_data_size + nitems[bktno];
-//
-//        // Put the data value into this bucket
-//        bucket[idx] = data[i];
-//        ++nitems[bktno];
-//    }
-//    // from bucket.c
-
-
-//    MPI_Bcast(pivot_list, processes_number, MPI_LONG, 0, MPI_COMM_WORLD);
-
-    //update small_buckets
-//    for(unsigned long i = 0; i < curr_proc_data_size; i++)
-//    {
-//        for(int j = 0; j < processes_number - 1; j++)
-//        {
-//            if(curr_proc_data[i] >= pivot_list[j] && curr_proc_data[i] < pivot_list[j+1])
-//            {
-//                small_buckets[j*curr_proc_data_size+index[j]] = curr_proc_data[i];
-//                index[j] = index[j] + 1;
-//            }
-//        }
-//
-//        if(curr_proc_data[i]>=pivot_list[processes_number-1])
-//        {
-//            small_buckets[(processes_number-1)*curr_proc_data_size+index[processes_number-1]]=curr_proc_data[i];
-//            index[processes_number-1]=index[processes_number-1]+1;
-//        }
-//    }
-//
-//    //creation of a new datatype BUCKETS
-//    MPI_Datatype BUCKETS;
-//    MPI_Type_contiguous(curr_proc_data_size, MPI_LONG, &BUCKETS);
-//    MPI_Type_commit(&BUCKETS);
-//
-//    final_buckets=new unsigned long[processes_number*curr_proc_data_size];
-//    for(unsigned long i=0;i<number_size;i++)
-//    {
-//        final_buckets[i]=0;
-//    }
-//
-//    //the alltoall function to get the final buckets in processes
-//    MPI_Alltoall(small_buckets, 1, BUCKETS, final_buckets, 1, BUCKETS, MPI_COMM_WORLD);
-//    MPI_Type_free(&BUCKETS);
-
 
     // step 5, each process sorts its own numbers.
     unsigned long *result; // receive all numbers per process
@@ -279,7 +193,6 @@ int main(int argc, char **argv)
 
     cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
     display(result, recv_total_count);
-
 
     //step 6, Gather the results to rank 0
     int *recv_cnt = new int[buckets_number]; // receive count from processes
