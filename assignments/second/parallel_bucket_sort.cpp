@@ -159,18 +159,18 @@ int main(int argc, char **argv)
         send_displs[i] = i * curr_proc_data_size;
         recv_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
     }
-
-    cout << "Line: " << __LINE__ << ", Before alltoallv send_displs and recv_displs, the rank of this processor is " << curr_rank << endl;
-    display_int_array(send_displs, buckets_number);
-    display_int_array(recv_displs, buckets_number);
+//
+//    cout << "Line: " << __LINE__ << ", Before alltoallv send_displs and recv_displs, the rank of this processor is " << curr_rank << endl;
+//    display_int_array(send_displs, buckets_number);
+//    display_int_array(recv_displs, buckets_number);
 
     // use alltoallv to communicate numbers in each processores
     recv_bucket_alltoallv = (unsigned long*)calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, recv_bucket_alltoallv, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
-    cout << "Line: " << __LINE__ << ", After alltoallv, the rank of this processor is " << curr_rank << endl;
-    display(recv_bucket_alltoallv, number_size);
-    display_int_array(recv_displs, buckets_number);
+//    cout << "Line: " << __LINE__ << ", After alltoallv, the rank of this processor is " << curr_rank << endl;
+//    display(recv_bucket_alltoallv, number_size);
+//    display_int_array(recv_displs, buckets_number);
 
     // step 5, each process sorts its own numbers.
     unsigned long *result; // receive all numbers per process
