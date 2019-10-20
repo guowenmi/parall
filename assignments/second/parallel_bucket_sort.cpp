@@ -249,18 +249,13 @@ int main(int argc, char **argv)
 
 
     // step 5, each process sorts its own numbers.
-    unsigned long *result;
-    unsigned long count=0;
-    for(unsigned long i=0;i<number_size;i++)
-    {
-        if(recv_bucket_alltoallv[i]!=INF)
-        {
-            count++;
-        }
-    }
+    unsigned long *result; // receive all numbers per process
+    unsigned long recv_total_count = 0; // total number of each process
+    for (int i = 0; i < buckets_number; i ++)
+        recv_total_count += recv_count_alltoallv[i];
 
-    result = new unsigned long[count];
-    count = 0;
+    result = new unsigned long[recv_total_count];
+    int count = 0;
     for(unsigned long i=0;i<number_size;i++)
     {
         if(recv_bucket_alltoallv[i]!=INF)
@@ -269,22 +264,27 @@ int main(int argc, char **argv)
         }
     }
 
+    cout << "display result, rank : " << curr_rank << endl;
+    display(result, recv_total_count);
+
     // just use qsort of stdlib
-    qsort(result, count, sizeof(unsigned long), IncOrder);
+    qsort(result, recv_total_count, sizeof(unsigned long), IncOrder);
 
     //step 6, Gather the results to rank 0
     int *recv_cnt = new int[processes_number];
     unsigned long *sorted = new unsigned long[number_size];
-    int *displs = new int[processes_number];
+    int *final_displs = new int[processes_number];
 
-    MPI_Gather(&count, 1, MPI_LONG, recv_cnt, 1, MPI_LONG, 0, MPI_COMM_WORLD);
-    displs[0]=0;
-    for(int i=1;i<processes_number;i++)
+    MPI_Gather(&recv_total_count, 1, MPI_LONG, recv_cnt, 1, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
+    final_displs[0]=0;
+    for(int i = 1; i < buckets_number; i++)
     {
-        displs[i]=displs[i-1]+recv_cnt[i-1];
+        final_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1];
+
+    //    final_displs[i]=final_displs[i-1]+recv_cnt[i-1];
     }
 
-    MPI_Gatherv(result, count, MPI_LONG, sorted, recv_cnt, displs, MPI_LONG, 0, MPI_COMM_WORLD);
+    MPI_Gatherv(result, recv_total_count, MPI_LONG, sorted, recv_cnt, final_displs, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
     cout << "time of curr_rank " << curr_rank << " : " << cost_time<<endl;
 
