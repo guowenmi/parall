@@ -29,11 +29,6 @@
 #define INF (-1)
 using namespace std;
 
-unsigned long number_size;//length of the unsorted data
-int curr_rank;//rank of the current process
-int processes_number;//the number of processes
-int MASTER_RANK = 0; // the master's rank
-
 //generate the unsorted data, range (0, max)
 unsigned long *generate_array_with_random(unsigned long max, unsigned long size){
 //    std::tr1::default_random_engine e;
@@ -45,7 +40,22 @@ unsigned long *generate_array_with_random(unsigned long max, unsigned long size)
         array[i] = rand() % max + 1;
         cout << "array_random_number = " << array [i] << endl;
     }
+
     return array;
+}
+
+float *generate_random_number (int min, int max, int size){
+
+    const float xmin = 10.0;
+    const float xmax = 250000;
+
+
+    float *data = malloc(size * sizeof(float));
+
+    for (i = 0; i < size; i++)
+        data[i] = drand48() * (xmax - xmin - 1) + xmin;
+
+    return data;
 }
 
 //IncOrder for qsort
@@ -73,6 +83,12 @@ int main(int argc, char **argv)
         cout<<"Please check your input"<<endl;
         exit(0);
     }
+
+    unsigned long number_size;//length of the unsorted data
+    int curr_rank;//rank of the current process
+    int processes_number;//the number of processes
+    int MASTER_RANK = 0; // the master's rank
+
     unsigned long curr_proc_data_size;//size of data on the current process
     unsigned long *curr_proc_data;//data on the current process
     unsigned long *original_data;//the unsorted data
@@ -127,12 +143,16 @@ int main(int argc, char **argv)
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
-    unsigned long *bucket = new unsigned long [number_size];
-            //(unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
+    unsigned long* bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
     // new unsigned long [buckets_number * curr_proc_data_size]
 
+//    float *bucket = calloc(ntotal, sizeof(float *));
+//    for (i = 0; i < ntotal; ++i) bucket[i] = 0;
+
     //initialize number of items, used to storte the size of numbers in small buckets
-    int *nitems = (int*)calloc(buckets_number, sizeof(int));
+    int *nitems = malloc(buckets_number * sizeof(int));
+    for (i = 0; i < buckets_number; ++i)
+        nitems[i] = 0;
     unsigned long step = number_size/processes_number;
 
     for(unsigned long i = 0; i < number_size; i++)
@@ -142,7 +162,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < curr_proc_data_size; i++)
     {
-        int bktno = floor(curr_proc_data[i]/step);// in which small bucket
+        int bktno = (int)floor(curr_proc_data[i]/step);// in which small bucket
         int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
         cout << "curr_rank = " << curr_rank << ", " << __LINE__ << ", idx = " << idx << ", bktno = " << bktno << endl;
         bucket[idx] = curr_proc_data[i];
@@ -211,16 +231,20 @@ int main(int argc, char **argv)
     int *final_displs = new int[buckets_number]; // final displaces
 
     // gather the count from each process.
-    MPI_Gather(&recv_total_count, 1, MPI_INT, recv_cnt, 1, MPI_INT, MASTER_RANK, MPI_COMM_WORLD);
+//    memset(recv_count_alltoallv, 0, buckets_number*sizeof(int));
+    // recv_cnt --> recv_count_alltoallv
+    MPI_Gather(&recv_total_count, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MASTER_RANK, MPI_COMM_WORLD);
     final_displs[0]=0;
     for(int i = 1; i < buckets_number; i++)
     {
-        final_displs[i] = recv_displs[i-1] + recv_cnt[i-1];
+        final_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1]; //recv_cnt[i-1];
     }
 
     cout << "Line: " << __LINE__ << ", display final_displs, rank : " << curr_rank << endl;
     display_int_array(final_displs, processes_number);
 
+    //result ? big_bucket ?
+    // recv_cnt --> recv_count_alltoallv
     MPI_Gatherv(result, recv_total_count, MPI_LONG, sorted, recv_cnt, final_displs, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
     cout << "Line: " << __LINE__ << ", time of curr_rank " << curr_rank << " : " << cost_time<<endl;
