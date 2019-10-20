@@ -129,10 +129,11 @@ int main(int argc, char **argv)
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
-    unsigned long *bucket = calloc(buckets_number * curr_proc_data_size, sizeof(long));
+    unsigned long *bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(long));
+    // new unsigned long [buckets_number * curr_proc_data_size]
 
     //initialize number of items, used to storte the size of numbers in small buckets
-    int *nitems = calloc(buckets_number, sizeof(int));
+    int *nitems = (int*)calloc(buckets_number, sizeof(int));
     unsigned long step = number_size/processes_number;
 
     for (int i = 0; i < curr_proc_data_size; i++)
@@ -145,20 +146,20 @@ int main(int argc, char **argv)
 
     // step 4, each processor scatter its numbers to proper processors and gather its own proper numbers from others
     // firstly, need to let all processores know how many numbers should recv from each processor
-    int* recv_count_alltoallv = (int*)calloc(buckets_number, sizeof(int));
+    unsigned long* recv_count_alltoallv = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
  //   int send_count, recv_count = 1;
     MPI_Alltoall(nitems, 1, MPI_INT, recv_count_alltoallv, 1, MPI_INT, MPI_COMM_WORLD);
 
     // calculate the place
-    int* send_displs = (int*)calloc(buckets_number, sizeof(int));
-    int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
+    unsigned long* send_displs = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
+    unsigned long* recv_displs = (unsigned long*)calloc(buckets_number, sizeof(unsigned long));
     for (int i = 1; i < buckets_number; i++){
         send_displs[i] = i * curr_proc_data;
         recv_displs[i] = recv_displs[i-1]+recv_count_alltoallv[i-1];
     }
 
     // use alltoallv to communicate numbers in each processores
-    unsigned long* big_bucket = calloc(number_size, sizeof(unsigned long));
+    unsigned long* big_bucket = (unsigned long*)calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
     cout << "the rank of this processor is " << curr_rank << endl;
