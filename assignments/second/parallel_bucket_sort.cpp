@@ -264,13 +264,13 @@ int main(int argc, char **argv)
         }
     }
 
-    cout << "display result, rank : " << curr_rank << endl;
+    cout << "Line: " << __LINE__ << ", display result, rank : " << curr_rank << endl;
     display(result, recv_total_count);
 
     // just use qsort of stdlib
     qsort(result, recv_total_count, sizeof(unsigned long), IncOrder);
 
-    cout << "display sorted result, rank : " << curr_rank << endl;
+    cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
     display(result, recv_total_count);
 
 
@@ -289,16 +289,13 @@ int main(int argc, char **argv)
 
     MPI_Gatherv(result, recv_total_count, MPI_LONG, sorted, recv_cnt, final_displs, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
-    cout << "time of curr_rank " << curr_rank << " : " << cost_time<<endl;
+    cout << "Line: " << __LINE__ << ", time of curr_rank " << curr_rank << " : " << cost_time<<endl;
 
     //print the sorted data on curr_rank 0
 	if(curr_rank == MASTER_RANK)
 	{
-		for(long i = 0; i < number_size; i++)
-		{
-			cout << sorted[i] << " ";
-		}
-		cout << endl;
+        cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
+        display(sorted, number_size);
 	}
 
     MPI_Finalize();
