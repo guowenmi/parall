@@ -129,13 +129,13 @@ int main(int argc, char **argv)
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
-    unsigned long* bucket = calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
+    unsigned long *bucket = calloc(buckets_number * curr_proc_data_size, sizeof(long));
 
     //initialize number of items, used to storte the size of numbers in small buckets
-    int* nitems = calloc(buckets_number, sizeof(int));
+    int *nitems = calloc(buckets_number, sizeof(int));
     unsigned long step = number_size/processes_number;
 
-    for (i=0; i < curr_proc_data_size; i++)
+    for (int i = 0; i < curr_proc_data_size; i++)
     {
         int bktno = floor(curr_proc_data[i]/step);// in which bucket
         int idx = bktno * curr_proc_data_size + nitems[bktno];// index in the bucket
@@ -152,17 +152,17 @@ int main(int argc, char **argv)
     // calculate the place
     int* send_displs = (int*)calloc(buckets_number, sizeof(int));
     int* recv_displs = (int*)calloc(buckets_number, sizeof(int));
-    for (i=1; i<buckets_number; i++){
+    for (int i = 1; i < buckets_number; i++){
         send_displs[i] = i * curr_proc_data;
         recv_displs[i] = recv_displs[i-1]+recv_count_alltoallv[i-1];
     }
 
     // use alltoallv to communicate numbers in each processores
-    unsigned long* big_bucket = calloc(N, sizeof(unsigned long));
+    unsigned long* big_bucket = calloc(number_size, sizeof(unsigned long));
     MPI_Alltoallv(bucket, nitems, send_displs, MPI_LONG, big_bucket, recv_count_alltoallv, recv_displs, MPI_LONG, MPI_COMM_WORLD);
 
     cout << "the rank of this processor is " << curr_rank << endl;
-    display(arr, n);
+    display(big_bucket, recv_count_alltoallv);
 
 //
 //    vector<unsigned long> bucket[processes_number];
