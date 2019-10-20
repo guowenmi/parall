@@ -94,7 +94,6 @@ int main(int argc, char **argv)
 
     cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
 
-
     // step 1, initial the number
     if(curr_rank == MASTER_RANK)
     {
@@ -128,7 +127,8 @@ int main(int argc, char **argv)
     // update small_buckets
     // curr_proc_data --> small_buckets
     int buckets_number = processes_number;
-    unsigned long *bucket = (unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
+    unsigned long *bucket = new unsigned long [buckets_number * curr_proc_data_size];
+            //(unsigned long*)calloc(buckets_number * curr_proc_data_size, sizeof(unsigned long));
     // new unsigned long [buckets_number * curr_proc_data_size]
 
     //initialize number of items, used to storte the size of numbers in small buckets
