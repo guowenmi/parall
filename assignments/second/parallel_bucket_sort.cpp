@@ -24,7 +24,8 @@
 #include <string.h>
 #include <time.h>
 #include <cstdlib>
-#include <tr1/random>
+#include <random>
+// ** note ** in my machine cannot find tr1, but in mighty there is a runtime error if no tr1
 
 #define INF (-1)
 using namespace std;
@@ -61,7 +62,7 @@ int float_comparator(const void *x1, const void *x2) {
     float diff = *f1 - *f2;
 
     return (diff < 0) ? -1 : 1;
-    
+
 //    return (*((float *)x1)-*((float *)x2)) < 0 ? -1 : 1; //(diff < 0) ? -1 : 1;
 }
 
