@@ -25,6 +25,8 @@
 #include <time.h>
 #include <cstdlib>
 #include <random>
+#include <math.h>
+
 // ** note ** in my machine cannot find tr1, but in mighty there is a runtime error if no tr1
 
 #define INF (-1)
