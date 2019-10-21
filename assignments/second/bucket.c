@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
     const float xmin = 10.0;
     const float xmax = 250000;
     int nbuckets = 1000;
-    int nitems = 100000;
+    int nitems = 200000;
     int i;
 
     if (argc == 2) nitems = atoi(argv[1]);
@@ -127,8 +127,8 @@ float *create_buckets(int nbuckets, int nitems) {
 // function. This will tell qsort to sort the numbers in ascending
 // order.
 int compare(const void *x1, const void *x2) {
-    const float *f1 = x1;
-    const float *f2 = x2;
+    float *f1 = (float *)x1;
+    float *f2 = (float *)x2;
     float diff = *f1 - *f2;
 
     return (diff < 0) ? -1 : 1;
