@@ -31,22 +31,7 @@
 #define INF (-1)
 using namespace std;
 
-//generate the unsorted data, range (0, max)
-unsigned long *generate_array_with_random(unsigned long max, unsigned long size){
-//    std::tr1::default_random_engine e;
-//    std::tr1::uniform_int_distribution<unsigned> u(min, max);
-
-    unsigned long *array = new unsigned long [size];
-    for (unsigned long i = 0; i < size; i ++) {
-    //    array[i] = u(e);
-        array[i] = rand() % max + 1;
-        cout << "array_random_number = " << array [i] << endl;
-    }
-
-    return array;
-}
-
-
+//generate the unsorted data, range (xmin, xmax)
 float *generate_random_number (int xmin, int xmax, int size){
 
     float *data = (float *)malloc(size * sizeof(float));
@@ -63,22 +48,23 @@ int float_comparator(const void *x1, const void *x2) {
     float diff = *f1 - *f2;
 
     return (diff < 0) ? -1 : 1;
-
-//    return (*((float *)x1)-*((float *)x2)) < 0 ? -1 : 1; //(diff < 0) ? -1 : 1;
 }
 
-//IncOrder for qsort
-int IncOrder(const void *e1, const void *e2)
-{
-    return (*((unsigned long *)e1)-*((unsigned long *)e2));
-}
-
+// for debug
 void display(float *array, float size) {
     for(int i = 0; i<size; i++)
         cout << array[i] << " ";
     cout << endl;
 }
 
+void display_float_with_info (float *array, float size, int curr_rank, string info) {
+    cout << "curr_rank = " << curr_rank << ", " << info ;
+    for(int i = 0; i<size; i++)
+        cout << array[i] << " ";
+    cout << endl;
+}
+
+// for debug
 void display_int_array_with_info(int *array, int size, int curr_rank, string info) {
     cout << "curr_rank = " << curr_rank << ", " << info ;
     for(int i = 0; i<size; i++)
@@ -86,6 +72,7 @@ void display_int_array_with_info(int *array, int size, int curr_rank, string inf
     cout << endl;
 }
 
+// for debug
 void display_int_array(int *array, int size, int curr_rank) {
     cout << "curr_rank = " << curr_rank << endl;
     for(int i = 0; i<size; i++)
@@ -93,17 +80,9 @@ void display_int_array(int *array, int size, int curr_rank) {
     cout << endl;
 }
 
-/*
-void display_int_array(int *array, int size, int curr_rank, char info) {
-    cout << "curr_rank = " << curr_rank << endl;
-    for(int i = 0; i<size; i++)
-        cout << array[i] << " ";
-    cout << endl;
-}*/
-
 int main(int argc, char **argv)
 {
-    if(argc!=2)
+    if(argc < 2)
     {
         cout<<"Please check your input"<<endl;
         exit(0);
@@ -114,16 +93,15 @@ int main(int argc, char **argv)
     const float xmin = 10.0;
     const float xmax = 250000;
     const int MASTER_RANK = 0; // the master's rank
-    const bool IS_DEBUG = true ;//argv[2];
+    bool IS_DEBUG = false;
+    if (argc == 3)
+        IS_DEBUG = atoll (argv[2]);
 
     //rank of the current process, the number of processes, size of data on the current process, the number of numbers
     int curr_rank, processes_number, curr_proc_data_size, number_size, i;
 
     //data on the current process, the unsorted data, the buckets in the current process, the bucket after alltoallv function
     float *curr_proc_data, *original_data, *small_buckets, *recv_big_bucket;
-
-    //Blocks until all processes in the communicator have reached this routine
-    //    MPI_Barrier(MPI_COMM_WORLD);
 
     MPI_Init(&argc, &argv); //initial
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
@@ -136,30 +114,21 @@ int main(int argc, char **argv)
 
     // step 1, initial the number
     if(curr_rank == MASTER_RANK)
-    {
         original_data = generate_random_number (xmin, xmax, number_size);
-    }
 
     // step 2, scatter evenly to all processes.
     curr_proc_data = (float *)malloc(curr_proc_data_size * sizeof(float));//new float[curr_proc_data_size];
-//    final_sorted_data=new long[number_size];
     MPI_Scatter(original_data, curr_proc_data_size, MPI_FLOAT, curr_proc_data, curr_proc_data_size, MPI_FLOAT, MASTER_RANK, MPI_COMM_WORLD);
 
     if (IS_DEBUG) {
-        for (i = 0; i < curr_proc_data_size; i++) {
-            cout << "after scatter rank " << curr_rank << " : curr_proc_data [i] = " << curr_proc_data[i] << cost_time
-                 << endl;
-        }
+        display_float_with_info(curr_proc_data, curr_proc_data_size, curr_rank, "after scatter, ");
     }
-    // OK
 
     // step 3, each processor loops each number to determine which small bucket they should in.
     //initialize small_buckets
     small_buckets = (float *)malloc(number_size * sizeof(float));//new float[number_size];
     for(i = 0; i < number_size; i++)
-    {
         small_buckets[i] = INF;
-    }
 
     // update small_buckets
     // curr_proc_data --> small_buckets
@@ -262,8 +231,7 @@ int main(int argc, char **argv)
 
     //step 6, Gather the results to rank 0
 //    int *recv_cnt = new int[buckets_number]; // receive count from processes
-    float *sorted = (float*)calloc(number_size, sizeof(float)); //new float[number_size]; // sorted numbers
-    int *final_displs = (int*)calloc(buckets_number, sizeof(int));//new int[buckets_number]; // final displaces
+//    float *sorted = (float*)calloc(number_size, sizeof(float));
 
     if (IS_DEBUG) {
         cout << "Line: " << __LINE__ << ", recv_total_count : " << recv_total_count << endl;
@@ -279,20 +247,21 @@ int main(int argc, char **argv)
     }
     // it is ok
 
-    final_displs[0]=0;
+//    int *final_displs = (int*)calloc(buckets_number, sizeof(int));//new int[buckets_number]; // final displaces
+    // final_displs --> recv_displs
+    recv_displs[0]=0;
     for(i = 1; i < buckets_number; i++)
     {// recv_displs --> recv_count_alltoallv
-        final_displs[i] = final_displs[i-1] + recv_count_alltoallv[i-1]; //recv_cnt[i-1];
+        recv_displs[i] = recv_displs[i-1] + recv_count_alltoallv[i-1]; //recv_cnt[i-1];
     }
 
     if (IS_DEBUG) {
         cout << "Line: " << __LINE__ << ", display final_displs, rank : " << curr_rank << endl;
-        display_int_array(final_displs, processes_number, curr_rank);
+        display_int_array(recv_displs, processes_number, curr_rank);
     }
 
-    //result ? big_bucket ?
-    // recv_cnt --> recv_count_alltoallv
-    MPI_Gatherv(result, recv_total_count, MPI_FLOAT, sorted, recv_count_alltoallv, final_displs, MPI_FLOAT, MASTER_RANK, MPI_COMM_WORLD);
+    // recv_cnt --> recv_count_alltoallv, sorted --> original_data
+    MPI_Gatherv(result, recv_total_count, MPI_FLOAT, original_data, recv_count_alltoallv, recv_displs, MPI_FLOAT, MASTER_RANK, MPI_COMM_WORLD);
     cost_time += MPI_Wtime();
     cout << "Line: " << __LINE__ << ", time of curr_rank " << curr_rank << " : " << cost_time<<endl;
 
@@ -300,7 +269,7 @@ int main(int argc, char **argv)
 	if(IS_DEBUG && curr_rank == MASTER_RANK)
 	{
         cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
-        display(sorted, number_size);
+        display (original_data, number_size); // sorted --> original_data
 	}
 
     MPI_Finalize();
