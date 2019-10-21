@@ -1,24 +1,24 @@
 //
-// Created by guowenmi on 2019-10-01.
+// Created by guowenmi on 2019-08-14.
 /**
- * parallel bucket sort
+ * calculate pi in parellel environment
  *
  * how to do?
  * it will use master/slave mode.
  *
- * 1. First, Master generates random numbers needed to be sorted. (only in Master)
- * 2. Second, Master scatter numbers to each processors evenly.
- * 3. Each processor divides its own numbers into proper small buckets.
- * 4. Each processor scatters its own small buckets to all other processors
- *    and gather its own proper numbers from all other processors. (by call alltoall() and alltoallv() functions)
- * 5. Each processor sorts its own numbers
- * 6. Master gather sorted numbers from all other processes (large bucket).
- * 7. Master combines these large bucket in proper order.
+ * 1. Firstly, master divides different tasks to slaves.
+ *      master computes the first Random number and communicates the number and seed to each slave.
+ * 2. Each slave computes its random number respectively
+ * 3. Each slave generator another corresponding number to compose a point,
+ *      and then judge if this point in a unit circle
+ * 4. Slaves feedback these results to Master
+ * 5. Master count the number in circle and compute the value of pi
  *
- * the steps, 3, 4 and 5, will be paralleled.
+ * the steps, 2, 3 and 4, will be paralleled.
  *
+ *  It will use Leapfrog method to generate the random number in different processor.
+ *  Generating a point by using
  */
-//first.cpp Adding numbers using two nodes C++ version
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -27,25 +27,15 @@
 #include <mpi.h>
 
 typedef unsigned long long int U_LL_INT;
-
-int MASTER_ID = 0;
-
-U_LL_INT getRandom ();// use to generate random.
-
-// for generate random
 U_LL_INT a = 1664525;
 U_LL_INT m = 4294967296;//2 << 32;
 U_LL_INT c = 1013904223;
 U_LL_INT n_prev = 12345; // seed, it will be used as n[0]
 U_LL_INT currRandom = 0;
 U_LL_INT n_next;
-
-
-
 U_LL_INT sumInCircle = 0;
 bool isInCircle = false;
 double pi;
-
 
 void getRandom(U_LL_INT sampleNumber);
 bool pointIsInCircle (U_LL_INT randomNumber);
@@ -63,42 +53,31 @@ int main(int argc,char* argv[]) {
 
     std::cout << __LINE__ << ", hello, This is at the begin of main " << std::endl;
 
-    double starttime, endtime;
+    double time00 = MPI_Wtime();
+    double time0 = MPI_Wtime();
+    double time1 = MPI_Wtime();
 
     MPI::Init(argc, argv);
 
     // What is my ID and how many processes are in this pool?
     int myid = MPI::COMM_WORLD.Get_rank(); // get my id
-    int num_processor = MPI::COMM_WORLD.Get_size(); // get the number of processors
+    int numproc = MPI::COMM_WORLD.Get_size(); // get the number of processors
 
-    std::cout << __LINE__ << ", This is id " << myid << " out of " << num_processor << std::endl;
-
+    std::cout << __LINE__ << ", This is id " << myid << " out of " << numproc << std::endl;
     // Get the number the user wants
-    U_LL_INT num_needtosort = atoll(argv[1]);   // the number of numbers
-    U_LL_INT send_count = num_needtosort / num_processor;   //
+    U_LL_INT N = atoll(argv[1]); // is there a question due to different types?
 
-    U_LL_INT array_random_number[num_needtosort];   // create an array with length = num_needtosort
-    int *recvbuf = new int[send_count];     // N / P numbers in per processor
+    // calculating A and C
+    for (int i = 0; i < numproc; i++)
+        A = A * a;
+    A = A % m;
 
-    // if it is Master, it needs to generate random numbers array, and then scatter to all processors.
-    if (myid == 0) {
-        // fill the array using random numbers
-        for (int i = 0; i < num_needtosort; i++)
-            array_random_number[i] = getRandom();
+    U_LL_INT tmpA = 1;
+    for (int i = 1; i < numproc; i++) {
+        tmpA = tmpA * a;
+        C = C + tmpA;
     }
-
-    // starting time calculation of the sort
-    starttime = MPI_Wtime();
-
-    // every processs need to call this function
-    // (send_buf, send_count, send_type, recv_buf, rev_count, recv_buf, recv_type, root_id)
-    MPI::COMM_WORLD.Scatter(array_random_number, send_num, MPI_UNSIGNED_LONG_LONG, recvbuf, send_num, MPI_UNSIGNED_LONG_LONG, MASTER_ID);
-
-
-
-
-
-    ///////////////////// split line
+    C = (c * C) % m;
 
     getRandom (numproc);// generate the random as seeds
     U_LL_INT loopNumber = N ; // numproc ;
@@ -163,7 +142,7 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
     U_LL_INT sum = 0;
     for (U_LL_INT index = processorId; index < loopNumber;){
 
-        //    std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
+    //    std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
@@ -173,14 +152,14 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
         }
 
         double time0 = MPI_Wtime();
-        //    std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
+    //    std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
 
         bool isInCircleTmp = pointIsInCircle(currRandom);
         if (isInCircleTmp)
             sum = sum + 1;
 
         time1 = MPI_Wtime();
-        //    std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
+    //    std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
 
         index = index + numproc;
     }
@@ -190,21 +169,13 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
     return sum;
 }
 
-// generate one random number
-void getRandom() {
-        n_next = (a * n_prev + c) % m;
-        //    std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
-        n_prev = n_next;
-        return n_next;
-}
 
-// generate randomNumber random
 void getRandom(U_LL_INT randomNumber) {
 
     for (int i = 0; i < randomNumber; i++) {
         n_next = (a * n_prev + c) % m;
 
-        //    std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
+    //    std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
 
         randomArray[i] = n_next;
         n_prev = n_next;

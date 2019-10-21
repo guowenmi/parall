@@ -24,6 +24,7 @@ int check(float *data, int nitems) {
         if (i && data[i] < data[i - 1]) sorted = 0;
     }
     printf("sum=%f, sorted=%d\n", sum, sorted);
+    return sorted;
 }
 
 int compare(const void *x1, const void *x2);
@@ -41,7 +42,7 @@ int main(int argc, char *argv[]) {
 
     if (argc == 2) nitems = atoi(argv[1]);
 
-    float *data = malloc(nitems * sizeof(float));
+    float *data = (float *)malloc(nitems * sizeof(float));
 
     for (i = 0; i < nitems; i++)
         data[i] = drand48() * (xmax - xmin - 1) + xmin;
@@ -70,7 +71,7 @@ void bucket_sort(float *data, int ndata, float x1, float x2, int nbuckets,
     // The number of items thrown into each bucket. We would expect each
     // bucket to have a similar number of items, but they won't be
     // exactly the same. So we keep track of their numbers here.
-    int *nitems = malloc(nbuckets * sizeof(int));
+    int *nitems = (int *)malloc(nbuckets * sizeof(int));
     for (i = 0; i < nbuckets; ++i) nitems[i] = 0;
 
     // Toss the data items into the correct bucket
@@ -114,7 +115,7 @@ float *create_buckets(int nbuckets, int nitems) {
     int ntotal = nbuckets * nitems;
 
     // Pointer to an array of more pointers to each bucket
-    float *bucket = calloc(ntotal, sizeof(float *));
+    float *bucket = (float *)calloc(ntotal, sizeof(float *));
     for (i = 0; i < ntotal; ++i) bucket[i] = 0;
 
     // return the address of the array of pointers to float arrays
