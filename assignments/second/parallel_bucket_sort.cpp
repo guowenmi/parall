@@ -114,7 +114,6 @@ int main(int argc, char **argv)
     const float xmin = 10.0;
     const float xmax = 100; //250000;
     const int MASTER_RANK = 0; // the master's rank
-    const bool IS_DEBUG = true;
 
     //rank of the current process, the number of processes, size of data on the current process, the number of numbers
     int curr_rank, processes_number, curr_proc_data_size, number_size, i;
@@ -130,6 +129,8 @@ int main(int argc, char **argv)
     MPI_Comm_size(MPI_COMM_WORLD, &processes_number);
     number_size = atoll(argv[1]); // the size of numbers need to be sorted, an input parameter
     curr_proc_data_size = number_size / processes_number; // the number of numbers is total_number / processers
+
+    const bool IS_DEBUG = false;//argv[2];
 
     if (IS_DEBUG)
         cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
