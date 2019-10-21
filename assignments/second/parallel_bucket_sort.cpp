@@ -112,7 +112,7 @@ int main(int argc, char **argv)
     double cost_time = - MPI_Wtime();
 
     const float xmin = 10.0;
-    const float xmax = 100; //250000;
+    const float xmax = 250000;
     const int MASTER_RANK = 0; // the master's rank
 
     //rank of the current process, the number of processes, size of data on the current process, the number of numbers
