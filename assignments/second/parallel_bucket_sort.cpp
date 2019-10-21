@@ -56,11 +56,13 @@ float *generate_random_number (int xmin, int xmax, int size){
 
 // comparator for float
 int float_comparator(const void *x1, const void *x2) {
-    /*float *f1 = x1;
-    float *f2 = x2;*/
- //   float diff = *x1 - *x2; //*f1 - *f2;
+    float *f1 = (float *)x1;
+    float *f2 = (float *)x2;
+    float diff = *f1 - *f2;
 
-    return (*((float *)x1)-*((float *)x2)) < 0 ? -1 : 1; //(diff < 0) ? -1 : 1;
+    return (diff < 0) ? -1 : 1;
+    
+//    return (*((float *)x1)-*((float *)x2)) < 0 ? -1 : 1; //(diff < 0) ? -1 : 1;
 }
 
 //IncOrder for qsort
