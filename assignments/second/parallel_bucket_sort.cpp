@@ -24,7 +24,7 @@
 #include <string.h>
 #include <time.h>
 #include <cstdlib>
-#include <random>
+#include <tr1/random>
 
 #define INF (-1)
 using namespace std;
