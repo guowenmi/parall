@@ -80,28 +80,26 @@ void display_int_array(int *array, int size, int curr_rank) {
     cout << endl;
 }
 
-int main(int argc, char **argv)
-{
-    if(argc < 2)
-    {
-        cout<<"Please check your input"<<endl;
+int main(int argc, char **argv) {
+    if (argc < 2) {
+        cout << "Please check your input" << endl;
         exit(0);
     }
 
-    double cost_time = - MPI_Wtime();
+    double cost_time = -MPI_Wtime();
 
     const float xmin = 10.0;
     const float xmax = 250000;
     const int MASTER_RANK = 0; // the master's rank
     bool IS_DEBUG = false;
     if (argc == 3)
-        IS_DEBUG = atoll (argv[2]);
+        IS_DEBUG = atoll(argv[2]);
 
     //rank of the current process, the number of processes, size of data on the current process, the number of numbers
     int curr_rank, processes_number, curr_proc_data_size, number_size, i;
 
     //data on the current process, the unsorted data, the buckets in the current process, the bucket after alltoallv function
-    float *curr_proc_data, *original_data, *small_buckets, *recv_big_bucket;
+    float *curr_proc_data, *small_buckets, *recv_big_bucket;
 
     MPI_Init(&argc, &argv); //initial
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
@@ -113,8 +111,13 @@ int main(int argc, char **argv)
         cout << "number_size = " << number_size << ", curr_proc_data_size = " << curr_proc_data_size << endl;
 
     // step 1, initial the number
-    if(curr_rank == MASTER_RANK)
-        original_data = generate_random_number (xmin, xmax, number_size);
+//    modify  float original_data[number_size]; to the following line, try to fix allocate momery error
+    float *original_data = (float *)malloc(number_size * sizeof(float));
+    if (curr_rank == MASTER_RANK) {
+    //    original_data = generate_random_number(xmin, xmax, number_size);
+        for (i = 0; i < number_size; i++)
+            original_data[i] = drand48() * (xmax - xmin - 1) + xmin;
+    }
 
     // step 2, scatter evenly to all processes.
     curr_proc_data = (float *)malloc(curr_proc_data_size * sizeof(float));//new float[curr_proc_data_size];
@@ -245,7 +248,6 @@ int main(int argc, char **argv)
         cout << "Line: " << __LINE__ << ", gather count result, rank : " << curr_rank << endl;
         display_int_array(recv_count_alltoallv, buckets_number, curr_rank);
     }
-    // it is ok
 
 //    int *final_displs = (int*)calloc(buckets_number, sizeof(int));//new int[buckets_number]; // final displaces
     // final_displs --> recv_displs
@@ -266,10 +268,14 @@ int main(int argc, char **argv)
     cout << "Line: " << __LINE__ << ", time of curr_rank " << curr_rank << " : " << cost_time<<endl;
 
     //print the sorted data on curr_rank 0
-	if(IS_DEBUG && curr_rank == MASTER_RANK)
+	if(curr_rank == MASTER_RANK)
 	{
-        cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
-        display (original_data, number_size); // sorted --> original_data
+	    if (IS_DEBUG) {
+            cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
+            display(original_data, number_size); // sorted --> original_data
+        }
+
+	    free (original_data);
 	}
 
     MPI_Finalize();
