@@ -144,10 +144,12 @@ int main(int argc, char **argv) {
     float step = (xmax - xmin)/buckets_number;
     if (IS_DEBUG)
         cout << __LINE__ << ", curr_rank = " << curr_rank << ", "  << ", step = " << step << endl;
-
+    
+/* small_buckets has been initialed
     small_buckets = (float*)calloc(buckets_number * curr_proc_data_size, sizeof(float));
     for(i = 0; i < number_size; i++)
         small_buckets[i] = INF;
+*/
 
 //    float *big_bucket = calloc(ntotal, sizeof(float *));
 //    for (i = 0; i < ntotal; ++i) bucket[i] = 0;
