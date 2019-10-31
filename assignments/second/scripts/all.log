@@ -1,0 +1,416 @@
+this is p1-1 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:21940] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:21940] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-2 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:21957] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:21957] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-3 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:21965] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:21965] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-4 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04300] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04300] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-5 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-2.local:27045] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-2.local:27045] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-6 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-1.local:30046] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-1.local:30046] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-7 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-0.local:12592] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-0.local:12592] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p1-8 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22063] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22063] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-1 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22014] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22014] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-2 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04342] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04342] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-3 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04483] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04483] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-4 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04494] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04494] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-5 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-1.local:30090] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-1.local:30090] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-6 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22133] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22133] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-7 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-2.local:27089] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-2.local:27089] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p2-8 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22195] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22195] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-1 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04386] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04386] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-2 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22145] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22145] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-3 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-2.local:27165] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-2.local:27165] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-4 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-2.local:27171] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-2.local:27171] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-5 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22270] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22270] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-6 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22328] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22328] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-7 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22372] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22372] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p3-8 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22416] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22416] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-1 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-3.local:04508] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-3.local:04508] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-2 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22278] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22278] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-3 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22460] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22460] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-4 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22500] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22500] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-5 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22548] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22548] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-6 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22592] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22592] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-7 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22636] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22636] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+this is p4-8 --------------------
+--------------------------------------------------------------------------
+Open RTE detected a parse error in the hostfile:
+    /home/s19026416/parall/assignments/second/sort
+It occured on line number 1 on token 1.
+--------------------------------------------------------------------------
+[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
+[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
+[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
+[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
+[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
+[compute-0-4.local:22680] 1 more process has sent help message help-hostfile.txt / parse_error
+[compute-0-4.local:22680] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
