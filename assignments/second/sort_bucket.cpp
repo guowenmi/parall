@@ -41,14 +41,16 @@ int floatComparator(const void *x1, const void *x2) {
 }
 
 int main(int argc, char **argv) {
-    int numberProcessor, processorId, N, i;
+    int numberProcessor, curr_rank, N, i;
     float *dSend, *dRecv;
     const float xMin = 1.0;
+
+    double t_costtime_b = MPI_Wtime();
 
     MPI_Init(&argc, &argv
     );
     MPI_Comm_size(MPI_COMM_WORLD, &numberProcessor);
-    MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
+    MPI_Comm_rank(MPI_COMM_WORLD, &curr_rank);
 
     N = atoi(argv[1]);
     const float xMax = N * 10;
@@ -58,7 +60,7 @@ int main(int argc, char **argv) {
     dSend = (float *) malloc(N * sizeof(float));
     dRecv = (float *) malloc(nrecv * sizeof(float));
 
-    if (processorId == MASTER_RANK) {
+    if (curr_rank == MASTER_RANK) {
         fprintf(stdout,
                 "Generating %d numbers to be sorted on %d processors\n", N, numberProcessor);
         for (i = 0; i < N; i++) {
@@ -66,7 +68,6 @@ int main(int argc, char **argv) {
         }
     }
 
-    double total_s = MPI_Wtime();
     MPI_Scatter(dSend, nrecv, MPI_FLOAT, dRecv, nrecv, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
     double bucketing_s = MPI_Wtime();
@@ -108,7 +109,7 @@ int main(int argc, char **argv) {
     double sorting_s = MPI_Wtime();
 
     qsort(big_bucket, totalCount, sizeof(float), floatComparator);
-    double sorting_t = MPI_Wtime() - sorting_s;
+    double time_to_sort = MPI_Wtime() - sorting_s;
 
 //    memset(recvCount, 0, bucketCount * sizeof(int));
 
@@ -123,8 +124,8 @@ int main(int argc, char **argv) {
     }
 
     MPI_Gatherv(big_bucket, totalCount, MPI_FLOAT, dSend, recvCount, rdispls, MPI_FLOAT, 0, MPI_COMM_WORLD);
-    if (processorId == MASTER_RANK && check(dSend, N)) {
-        fprintf(stdout, "total time: %f, parallel: %f\n", MPI_Wtime() - total_s, bucketing_t + sorting_t);
+    if (curr_rank == MASTER_RANK && check(dSend, N)) {
+        fprintf(stdout, "total time: %f, parallel time: %f\n", MPI_Wtime() - t_costtime_b, bucketing_t + time_to_sort);
         fprintf(stdout, "The sorted data array from %f to %f\n", dSend[0], dSend[N - 1]);
     }
 
