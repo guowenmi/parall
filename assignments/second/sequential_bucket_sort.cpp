@@ -40,6 +40,8 @@ int main(int argc, char *argv[]) {
     int nitems = 200000;
     int i;
 
+    double total_time_begin = MPI_Wtime ();
+
     if (argc == 2) nitems = atoi(argv[1]);
 
     float *data = (float *)malloc(nitems * sizeof(float));
@@ -49,11 +51,16 @@ int main(int argc, char *argv[]) {
 
     check(data, nitems);
 
+    double canbe_paralleled_time_begin = MPI_Wtime ();
+
+
     float *buckets = create_buckets(nbuckets, nitems);
     bucket_sort(data, nitems, xmin, xmax, nbuckets, buckets);
 
     check(data, nitems);
 
+    printf("total time = \n", (MPI_Wtime () - total_time_begin));
+    printf("can be paralleled time = \n", (MPI_Wtime () - canbe_paralleled_time_begin));
 }
 /*****************************************************************************/
 
