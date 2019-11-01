@@ -1,11 +1,14 @@
 // Sequential version of the bucket sort routine
 
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <mpi.h>
+#include <iostream>
+#include <fstream>
 #include <string.h>
+#include <time.h>
+#include <cstdlib>
+#include <math.h>
 
-#include "mpi.h"
+using namespace std;
 
 /*****************************************************************************/
 // Routines used in the sequential implementation of the bucket sort
@@ -61,6 +64,9 @@ int main(int argc, char *argv[]) {
 
     cout << "total time = \n" << (MPI_Wtime () - total_time_begin) << " ms "<< endl;
     cout << ("can be paralleled time = \n") << (MPI_Wtime () - canbe_paralleled_time_begin) << " ms" << endl;
+
+//    cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
+
 }
 /*****************************************************************************/
 
