@@ -54,16 +54,15 @@ int main(int argc, char *argv[]) {
 
     check(data, nitems);
 
-    double canbe_paralleled_time_begin = MPI_Wtime ();
-
+//    double canbe_paralleled_time_begin = MPI_Wtime ();
 
     float *buckets = create_buckets(nbuckets, nitems);
     bucket_sort(data, nitems, xmin, xmax, nbuckets, buckets);
 
+
     check(data, nitems);
 
     cout << "total time = \n" << (MPI_Wtime () - total_time_begin) << " ms "<< endl;
-    cout << ("can be paralleled time = \n") << (MPI_Wtime () - canbe_paralleled_time_begin) << " ms" << endl;
 
 //    cout << "Line: " << __LINE__ << ", display sorted result, rank : " << curr_rank << endl;
 
@@ -87,6 +86,10 @@ void bucket_sort(float *data, int ndata, float x1, float x2, int nbuckets,
     int *nitems = (int *)malloc(nbuckets * sizeof(int));
     for (i = 0; i < nbuckets; ++i) nitems[i] = 0;
 
+    // can be parallel begin
+
+    double canbe_paralleled_time_begin = MPI_Wtime ();
+
     // Toss the data items into the correct bucket
     for (i = 0; i < ndata; ++i) {
 
@@ -100,6 +103,8 @@ void bucket_sort(float *data, int ndata, float x1, float x2, int nbuckets,
         bucket[idx] = data[i];
         ++nitems[bktno];
     }
+    // can be parallel end
+    cout << ("can be paralleled time = \n") << (MPI_Wtime () - canbe_paralleled_time_begin) << " ms" << endl;
 
     // Sort each bucket using the standard library qsort routine. Note
     // that we need to input the correct number of items in each bucket
