@@ -1,25 +1,36 @@
-#include "mpi.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "mpi.h"
 
-// typedef char bool;
-#define TRUE 1
-#define FALSE 0
 #define INF (-1)
 
+/*
 bool isSorted(float *data, int size, bool isAscending) {
     int i;
     for (i = 0; i < size; i++) {
         if (isAscending) {
             if (i && data[i] < data[i - 1])
-                return FALSE;
+                return false;
         } else if (i && data[i] > data[i - 1]) {
-            return FALSE;
+            return false;
         }
     }
-    return TRUE;
+    return true;
 }
+ */
 
+int check(float *data, int nitems) {
+    double sum = 0;
+    int sorted = 1;
+    int i;
+
+    for (i = 0; i < nitems; i++) {
+        sum += data[i];
+        if (i && data[i] < data[i - 1]) sorted = 0;
+    }
+    printf("sum=%f, sorted=%d\n", sum, sorted);
+    return sorted;
+}
 
 int floatComparator(const void *x1, const void *x2) {
     float *f1 = (float *) x1;
@@ -28,7 +39,6 @@ int floatComparator(const void *x1, const void *x2) {
 
     return (diff < 0) ? -1 : 1;
 }
-
 
 int main(int argc, char **argv) {
     int numberProcessor, processorId, N, i;
@@ -42,11 +52,13 @@ int main(int argc, char **argv) {
 
     N = atoi(argv[1]);
     const float xMax = N * 10;
+    const int MASTER_RANK = 0; // the master's rank
+
     int nrecv = N / numberProcessor;
     dSend = (float *) malloc(N * sizeof(float));
     dRecv = (float *) malloc(nrecv * sizeof(float));
 
-    if (processorId == 0) {
+    if (processorId == MASTER_RANK) {
         fprintf(stdout,
                 "Generating %d numbers to be sorted on %d processors\n", N, numberProcessor);
         for (i = 0; i < N; i++) {
@@ -104,7 +116,6 @@ int main(int argc, char **argv) {
         recvCount[i] = 0;
     }
 
-
     MPI_Gather(&totalCount, 1, MPI_INT, recvCount, 1, MPI_INT, 0, MPI_COMM_WORLD);
     rdispls[0] = 0;
     for (i = 1; i < bucketCount; i++) {
@@ -112,9 +123,9 @@ int main(int argc, char **argv) {
     }
 
     MPI_Gatherv(big_bucket, totalCount, MPI_FLOAT, dSend, recvCount, rdispls, MPI_FLOAT, 0, MPI_COMM_WORLD);
-    if (processorId == 0 && isSorted(dSend, N, TRUE)) {
+    if (processorId == MASTER_RANK && check(dSend, N)) {
         fprintf(stdout, "total time: %f, parallel: %f\n", MPI_Wtime() - total_s, bucketing_t + sorting_t);
-        fprintf(stdout, "The data array has been sorted, from %f to %f\n", dSend[0], dSend[N - 1]);
+        fprintf(stdout, "The sorted data array from %f to %f\n", dSend[0], dSend[N - 1]);
     }
 
     MPI_Finalize();
