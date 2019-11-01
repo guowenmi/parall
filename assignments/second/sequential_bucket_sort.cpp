@@ -59,8 +59,8 @@ int main(int argc, char *argv[]) {
 
     check(data, nitems);
 
-    printf("total time = \n", (MPI_Wtime () - total_time_begin));
-    printf("can be paralleled time = \n", (MPI_Wtime () - canbe_paralleled_time_begin));
+    printf("total time = \n", (MPI_Wtime () - total_time_begin), sorted);
+    printf("can be paralleled time = \n", (MPI_Wtime () - canbe_paralleled_time_begin), sorted);
 }
 /*****************************************************************************/
 
