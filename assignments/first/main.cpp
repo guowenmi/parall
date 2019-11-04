@@ -52,8 +52,6 @@ U_LL_INT randomArray [40];
 //always use argc and argv, as mpirun will pass the appropriate parms.
 int main(int argc,char* argv[]) {
 
-    std::cout << __LINE__ << ", hello, This is at the begin of main " << std::endl;
-
     double time00 = MPI_Wtime();
     double time0 = MPI_Wtime();
     double time1 = MPI_Wtime();
@@ -101,7 +99,7 @@ int main(int argc,char* argv[]) {
         sumInCircle = countInCircleNumber(randomArray[0], myid, numproc, loopNumber);
         std::cout << __LINE__ << "I am " << myid << ", parallel cost time = " << (MPI_Wtime() - pTimeStart) << std::endl;
 
-        std::cout << __LINE__ << ", myid = 0, sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
+//        std::cout << __LINE__ << ", myid = 0, sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
         // gather all slaves' result and deal with
         for (int i = 1; i < numproc; i ++){
@@ -113,11 +111,11 @@ int main(int argc,char* argv[]) {
             std::cout << __LINE__ << ", MPI_Recv from = " << i << ", slaveInCircleSum = " << slaveInCircleSum << ", sumInCircle = " << sumInCircle << std::endl;
         }
 
-        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
+//        std::cout << __LINE__ << ", sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
         pi = 4.0 * sumInCircle / N ;
 
         double endTime = MPI_Wtime ();
-        std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
+//        std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (endTime - startTime) << std::endl;
     } else /* if (myid == 1) */ {
         // slaves. are processes of all slaves same? need to test
         U_LL_INT sumInCircleSlave = 0;
@@ -132,7 +130,7 @@ int main(int argc,char* argv[]) {
         // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
         MPI_Send(&result, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
 
-        std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
+    //    std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
     }
 
     MPI_Finalize();
@@ -144,12 +142,9 @@ int main(int argc,char* argv[]) {
 
 U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc, U_LL_INT loopNumber){
 
-    std::cout << __LINE__ << ", processorId = " << processorId << ", randomSeed = " << randomSeed << ", numproc = " << numproc << ", loopNumber = " << loopNumber << std::endl;
-
     U_LL_INT sum = 0;
     for (U_LL_INT index = processorId; index < loopNumber;){
 
-    //    std::cout << __LINE__ << ", index = " << index << ", currRandom = " << currRandom << std::endl;
         double time1 = MPI_Wtime();
         // Partial result for node 0
         if (index < numproc) {
@@ -159,19 +154,15 @@ U_LL_INT countInCircleNumber (U_LL_INT randomSeed, int processorId, int numproc,
         }
 
         double time0 = MPI_Wtime();
-    //    std::cout << __LINE__ << ", currRandom = " << currRandom << ", cost time = " << (time1 - time0) << std::endl;
 
         bool isInCircleTmp = pointIsInCircle(currRandom);
         if (isInCircleTmp)
             sum = sum + 1;
 
-        time1 = MPI_Wtime();
-    //    std::cout << __LINE__ << ", isInCircleTmp = " << isInCircleTmp << ", sumInCircle = " << sum << ", pointIsInCircle cost time = " << (time1 - time0) << std::endl;
-
         index = index + numproc;
     }
 
-    std::cout << __LINE__ << ", processorId = " << processorId << ", sumInCircle = " << sum << std::endl;
+//    std::cout << __LINE__ << ", processorId = " << processorId << ", sumInCircle = " << sum << std::endl;
 
     return sum;
 }
@@ -181,8 +172,6 @@ void getRandom(U_LL_INT randomNumber) {
 
     for (int i = 0; i < randomNumber; i++) {
         n_next = (a * n_prev + c) % m;
-
-    //    std::cout << __LINE__ << ", n_prev = " << n_prev << ", n_next = " << n_next << std::endl;
 
         randomArray[i] = n_next;
         n_prev = n_next;
@@ -197,10 +186,7 @@ void getRandom(U_LL_INT randomNumber) {
  * @return
  */
 U_LL_INT getRandomInLeapfrog(U_LL_INT random_prev) {
-//    std::cout << __LINE__ << ", A = " << A << ", random_prev = " << random_prev << ", C = " << C << std::endl;
-
     return (A * random_prev + C) % m;
-//    return result;
 }
 
 U_LL_INT radius = 65536; //2 << 16;
@@ -209,8 +195,6 @@ bool pointIsInCircle (U_LL_INT randomNumber){
 
     U_LL_INT x = randomNumber % radius;
     U_LL_INT y = randomNumber / radius;
-
-//    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
     if (x * x + y * y < radius * radius)//(radius + 0.5) * (radius + 0.5))
