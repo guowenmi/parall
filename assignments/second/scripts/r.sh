@@ -7,7 +7,7 @@ do
       > p$nodeNum-$pNum.stdout
       > p$nodeNum-$pNum.pbs
 	echo "#PBS -j oe -o p$nodeNum-$pNum.stdout -l nodes=$nodeNum:ppn=$pNum -q pp
-	mpiexec -machinefile \$PBS_NODEFILE /home/s19026416/parall/assignments/second/sort 9999999999" >>  p$nodeNum-$pNum.pbs
+	mpiexec -machinefile \$PBS_NODEFILE /home/s19026416/parall/assignments/second/sort 99999999" >>  p$nodeNum-$pNum.pbs
  	qsub p$nodeNum-$pNum.pbs
     done
 done
