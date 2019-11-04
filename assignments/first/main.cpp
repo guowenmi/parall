@@ -6,20 +6,20 @@
  * how to do?
  * it will use master/slave mode.
  *
- * 1. Firstly, master divides different tasks to slaves.
- *      master computes the first Random number and communicates the number and seed to each slave.
- * 2. Each slave computes its random number respectively
- * 3. Each slave generator another corresponding number to compose a point,
- *      and then judge if this point in a unit circle
- * 4. Slaves feedback these results to Master
- * 5. Master count the number in circle and compute the value of pi
+ * 1. Master divides different tasks to slaves.
+ *      master computes the first Random number
+ * 2. Master sends the number and seed to each slave.
+ * 3. Each slave computes its random number respectively
+ * 4. Each slave simulates a point using the generated random number.
+ * 5. Each Slave judges if this point in a unit circle
+ * 6. Slaves feedback these results to Master
+ * 7. Master count the number in circle and compute the value of pi
  *
- * the steps, 2, 3 and 4, will be paralleled.
+ * the steps, 3, 4, 5 and 6, will be paralleled.
  *
  *  It will use Leapfrog method to generate the random number in different processor.
  *  Generating a point by using
  */
-//first.cpp Adding numbers using two nodes C++ version
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -58,11 +58,12 @@ int main(int argc,char* argv[]) {
     double time0 = MPI_Wtime();
     double time1 = MPI_Wtime();
 
-    MPI::Init(argc, argv);
+    MPI_Init(&argc, &argv);
 
     // What is my ID and how many processes are in this pool?
-    int myid = MPI::COMM_WORLD.Get_rank(); // get my id
-    int numproc = MPI::COMM_WORLD.Get_size(); // get the number of processors
+    int myid, numproc; // get my id
+    MPI_Comm_rank(MPI_COMM_WORLD, &myid);
+    MPI_Comm_size(MPI_COMM_WORLD, &numproc);// get the number of processor
 
     std::cout << __LINE__ << ", This is id " << myid << " out of " << numproc << std::endl;
     // Get the number the user wants
@@ -121,7 +122,10 @@ int main(int argc,char* argv[]) {
 
         //MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
         MPI_Recv (&currRandom, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+        double pTimeStart = MPI_Wtime();
         U_LL_INT result = countInCircleNumber (currRandom, myid, numproc, loopNumber);
+        std::cout << __LINE__ << "I am " << myid << ", parallel cost time = " << (MPI_Wtime() - pTimeStart) << std::endl;
 
         // MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
         MPI_Send(&result, 1, MPI_UNSIGNED_LONG_LONG, 0, 0, MPI_COMM_WORLD);
@@ -129,7 +133,7 @@ int main(int argc,char* argv[]) {
         std::cout << __LINE__ << " I am " << myid << ", have sent to Master" << std::endl;
     }
 
-    MPI::Finalize();
+    MPI_Finalize();
 
     time1 = MPI_Wtime();
     std::cout << __LINE__ << ", The pi is " << pi << ", cost time is " << (time1 - time00) << std::endl;
@@ -207,7 +211,7 @@ bool pointIsInCircle (U_LL_INT randomNumber){
 //    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
-    if (x * x + y * y < radius * radius)
+    if (x * x + y * y < (radius + 0.5) * (radius + 0.5))
         return true;
 
     return false;
