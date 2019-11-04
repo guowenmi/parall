@@ -1,0 +1,2 @@
+#PBS -j oe -o p1-1.stdout -l nodes=1:ppn=1 -q pp
+mpiexec -machinefile  /home/s19026416/parall/assignments/first/first 500000000
