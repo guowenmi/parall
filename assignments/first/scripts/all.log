@@ -1,0 +1,2700 @@
+this is p1-1 --------------------
+66, This is id 0 out of 1
+86, getRandom cost time = 0.00490403
+100I am 0, parallel cost time = 85.0058
+139, The pi is 3.14157, cost time is 85.0127
+this is p1-2 --------------------
+66, This is id 1 out of 2
+86, getRandom cost time = 1.00868
+66, This is id 0 out of 2
+86, getRandom cost time = 1.00996
+128I am 1, parallel cost time = 42.72
+100I am 0, parallel cost time = 42.801
+111, MPI_Recv from = 1, slaveInCircleSum = 196347475, sumInCircle = 392696870
+139, The pi is 0, cost time is 43.8118
+139, The pi is 3.14157, cost time is 43.8135
+this is p1-3 --------------------
+66, This is id 0 out of 3
+86, getRandom cost time = 1.01115
+66, This is id 1 out of 3
+86, getRandom cost time = 1.01081
+66, This is id 2 out of 3
+86, getRandom cost time = 1.00986
+128I am 1, parallel cost time = 28.2695
+100I am 0, parallel cost time = 28.3973
+111, MPI_Recv from = 1, slaveInCircleSum = 130899820, sumInCircle = 261803137
+128I am 2, parallel cost time = 28.6118
+111, MPI_Recv from = 2, slaveInCircleSum = 130893733, sumInCircle = 392696870
+139, The pi is 0, cost time is 29.6247
+139, The pi is 3.14157, cost time is 29.6251
+139, The pi is 0, cost time is 29.6264
+this is p1-4 --------------------
+66, This is id 0 out of 4
+86, getRandom cost time = 1.01204
+66, This is id 1 out of 4
+86, getRandom cost time = 1.01211
+66, This is id 2 out of 4
+86, getRandom cost time = 1.01216
+66, This is id 3 out of 4
+86, getRandom cost time = 1.01133
+128I am 3, parallel cost time = 21.1564
+128I am 1, parallel cost time = 21.1921
+128I am 2, parallel cost time = 21.1992
+100I am 0, parallel cost time = 21.2153
+111, MPI_Recv from = 1, slaveInCircleSum = 98170700, sumInCircle = 196347763
+111, MPI_Recv from = 2, slaveInCircleSum = 98172332, sumInCircle = 294520095
+111, MPI_Recv from = 3, slaveInCircleSum = 98176775, sumInCircle = 392696870
+139, The pi is 3.14157, cost time is 22.2303
+139, The pi is 0, cost time is 22.23
+139, The pi is 0, cost time is 22.2292
+139, The pi is 0, cost time is 22.2301
+this is p1-5 --------------------
+66, This is id 2 out of 5
+86, getRandom cost time = 1.01345
+66, This is id 3 out of 5
+86, getRandom cost time = 1.01307
+66, This is id 4 out of 5
+86, getRandom cost time = 1.01278
+66, This is id 0 out of 5
+86, getRandom cost time = 1.01364
+66, This is id 1 out of 5
+86, getRandom cost time = 1.01369
+100I am 0, parallel cost time = 16.9355
+111, MPI_Recv from = 1, slaveInCircleSum = 78535147, sumInCircle = 157076073
+128I am 1, parallel cost time = 16.983
+111, MPI_Recv from = 2, slaveInCircleSum = 78541844, sumInCircle = 235617917
+128I am 2, parallel cost time = 17.012
+128I am 4, parallel cost time = 17.1179
+111, MPI_Recv from = 3, slaveInCircleSum = 78538640, sumInCircle = 314156557
+111, MPI_Recv from = 4, slaveInCircleSum = 78540313, sumInCircle = 392696870
+128I am 3, parallel cost time = 17.4176
+139, The pi is 0, cost time is 18.4339
+139, The pi is 0, cost time is 18.4341
+139, The pi is 3.14157, cost time is 18.434
+139, The pi is 0, cost time is 18.4333
+139, The pi is 0, cost time is 18.4339
+this is p1-6 --------------------
+66, This is id 0 out of 6
+86, getRandom cost time = 1.01645
+66, This is id 1 out of 6
+86, getRandom cost time = 1.01641
+66, This is id 2 out of 6
+86, getRandom cost time = 1.01628
+66, This is id 3 out of 6
+86, getRandom cost time = 1.01564
+66, This is id 4 out of 6
+86, getRandom cost time = 1.01494
+66, This is id 5 out of 6
+86, getRandom cost time = 1.01447
+128I am 4, parallel cost time = 14.1464
+100I am 0, parallel cost time = 14.1673
+128I am 3, parallel cost time = 14.1716
+128I am 1, parallel cost time = 14.2092
+111, MPI_Recv from = 1, slaveInCircleSum = 65449468, sumInCircle = 130901363
+128I am 5, parallel cost time = 14.228
+128I am 2, parallel cost time = 14.9789
+111, MPI_Recv from = 2, slaveInCircleSum = 65447148, sumInCircle = 196348511
+111, MPI_Recv from = 3, slaveInCircleSum = 65451422, sumInCircle = 261799933
+111, MPI_Recv from = 4, slaveInCircleSum = 65450352, sumInCircle = 327250285
+111, MPI_Recv from = 5, slaveInCircleSum = 65446585, sumInCircle = 392696870
+139, The pi is 0, cost time is 15.9977
+139, The pi is 0, cost time is 15.9977
+139, The pi is 0, cost time is 15.9965
+139, The pi is 0, cost time is 15.9973
+139, The pi is 3.14157, cost time is 15.9981
+139, The pi is 0, cost time is 15.9977
+this is p1-7 --------------------
+66, This is id 0 out of 7
+86, getRandom cost time = 1.01996
+66, This is id 1 out of 7
+86, getRandom cost time = 1.01997
+66, This is id 2 out of 7
+86, getRandom cost time = 1.01996
+66, This is id 3 out of 7
+86, getRandom cost time = 1.01866
+66, This is id 4 out of 7
+86, getRandom cost time = 1.01864
+66, This is id 5 out of 7
+86, getRandom cost time = 1.0175
+66, This is id 6 out of 7
+86, getRandom cost time = 1.017
+128I am 4, parallel cost time = 12.1234
+128I am 2, parallel cost time = 12.1251
+128I am 5, parallel cost time = 12.1335
+128I am 3, parallel cost time = 12.1341
+128I am 1, parallel cost time = 12.1357
+100I am 0, parallel cost time = 12.1447
+111, MPI_Recv from = 1, slaveInCircleSum = 56103953, sumInCircle = 112200755
+111, MPI_Recv from = 2, slaveInCircleSum = 56100155, sumInCircle = 168300910
+111, MPI_Recv from = 3, slaveInCircleSum = 56098685, sumInCircle = 224399595
+111, MPI_Recv from = 4, slaveInCircleSum = 56096695, sumInCircle = 280496290
+111, MPI_Recv from = 5, slaveInCircleSum = 56100644, sumInCircle = 336596934
+128I am 6, parallel cost time = 13.5663
+111, MPI_Recv from = 6, slaveInCircleSum = 56099936, sumInCircle = 392696870
+139, The pi is 0, cost time is 14.5884
+139, The pi is 0, cost time is 14.5897
+139, The pi is 3.14157, cost time is 14.5898
+139, The pi is 0, cost time is 14.5899
+139, The pi is 0, cost time is 14.5874
+139, The pi is 0, cost time is 14.5886
+139, The pi is 0, cost time is 14.5891
+this is p1-8 --------------------
+66, This is id 2 out of 8
+86, getRandom cost time = 1.02274
+66, This is id 3 out of 8
+86, getRandom cost time = 1.0221
+66, This is id 4 out of 8
+86, getRandom cost time = 1.0221
+66, This is id 5 out of 8
+86, getRandom cost time = 1.02086
+66, This is id 6 out of 8
+86, getRandom cost time = 1.02022
+66, This is id 7 out of 8
+86, getRandom cost time = 1.0195
+66, This is id 0 out of 8
+86, getRandom cost time = 1.02449
+66, This is id 1 out of 8
+86, getRandom cost time = 1.02375
+128I am 1, parallel cost time = 10.6087
+128I am 4, parallel cost time = 10.6112
+128I am 3, parallel cost time = 10.6171
+100I am 0, parallel cost time = 10.6172
+111, MPI_Recv from = 1, slaveInCircleSum = 49088620, sumInCircle = 98176002
+128I am 5, parallel cost time = 10.6402
+128I am 6, parallel cost time = 10.6418
+128I am 7, parallel cost time = 10.655
+128I am 2, parallel cost time = 10.7987
+111, MPI_Recv from = 2, slaveInCircleSum = 49083456, sumInCircle = 147259458
+111, MPI_Recv from = 3, slaveInCircleSum = 49086327, sumInCircle = 196345785
+111, MPI_Recv from = 4, slaveInCircleSum = 49089681, sumInCircle = 245435466
+111, MPI_Recv from = 5, slaveInCircleSum = 49082080, sumInCircle = 294517546
+111, MPI_Recv from = 6, slaveInCircleSum = 49088876, sumInCircle = 343606422
+111, MPI_Recv from = 7, slaveInCircleSum = 49090448, sumInCircle = 392696870
+139, The pi is 3.14157, cost time is 11.8263
+139, The pi is 0, cost time is 11.8247
+139, The pi is 0, cost time is 11.8222
+139, The pi is 0, cost time is 11.8247
+139, The pi is 0, cost time is 11.8264
+139, The pi is 0, cost time is 11.8254
+139, The pi is 0, cost time is 11.8236
+139, The pi is 0, cost time is 11.825
+this is p2-1 --------------------
+66, This is id 0 out of 2
+86, getRandom cost time = 1.00782
+66, This is id 1 out of 2
+86, getRandom cost time = 1.00726
+128I am 1, parallel cost time = 45.2495
+100I am 0, parallel cost time = 47.9276
+111, MPI_Recv from = 1, slaveInCircleSum = 196347475, sumInCircle = 392696870
+139, The pi is 0, cost time is 48.9369
+139, The pi is 3.14157, cost time is 48.9387
+this is p2-2 --------------------
+66, This is id 0 out of 4
+86, getRandom cost time = 1.01081
+66, This is id 1 out of 4
+86, getRandom cost time = 1.01063
+66, This is id 2 out of 4
+86, getRandom cost time = 1.01148
+66, This is id 3 out of 4
+86, getRandom cost time = 1.01082
+128I am 1, parallel cost time = 21.1696
+128I am 3, parallel cost time = 21.1716
+128I am 2, parallel cost time = 21.302
+100I am 0, parallel cost time = 21.5204
+111, MPI_Recv from = 1, slaveInCircleSum = 98170700, sumInCircle = 196347763
+111, MPI_Recv from = 2, slaveInCircleSum = 98172332, sumInCircle = 294520095
+111, MPI_Recv from = 3, slaveInCircleSum = 98176775, sumInCircle = 392696870
+139, The pi is 0, cost time is 22.5349
+139, The pi is 3.14157, cost time is 22.5346
+139, The pi is 0, cost time is 22.5354
+139, The pi is 0, cost time is 22.535
+this is p2-3 --------------------
+66, This is id 1 out of 6
+86, getRandom cost time = 1.01522
+66, This is id 2 out of 6
+86, getRandom cost time = 1.01461
+66, This is id 0 out of 6
+86, getRandom cost time = 1.0163
+66, This is id 4 out of 6
+86, getRandom cost time = 1.01408
+66, This is id 5 out of 6
+86, getRandom cost time = 1.01376
+66, This is id 3 out of 6
+86, getRandom cost time = 1.01472
+128I am 2, parallel cost time = 14.1025
+100I am 0, parallel cost time = 14.1134
+128I am 1, parallel cost time = 14.1267
+111, MPI_Recv from = 1, slaveInCircleSum = 65449468, sumInCircle = 130901363
+111, MPI_Recv from = 2, slaveInCircleSum = 65447148, sumInCircle = 196348511
+128I am 5, parallel cost time = 14.1617
+111, MPI_Recv from = 3, slaveInCircleSum = 65451422, sumInCircle = 261799933
+128I am 3, parallel cost time = 14.1649
+111, MPI_Recv from = 4, slaveInCircleSum = 65450352, sumInCircle = 327250285
+111, MPI_Recv from = 5, slaveInCircleSum = 65446585, sumInCircle = 392696870
+128I am 4, parallel cost time = 14.2047
+139, The pi is 0, cost time is 15.2231
+139, The pi is 0, cost time is 15.2219
+139, The pi is 0, cost time is 15.2228
+139, The pi is 0, cost time is 15.5478
+139, The pi is 3.14157, cost time is 15.5488
+139, The pi is 0, cost time is 15.5496
+this is p2-4 --------------------
+66, This is id 0 out of 8
+86, getRandom cost time = 1.01944
+66, This is id 1 out of 8
+86, getRandom cost time = 1.01898
+66, This is id 2 out of 8
+86, getRandom cost time = 1.01813
+66, This is id 3 out of 8
+86, getRandom cost time = 1.01744
+66, This is id 4 out of 8
+86, getRandom cost time = 1.01872
+66, This is id 6 out of 8
+86, getRandom cost time = 1.01678
+66, This is id 7 out of 8
+86, getRandom cost time = 1.01658
+66, This is id 5 out of 8
+86, getRandom cost time = 1.02093
+128I am 4, parallel cost time = 10.5824
+128I am 2, parallel cost time = 10.5886
+128I am 6, parallel cost time = 10.5873
+128I am 1, parallel cost time = 10.594
+100I am 0, parallel cost time = 10.5956
+111, MPI_Recv from = 1, slaveInCircleSum = 49088620, sumInCircle = 98176002
+111, MPI_Recv from = 2, slaveInCircleSum = 49083456, sumInCircle = 147259458
+128I am 3, parallel cost time = 10.6017
+111, MPI_Recv from = 3, slaveInCircleSum = 49086327, sumInCircle = 196345785
+111, MPI_Recv from = 4, slaveInCircleSum = 49089681, sumInCircle = 245435466
+128I am 7, parallel cost time = 10.602
+111, MPI_Recv from = 5, slaveInCircleSum = 49082080, sumInCircle = 294517546
+111, MPI_Recv from = 6, slaveInCircleSum = 49088876, sumInCircle = 343606422
+111, MPI_Recv from = 7, slaveInCircleSum = 49090448, sumInCircle = 392696870
+128I am 5, parallel cost time = 10.6056
+139, The pi is 0, cost time is 11.6296
+139, The pi is 0, cost time is 11.6276
+139, The pi is 0, cost time is 11.6279
+139, The pi is 0, cost time is 11.6297
+139, The pi is 0, cost time is 11.6523
+139, The pi is 0, cost time is 11.6513
+139, The pi is 0, cost time is 11.6509
+139, The pi is 3.14157, cost time is 11.6528
+this is p2-5 --------------------
+66, This is id 0 out of 10
+86, getRandom cost time = 1.02223
+66, This is id 1 out of 10
+86, getRandom cost time = 1.02169
+66, This is id 2 out of 10
+86, getRandom cost time = 1.02034
+66, This is id 3 out of 10
+86, getRandom cost time = 1.0199
+66, This is id 4 out of 10
+86, getRandom cost time = 1.0183
+66, This is id 5 out of 10
+86, getRandom cost time = 1.02152
+66, This is id 6 out of 10
+86, getRandom cost time = 1.02077
+66, This is id 7 out of 10
+86, getRandom cost time = 1.02039
+66, This is id 8 out of 10
+86, getRandom cost time = 1.01972
+66, This is id 9 out of 10
+86, getRandom cost time = 1.01964
+128I am 8, parallel cost time = 8.46589
+128I am 3, parallel cost time = 8.4748
+128I am 5, parallel cost time = 8.47477
+100I am 0, parallel cost time = 8.47894
+128I am 1, parallel cost time = 8.4845
+111, MPI_Recv from = 1, slaveInCircleSum = 39266032, sumInCircle = 78538966
+128I am 4, parallel cost time = 8.49188
+128I am 2, parallel cost time = 8.49645
+111, MPI_Recv from = 2, slaveInCircleSum = 39269225, sumInCircle = 117808191
+111, MPI_Recv from = 3, slaveInCircleSum = 39271002, sumInCircle = 157079193
+111, MPI_Recv from = 4, slaveInCircleSum = 39270483, sumInCircle = 196349676
+111, MPI_Recv from = 5, slaveInCircleSum = 39267992, sumInCircle = 235617668
+128I am 7, parallel cost time = 8.50766
+128I am 9, parallel cost time = 8.69689
+111, MPI_Recv from = 6, slaveInCircleSum = 39269115, sumInCircle = 274886783
+111, MPI_Recv from = 7, slaveInCircleSum = 39272619, sumInCircle = 314159402
+111, MPI_Recv from = 8, slaveInCircleSum = 39267638, sumInCircle = 353427040
+111, MPI_Recv from = 9, slaveInCircleSum = 39269830, sumInCircle = 392696870
+128I am 6, parallel cost time = 9.61668
+139, The pi is 0, cost time is 10.6431
+139, The pi is 0, cost time is 10.6398
+139, The pi is 0, cost time is 10.6417
+139, The pi is 3.14157, cost time is 10.6436
+139, The pi is 0, cost time is 10.6424
+139, The pi is 0, cost time is 10.6587
+139, The pi is 0, cost time is 10.6576
+139, The pi is 0, cost time is 10.6581
+139, The pi is 0, cost time is 10.6571
+139, The pi is 0, cost time is 10.6588
+this is p2-6 --------------------
+66, This is id 0 out of 12
+86, getRandom cost time = 1.02783
+66, This is id 1 out of 12
+86, getRandom cost time = 1.02721
+66, This is id 2 out of 12
+86, getRandom cost time = 1.02641
+66, This is id 3 out of 12
+86, getRandom cost time = 1.02589
+66, This is id 4 out of 12
+86, getRandom cost time = 1.02589
+66, This is id 5 out of 12
+86, getRandom cost time = 1.02453
+66, This is id 10 out of 12
+86, getRandom cost time = 1.02511
+66, This is id 11 out of 12
+86, getRandom cost time = 1.02314
+66, This is id 6 out of 12
+86, getRandom cost time = 1.02695
+66, This is id 7 out of 12
+86, getRandom cost time = 1.02566
+66, This is id 8 out of 12
+86, getRandom cost time = 1.02516
+66, This is id 9 out of 12
+86, getRandom cost time = 1.02495
+128I am 7, parallel cost time = 7.06948
+128I am 4, parallel cost time = 7.07204
+128I am 1, parallel cost time = 7.0839
+128I am 10, parallel cost time = 7.0813
+128I am 8, parallel cost time = 7.08361
+128I am 6, parallel cost time = 7.08613
+100I am 0, parallel cost time = 7.09066
+111, MPI_Recv from = 1, slaveInCircleSum = 32723149, sumInCircle = 65450118
+128I am 11, parallel cost time = 7.10322
+128I am 5, parallel cost time = 7.10673
+128I am 3, parallel cost time = 7.12028
+128I am 9, parallel cost time = 7.12884
+128I am 2, parallel cost time = 7.61222
+111, MPI_Recv from = 2, slaveInCircleSum = 32723865, sumInCircle = 98173983
+111, MPI_Recv from = 3, slaveInCircleSum = 32725626, sumInCircle = 130899609
+111, MPI_Recv from = 4, slaveInCircleSum = 32726811, sumInCircle = 163626420
+111, MPI_Recv from = 5, slaveInCircleSum = 32721755, sumInCircle = 196348175
+111, MPI_Recv from = 6, slaveInCircleSum = 32724926, sumInCircle = 229073101
+111, MPI_Recv from = 7, slaveInCircleSum = 32726319, sumInCircle = 261799420
+111, MPI_Recv from = 8, slaveInCircleSum = 32723283, sumInCircle = 294522703
+111, MPI_Recv from = 9, slaveInCircleSum = 32725796, sumInCircle = 327248499
+111, MPI_Recv from = 10, slaveInCircleSum = 32723541, sumInCircle = 359972040
+111, MPI_Recv from = 11, slaveInCircleSum = 32724830, sumInCircle = 392696870
+139, The pi is 0, cost time is 8.64066
+139, The pi is 0, cost time is 8.6394
+139, The pi is 0, cost time is 8.64132
+139, The pi is 3.14157, cost time is 8.64277
+139, The pi is 0, cost time is 8.64219
+139, The pi is 0, cost time is 8.64028
+139, The pi is 0, cost time is 8.63995
+139, The pi is 0, cost time is 8.6421
+139, The pi is 0, cost time is 8.64079
+139, The pi is 0, cost time is 8.64244
+139, The pi is 0, cost time is 8.6414
+139, The pi is 0, cost time is 8.64037
+this is p2-7 --------------------
+66, This is id 3 out of 14
+86, getRandom cost time = 1.03641
+66, This is id 4 out of 14
+86, getRandom cost time = 1.03525
+66, This is id 5 out of 14
+86, getRandom cost time = 1.03487
+66, This is id 6 out of 14
+86, getRandom cost time = 1.03405
+66, This is id 0 out of 14
+86, getRandom cost time = 1.03834
+66, This is id 1 out of 14
+86, getRandom cost time = 1.03782
+66, This is id 2 out of 14
+86, getRandom cost time = 1.03673
+66, This is id 7 out of 14
+86, getRandom cost time = 1.0377
+66, This is id 8 out of 14
+86, getRandom cost time = 1.03677
+66, This is id 9 out of 14
+86, getRandom cost time = 1.03631
+66, This is id 10 out of 14
+86, getRandom cost time = 1.03588
+66, This is id 11 out of 14
+86, getRandom cost time = 1.03576
+66, This is id 12 out of 14
+86, getRandom cost time = 1.03413
+66, This is id 13 out of 14
+86, getRandom cost time = 1.03382
+128I am 10, parallel cost time = 6.03645
+128I am 13, parallel cost time = 6.05058
+128I am 8, parallel cost time = 6.05293
+128I am 12, parallel cost time = 6.0536
+128I am 11, parallel cost time = 6.05421
+128I am 5, parallel cost time = 6.06369
+128I am 7, parallel cost time = 6.06279
+128I am 3, parallel cost time = 6.06457
+128I am 1, parallel cost time = 6.06865
+128I am 2, parallel cost time = 6.06887
+128I am 4, parallel cost time = 6.07326
+128I am 9, parallel cost time = 6.08774
+100I am 0, parallel cost time = 6.11839
+111, MPI_Recv from = 1, slaveInCircleSum = 28054018, sumInCircle = 56103894
+111, MPI_Recv from = 2, slaveInCircleSum = 28049662, sumInCircle = 84153556
+111, MPI_Recv from = 3, slaveInCircleSum = 28048882, sumInCircle = 112202438
+111, MPI_Recv from = 4, slaveInCircleSum = 28048041, sumInCircle = 140250479
+111, MPI_Recv from = 5, slaveInCircleSum = 28050291, sumInCircle = 168300770
+111, MPI_Recv from = 6, slaveInCircleSum = 28051725, sumInCircle = 196352495
+111, MPI_Recv from = 7, slaveInCircleSum = 28046926, sumInCircle = 224399421
+111, MPI_Recv from = 8, slaveInCircleSum = 28049935, sumInCircle = 252449356
+111, MPI_Recv from = 9, slaveInCircleSum = 28050493, sumInCircle = 280499849
+111, MPI_Recv from = 10, slaveInCircleSum = 28049803, sumInCircle = 308549652
+111, MPI_Recv from = 11, slaveInCircleSum = 28048654, sumInCircle = 336598306
+111, MPI_Recv from = 12, slaveInCircleSum = 28050353, sumInCircle = 364648659
+111, MPI_Recv from = 13, slaveInCircleSum = 28048211, sumInCircle = 392696870
+128I am 6, parallel cost time = 6.7273
+139, The pi is 0, cost time is 7.76647
+139, The pi is 0, cost time is 7.76754
+139, The pi is 0, cost time is 7.76407
+139, The pi is 3.14157, cost time is 7.76823
+139, The pi is 0, cost time is 7.76514
+139, The pi is 0, cost time is 7.76639
+139, The pi is 0, cost time is 7.76683
+139, The pi is 0, cost time is 7.76604
+139, The pi is 0, cost time is 7.76427
+139, The pi is 0, cost time is 7.76614
+139, The pi is 0, cost time is 7.76433
+139, The pi is 0, cost time is 7.76929
+139, The pi is 0, cost time is 7.76876
+139, The pi is 0, cost time is 7.76977
+this is p2-8 --------------------
+66, This is id 6 out of 16
+86, getRandom cost time = 1.02716
+66, This is id 7 out of 16
+86, getRandom cost time = 1.02667
+66, This is id 0 out of 16
+86, getRandom cost time = 1.03124
+66, This is id 1 out of 16
+86, getRandom cost time = 1.03073
+66, This is id 2 out of 16
+86, getRandom cost time = 1.03003
+66, This is id 3 out of 16
+86, getRandom cost time = 1.02935
+66, This is id 4 out of 16
+86, getRandom cost time = 1.02924
+66, This is id 5 out of 16
+86, getRandom cost time = 1.02794
+66, This is id 15 out of 16
+86, getRandom cost time = 1.02708
+66, This is id 8 out of 16
+86, getRandom cost time = 1.03104
+66, This is id 9 out of 16
+86, getRandom cost time = 1.03046
+66, This is id 10 out of 16
+86, getRandom cost time = 1.02983
+66, This is id 11 out of 16
+86, getRandom cost time = 1.02933
+66, This is id 12 out of 16
+86, getRandom cost time = 1.02923
+66, This is id 13 out of 16
+86, getRandom cost time = 1.02807
+66, This is id 14 out of 16
+86, getRandom cost time = 1.02736
+128I am 3, parallel cost time = 5.28955
+128I am 5, parallel cost time = 5.29778
+128I am 1, parallel cost time = 5.29919
+128I am 2, parallel cost time = 5.301
+128I am 6, parallel cost time = 5.3036
+128I am 8, parallel cost time = 5.30317
+128I am 11, parallel cost time = 5.30602
+100I am 0, parallel cost time = 5.30463
+111, MPI_Recv from = 1, slaveInCircleSum = 24546049, sumInCircle = 49092230
+111, MPI_Recv from = 2, slaveInCircleSum = 24543680, sumInCircle = 73635910
+111, MPI_Recv from = 3, slaveInCircleSum = 24541020, sumInCircle = 98176930
+128I am 4, parallel cost time = 5.30956
+111, MPI_Recv from = 4, slaveInCircleSum = 24541832, sumInCircle = 122718762
+111, MPI_Recv from = 5, slaveInCircleSum = 24542235, sumInCircle = 147260997
+111, MPI_Recv from = 6, slaveInCircleSum = 24541429, sumInCircle = 171802426
+128I am 13, parallel cost time = 5.30616
+128I am 15, parallel cost time = 5.31084
+128I am 10, parallel cost time = 5.31598
+128I am 9, parallel cost time = 5.31747
+111, MPI_Recv from = 7, slaveInCircleSum = 24546814, sumInCircle = 196349240
+111, MPI_Recv from = 8, slaveInCircleSum = 24541201, sumInCircle = 220890441
+111, MPI_Recv from = 9, slaveInCircleSum = 24542571, sumInCircle = 245433012
+111, MPI_Recv from = 10, slaveInCircleSum = 24539776, sumInCircle = 269972788
+111, MPI_Recv from = 11, slaveInCircleSum = 24545307, sumInCircle = 294518095
+128I am 7, parallel cost time = 5.33507
+128I am 14, parallel cost time = 5.37481
+111, MPI_Recv from = 12, slaveInCircleSum = 24547849, sumInCircle = 319065944
+111, MPI_Recv from = 13, slaveInCircleSum = 24539845, sumInCircle = 343605789
+111, MPI_Recv from = 14, slaveInCircleSum = 24547447, sumInCircle = 368153236
+111, MPI_Recv from = 15, slaveInCircleSum = 24543634, sumInCircle = 392696870
+128I am 12, parallel cost time = 5.47324
+139, The pi is 0, cost time is 6.50949
+139, The pi is 0, cost time is 6.50728
+139, The pi is 0, cost time is 6.50595
+139, The pi is 0, cost time is 6.50939
+139, The pi is 0, cost time is 6.50653
+139, The pi is 0, cost time is 6.50872
+139, The pi is 0, cost time is 6.50861
+139, The pi is 0, cost time is 6.5071
+139, The pi is 0, cost time is 6.50946
+139, The pi is 0, cost time is 6.50886
+139, The pi is 0, cost time is 6.51011
+139, The pi is 0, cost time is 6.50837
+139, The pi is 0, cost time is 6.50826
+139, The pi is 0, cost time is 6.50816
+139, The pi is 3.14157, cost time is 6.51258
+139, The pi is 0, cost time is 6.50884
+this is p3-1 --------------------
+66, This is id 0 out of 3
+86, getRandom cost time = 1.0089
+66, This is id 1 out of 3
+86, getRandom cost time = 1.00832
+66, This is id 2 out of 3
+86, getRandom cost time = 1.00892
+128I am 1, parallel cost time = 28.2308
+100I am 0, parallel cost time = 28.2777
+111, MPI_Recv from = 1, slaveInCircleSum = 130899820, sumInCircle = 261803137
+111, MPI_Recv from = 2, slaveInCircleSum = 130893733, sumInCircle = 392696870
+128I am 2, parallel cost time = 28.6771
+139, The pi is 0, cost time is 29.6886
+139, The pi is 3.14157, cost time is 29.6889
+139, The pi is 0, cost time is 29.6888
+this is p3-2 --------------------
+66, This is id 0 out of 6
+86, getRandom cost time = 1.02505
+66, This is id 1 out of 6
+86, getRandom cost time = 1.02487
+66, This is id 2 out of 6
+86, getRandom cost time = 1.02444
+66, This is id 4 out of 6
+86, getRandom cost time = 1.02141
+66, This is id 3 out of 6
+86, getRandom cost time = 1.02424
+66, This is id 5 out of 6
+86, getRandom cost time = 1.02373
+128I am 1, parallel cost time = 14.1336
+128I am 4, parallel cost time = 14.1459
+128I am 3, parallel cost time = 14.153
+128I am 5, parallel cost time = 14.159
+100I am 0, parallel cost time = 14.3662
+111, MPI_Recv from = 1, slaveInCircleSum = 65449468, sumInCircle = 130901363
+111, MPI_Recv from = 2, slaveInCircleSum = 65447148, sumInCircle = 196348511
+111, MPI_Recv from = 3, slaveInCircleSum = 65451422, sumInCircle = 261799933
+111, MPI_Recv from = 4, slaveInCircleSum = 65450352, sumInCircle = 327250285
+111, MPI_Recv from = 5, slaveInCircleSum = 65446585, sumInCircle = 392696870
+128I am 2, parallel cost time = 15.1633
+139, The pi is 0, cost time is 16.1908
+139, The pi is 3.14157, cost time is 16.1914
+139, The pi is 0, cost time is 16.1905
+139, The pi is 0, cost time is 16.1908
+139, The pi is 0, cost time is 16.1896
+139, The pi is 0, cost time is 16.1874
+this is p3-3 --------------------
+66, This is id 0 out of 9
+86, getRandom cost time = 1.02107
+66, This is id 1 out of 9
+86, getRandom cost time = 1.02046
+66, This is id 2 out of 9
+86, getRandom cost time = 1.01973
+66, This is id 7 out of 9
+86, getRandom cost time = 1.02025
+66, This is id 8 out of 9
+86, getRandom cost time = 1.01948
+66, This is id 6 out of 9
+86, getRandom cost time = 1.02075
+66, This is id 4 out of 9
+86, getRandom cost time = 1.02046
+66, This is id 5 out of 9
+86, getRandom cost time = 1.02
+66, This is id 3 out of 9
+86, getRandom cost time = 1.02108
+128I am 8, parallel cost time = 9.4291
+128I am 3, parallel cost time = 9.44878
+100I am 0, parallel cost time = 9.44708
+128I am 2, parallel cost time = 9.45117
+128I am 6, parallel cost time = 9.45055
+128I am 5, parallel cost time = 9.46388
+111, MPI_Recv from = 1, slaveInCircleSum = 43633612, sumInCircle = 87270042
+111, MPI_Recv from = 2, slaveInCircleSum = 43627037, sumInCircle = 130897079
+111, MPI_Recv from = 3, slaveInCircleSum = 43634687, sumInCircle = 174531766
+128I am 1, parallel cost time = 9.47882
+111, MPI_Recv from = 4, slaveInCircleSum = 43633771, sumInCircle = 218165537
+111, MPI_Recv from = 5, slaveInCircleSum = 43635639, sumInCircle = 261801176
+111, MPI_Recv from = 6, slaveInCircleSum = 43632200, sumInCircle = 305433376
+128I am 4, parallel cost time = 9.90531
+111, MPI_Recv from = 7, slaveInCircleSum = 43632437, sumInCircle = 349065813
+111, MPI_Recv from = 8, slaveInCircleSum = 43631057, sumInCircle = 392696870
+128I am 7, parallel cost time = 10.5697
+139, The pi is 3.14157, cost time is 11.5961
+139, The pi is 0, cost time is 11.5944
+139, The pi is 0, cost time is 11.5952
+139, The pi is 0, cost time is 11.5959
+139, The pi is 0, cost time is 11.5952
+139, The pi is 0, cost time is 11.5953
+139, The pi is 0, cost time is 11.5945
+139, The pi is 0, cost time is 11.595
+139, The pi is 0, cost time is 11.5954
+this is p3-4 --------------------
+66, This is id 2 out of 12
+86, getRandom cost time = 1.02178
+66, This is id 3 out of 12
+86, getRandom cost time = 1.02134
+66, This is id 0 out of 12
+86, getRandom cost time = 1.02314
+66, This is id 8 out of 12
+86, getRandom cost time = 1.02264
+66, This is id 9 out of 12
+86, getRandom cost time = 1.02167
+66, This is id 10 out of 12
+86, getRandom cost time = 1.02019
+66, This is id 11 out of 12
+86, getRandom cost time = 1.02157
+66, This is id 1 out of 12
+66, This is id 4 out of 12
+86, getRandom cost time = 1.02306
+66, This is id 5 out of 12
+86, getRandom cost time = 1.02224
+66, This is id 6 out of 12
+86, getRandom cost time = 1.01972
+66, This is id 7 out of 12
+86, getRandom cost time = 1.01938
+86, getRandom cost time = 1.02436
+128I am 4, parallel cost time = 7.05405
+128I am 5, parallel cost time = 7.05799
+128I am 7, parallel cost time = 7.06806
+128I am 2, parallel cost time = 7.07567
+100I am 0, parallel cost time = 7.0744
+128I am 8, parallel cost time = 7.0773
+128I am 11, parallel cost time = 7.07615
+128I am 3, parallel cost time = 7.0823
+128I am 9, parallel cost time = 7.08212
+128I am 10, parallel cost time = 7.10802
+128I am 6, parallel cost time = 7.13868
+128I am 1, parallel cost time = 7.31713
+111, MPI_Recv from = 1, slaveInCircleSum = 32723149, sumInCircle = 65450118
+111, MPI_Recv from = 2, slaveInCircleSum = 32723865, sumInCircle = 98173983
+111, MPI_Recv from = 3, slaveInCircleSum = 32725626, sumInCircle = 130899609
+111, MPI_Recv from = 4, slaveInCircleSum = 32726811, sumInCircle = 163626420
+111, MPI_Recv from = 5, slaveInCircleSum = 32721755, sumInCircle = 196348175
+111, MPI_Recv from = 6, slaveInCircleSum = 32724926, sumInCircle = 229073101
+111, MPI_Recv from = 7, slaveInCircleSum = 32726319, sumInCircle = 261799420
+111, MPI_Recv from = 8, slaveInCircleSum = 32723283, sumInCircle = 294522703
+111, MPI_Recv from = 9, slaveInCircleSum = 32725796, sumInCircle = 327248499
+111, MPI_Recv from = 10, slaveInCircleSum = 32723541, sumInCircle = 359972040
+111, MPI_Recv from = 11, slaveInCircleSum = 32724830, sumInCircle = 392696870
+139, The pi is 3.14157, cost time is 8.34428
+139, The pi is 0, cost time is 8.34288
+139, The pi is 0, cost time is 8.34246
+139, The pi is 0, cost time is 8.34093
+139, The pi is 0, cost time is 8.34106
+139, The pi is 0, cost time is 8.34138
+139, The pi is 0, cost time is 8.34359
+139, The pi is 0, cost time is 8.34395
+139, The pi is 0, cost time is 8.34451
+139, The pi is 0, cost time is 8.34276
+139, The pi is 0, cost time is 8.3434
+139, The pi is 0, cost time is 8.34667
+this is p3-5 --------------------
+66, This is id 2 out of 15
+86, getRandom cost time = 1.02505
+66, This is id 4 out of 15
+86, getRandom cost time = 1.02445
+66, This is id 0 out of 15
+86, getRandom cost time = 1.02711
+66, This is id 1 out of 15
+86, getRandom cost time = 1.02706
+66, This is id 5 out of 15
+86, getRandom cost time = 1.02691
+66, This is id 6 out of 15
+86, getRandom cost time = 1.02624
+66, This is id 7 out of 15
+86, getRandom cost time = 1.02559
+66, This is id 8 out of 15
+86, getRandom cost time = 1.02534
+66, This is id 9 out of 15
+86, getRandom cost time = 1.02538
+66, This is id 3 out of 15
+86, getRandom cost time = 1.02532
+66, This is id 10 out of 15
+86, getRandom cost time = 1.02687
+66, This is id 11 out of 15
+86, getRandom cost time = 1.0261
+66, This is id 12 out of 15
+86, getRandom cost time = 1.02557
+66, This is id 13 out of 15
+86, getRandom cost time = 1.025
+66, This is id 14 out of 15
+86, getRandom cost time = 1.02494
+128I am 2, parallel cost time = 5.64734
+128I am 1, parallel cost time = 5.64824
+128I am 4, parallel cost time = 5.65136
+128I am 8, parallel cost time = 5.65124
+128I am 5, parallel cost time = 5.65344
+128I am 3, parallel cost time = 5.65423
+100I am 0, parallel cost time = 5.65381
+111, MPI_Recv from = 1, slaveInCircleSum = 26179782, sumInCircle = 52361374
+111, MPI_Recv from = 2, slaveInCircleSum = 26180490, sumInCircle = 78541864
+111, MPI_Recv from = 3, slaveInCircleSum = 26181419, sumInCircle = 104723283
+111, MPI_Recv from = 4, slaveInCircleSum = 26180142, sumInCircle = 130903425
+111, MPI_Recv from = 5, slaveInCircleSum = 26176060, sumInCircle = 157079485
+128I am 14, parallel cost time = 5.66225
+128I am 13, parallel cost time = 5.68513
+128I am 12, parallel cost time = 5.69387
+128I am 11, parallel cost time = 5.70479
+128I am 7, parallel cost time = 5.70855
+111, MPI_Recv from = 6, slaveInCircleSum = 26178564, sumInCircle = 183258049
+111, MPI_Recv from = 7, slaveInCircleSum = 26177289, sumInCircle = 209435338
+111, MPI_Recv from = 8, slaveInCircleSum = 26177888, sumInCircle = 235613226
+128I am 6, parallel cost time = 5.83469
+111, MPI_Recv from = 9, slaveInCircleSum = 26177677, sumInCircle = 261790903
+128I am 9, parallel cost time = 6.06052
+111, MPI_Recv from = 10, slaveInCircleSum = 26183274, sumInCircle = 287974177
+111, MPI_Recv from = 11, slaveInCircleSum = 26176801, sumInCircle = 314150978
+111, MPI_Recv from = 12, slaveInCircleSum = 26184065, sumInCircle = 340335043
+111, MPI_Recv from = 13, slaveInCircleSum = 26179333, sumInCircle = 366514376
+111, MPI_Recv from = 14, slaveInCircleSum = 26182494, sumInCircle = 392696870
+128I am 10, parallel cost time = 6.0772
+139, The pi is 0, cost time is 7.10881
+139, The pi is 0, cost time is 7.11041
+139, The pi is 0, cost time is 7.10787
+139, The pi is 0, cost time is 7.10849
+139, The pi is 0, cost time is 7.10774
+139, The pi is 0, cost time is 7.10879
+139, The pi is 0, cost time is 7.11031
+139, The pi is 0, cost time is 7.10837
+139, The pi is 0, cost time is 7.10923
+139, The pi is 0, cost time is 7.10826
+139, The pi is 0, cost time is 7.10845
+139, The pi is 0, cost time is 7.10981
+139, The pi is 3.14157, cost time is 7.11121
+139, The pi is 0, cost time is 7.10915
+139, The pi is 0, cost time is 7.10912
+this is p3-6 --------------------
+66, This is id 3 out of 18
+86, getRandom cost time = 1.03035
+66, This is id 4 out of 18
+86, getRandom cost time = 1.02834
+66, This is id 5 out of 18
+86, getRandom cost time = 1.02842
+66, This is id 0 out of 18
+86, getRandom cost time = 1.03185
+66, This is id 1 out of 18
+86, getRandom cost time = 1.03133
+66, This is id 2 out of 18
+86, getRandom cost time = 1.03035
+66, This is id 16 out of 18
+86, getRandom cost time = 1.02882
+66, This is id 17 out of 18
+86, getRandom cost time = 1.02925
+66, This is id 12 out of 18
+86, getRandom cost time = 1.03167
+66, This is id 13 out of 18
+86, getRandom cost time = 1.03108
+66, This is id 14 out of 18
+86, getRandom cost time = 1.03107
+66, This is id 15 out of 18
+86, getRandom cost time = 1.02969
+66, This is id 6 out of 18
+86, getRandom cost time = 1.03126
+66, This is id 7 out of 18
+86, getRandom cost time = 1.03048
+66, This is id 8 out of 18
+86, getRandom cost time = 1.02988
+66, This is id 9 out of 18
+86, getRandom cost time = 1.02969
+66, This is id 10 out of 18
+86, getRandom cost time = 1.02903
+66, This is id 11 out of 18
+86, getRandom cost time = 1.02679
+128I am 10, parallel cost time = 4.70279
+128I am 14, parallel cost time = 4.70135
+128I am 7, parallel cost time = 4.70799
+128I am 16, parallel cost time = 4.70457
+128I am 6, parallel cost time = 4.70967
+128I am 12, parallel cost time = 4.7123
+128I am 8, parallel cost time = 4.715
+128I am 17, parallel cost time = 4.71183
+100I am 0, parallel cost time = 4.71509
+128I am 3, parallel cost time = 4.72102
+128I am 15, parallel cost time = 4.71724
+128I am 2, parallel cost time = 4.72583
+128I am 13, parallel cost time = 4.72205
+128I am 4, parallel cost time = 4.72729
+128I am 5, parallel cost time = 4.73271
+128I am 9, parallel cost time = 4.76022
+128I am 11, parallel cost time = 4.76723
+128I am 1, parallel cost time = 5.22738
+111, MPI_Recv from = 1, slaveInCircleSum = 21818143, sumInCircle = 43636564
+111, MPI_Recv from = 2, slaveInCircleSum = 21814357, sumInCircle = 65450921
+111, MPI_Recv from = 3, slaveInCircleSum = 21817488, sumInCircle = 87268409
+111, MPI_Recv from = 4, slaveInCircleSum = 21819058, sumInCircle = 109087467
+111, MPI_Recv from = 5, slaveInCircleSum = 21818750, sumInCircle = 130906217
+111, MPI_Recv from = 6, slaveInCircleSum = 21816275, sumInCircle = 152722492
+111, MPI_Recv from = 7, slaveInCircleSum = 21816612, sumInCircle = 174539104
+111, MPI_Recv from = 8, slaveInCircleSum = 21815902, sumInCircle = 196355006
+111, MPI_Recv from = 9, slaveInCircleSum = 21818009, sumInCircle = 218173015
+111, MPI_Recv from = 10, slaveInCircleSum = 21815469, sumInCircle = 239988484
+111, MPI_Recv from = 11, slaveInCircleSum = 21812680, sumInCircle = 261801164
+111, MPI_Recv from = 12, slaveInCircleSum = 21817199, sumInCircle = 283618363
+111, MPI_Recv from = 13, slaveInCircleSum = 21814713, sumInCircle = 305433076
+111, MPI_Recv from = 14, slaveInCircleSum = 21816889, sumInCircle = 327249965
+111, MPI_Recv from = 15, slaveInCircleSum = 21815925, sumInCircle = 349065890
+111, MPI_Recv from = 16, slaveInCircleSum = 21815825, sumInCircle = 370881715
+111, MPI_Recv from = 17, slaveInCircleSum = 21815155, sumInCircle = 392696870
+139, The pi is 0, cost time is 6.26121
+139, The pi is 0, cost time is 6.25848
+139, The pi is 0, cost time is 6.26049
+139, The pi is 3.14157, cost time is 6.26196
+139, The pi is 0, cost time is 6.26048
+139, The pi is 0, cost time is 6.26196
+139, The pi is 0, cost time is 6.25986
+139, The pi is 0, cost time is 6.25953
+139, The pi is 0, cost time is 6.26137
+139, The pi is 0, cost time is 6.26134
+139, The pi is 0, cost time is 6.26034
+139, The pi is 0, cost time is 6.26099
+139, The pi is 0, cost time is 6.25949
+139, The pi is 0, cost time is 6.26179
+139, The pi is 0, cost time is 6.26034
+139, The pi is 0, cost time is 6.26006
+139, The pi is 0, cost time is 6.25866
+139, The pi is 0, cost time is 6.26073
+this is p3-7 --------------------
+66, This is id 0 out of 21
+86, getRandom cost time = 1.03622
+66, This is id 1 out of 21
+86, getRandom cost time = 1.03567
+66, This is id 2 out of 21
+86, getRandom cost time = 1.03487
+66, This is id 3 out of 21
+86, getRandom cost time = 1.03426
+66, This is id 4 out of 21
+86, getRandom cost time = 1.03376
+66, This is id 5 out of 21
+86, getRandom cost time = 1.03199
+66, This is id 6 out of 21
+86, getRandom cost time = 1.03152
+66, This is id 17 out of 21
+86, getRandom cost time = 1.03429
+66, This is id 7 out of 21
+86, getRandom cost time = 1.03578
+66, This is id 18 out of 21
+86, getRandom cost time = 1.03429
+66, This is id 8 out of 21
+86, getRandom cost time = 1.03524
+66, This is id 19 out of 21
+86, getRandom cost time = 1.03318
+66, This is id 9 out of 21
+86, getRandom cost time = 1.03453
+66, This is id 20 out of 21
+86, getRandom cost time = 1.03272
+66, This is id 10 out of 21
+86, getRandom cost time = 1.0338
+66, This is id 14 out of 21
+86, getRandom cost time = 1.03602
+66, This is id 11 out of 21
+86, getRandom cost time = 1.03374
+66, This is id 15 out of 21
+86, getRandom cost time = 1.03527
+66, This is id 12 out of 21
+86, getRandom cost time = 1.03278
+66, This is id 16 out of 21
+86, getRandom cost time = 1.03494
+66, This is id 13 out of 21
+86, getRandom cost time = 1.0324
+128I am 9, parallel cost time = 4.03034
+128I am 7, parallel cost time = 4.03178
+128I am 12, parallel cost time = 4.02947
+128I am 19, parallel cost time = 4.03109
+128I am 13, parallel cost time = 4.03529
+128I am 11, parallel cost time = 4.0363
+128I am 8, parallel cost time = 4.03916
+128I am 10, parallel cost time = 4.03841
+128I am 17, parallel cost time = 4.03502
+128I am 3, parallel cost time = 4.04141
+128I am 15, parallel cost time = 4.0405
+128I am 1, parallel cost time = 4.04742
+128I am 20, parallel cost time = 4.04077
+128I am 6, parallel cost time = 4.05393
+100I am 0, parallel cost time = 4.049
+111, MPI_Recv from = 1, slaveInCircleSum = 18701026, sumInCircle = 37400005
+128I am 18, parallel cost time = 4.05477
+128I am 2, parallel cost time = 4.06413
+111, MPI_Recv from = 2, slaveInCircleSum = 18697359, sumInCircle = 56097364
+111, MPI_Recv from = 3, slaveInCircleSum = 18700171, sumInCircle = 74797535
+128I am 14, parallel cost time = 4.06921
+128I am 5, parallel cost time = 4.0894
+128I am 16, parallel cost time = 4.10628
+111, MPI_Recv from = 4, slaveInCircleSum = 18698626, sumInCircle = 93496161
+111, MPI_Recv from = 5, slaveInCircleSum = 18702622, sumInCircle = 112198783
+111, MPI_Recv from = 6, slaveInCircleSum = 18702635, sumInCircle = 130901418
+111, MPI_Recv from = 7, slaveInCircleSum = 18698544, sumInCircle = 149599962
+111, MPI_Recv from = 8, slaveInCircleSum = 18700911, sumInCircle = 168300873
+111, MPI_Recv from = 9, slaveInCircleSum = 18702478, sumInCircle = 187003351
+111, MPI_Recv from = 10, slaveInCircleSum = 18700233, sumInCircle = 205703584
+111, MPI_Recv from = 11, slaveInCircleSum = 18698331, sumInCircle = 224401915
+111, MPI_Recv from = 12, slaveInCircleSum = 18697300, sumInCircle = 243099215
+111, MPI_Recv from = 13, slaveInCircleSum = 18700351, sumInCircle = 261799566
+111, MPI_Recv from = 14, slaveInCircleSum = 18699279, sumInCircle = 280498845
+111, MPI_Recv from = 15, slaveInCircleSum = 18702016, sumInCircle = 299200861
+111, MPI_Recv from = 16, slaveInCircleSum = 18700318, sumInCircle = 317901179
+111, MPI_Recv from = 17, slaveInCircleSum = 18698281, sumInCircle = 336599460
+111, MPI_Recv from = 18, slaveInCircleSum = 18699738, sumInCircle = 355299198
+111, MPI_Recv from = 19, slaveInCircleSum = 18700722, sumInCircle = 373999920
+111, MPI_Recv from = 20, slaveInCircleSum = 18696950, sumInCircle = 392696870
+128I am 4, parallel cost time = 4.32686
+139, The pi is 0, cost time is 5.36479
+139, The pi is 3.14157, cost time is 5.36596
+139, The pi is 0, cost time is 5.36393
+139, The pi is 0, cost time is 5.36164
+139, The pi is 0, cost time is 5.36349
+139, The pi is 0, cost time is 5.3614
+139, The pi is 0, cost time is 5.36447
+139, The pi is 0, cost time is 5.36525
+139, The pi is 0, cost time is 5.36287
+139, The pi is 0, cost time is 5.36581
+139, The pi is 0, cost time is 5.36472
+139, The pi is 0, cost time is 5.36395
+139, The pi is 0, cost time is 5.36399
+139, The pi is 0, cost time is 5.36506
+139, The pi is 0, cost time is 5.36213
+139, The pi is 0, cost time is 5.36439
+139, The pi is 0, cost time is 5.3636
+139, The pi is 0, cost time is 5.36251
+139, The pi is 0, cost time is 5.3668
+139, The pi is 0, cost time is 5.36417
+139, The pi is 0, cost time is 5.36551
+this is p3-8 --------------------
+66, This is id 0 out of 24
+86, getRandom cost time = 1.04154
+66, This is id 1 out of 24
+86, getRandom cost time = 1.04082
+66, This is id 2 out of 24
+86, getRandom cost time = 1.04017
+66, This is id 3 out of 24
+86, getRandom cost time = 1.03942
+66, This is id 4 out of 24
+86, getRandom cost time = 1.03876
+66, This is id 5 out of 24
+86, getRandom cost time = 1.03829
+66, This is id 6 out of 24
+86, getRandom cost time = 1.0371
+66, This is id 7 out of 24
+86, getRandom cost time = 1.03633
+66, This is id 8 out of 24
+86, getRandom cost time = 1.04133
+66, This is id 9 out of 24
+86, getRandom cost time = 1.04053
+66, This is id 10 out of 24
+86, getRandom cost time = 1.03975
+66, This is id 11 out of 24
+86, getRandom cost time = 1.03928
+66, This is id 12 out of 24
+86, getRandom cost time = 1.0392
+66, This is id 13 out of 24
+86, getRandom cost time = 1.03818
+66, This is id 14 out of 24
+86, getRandom cost time = 1.03739
+66, This is id 15 out of 24
+66, This is id 23 out of 24
+86, getRandom cost time = 1.03709
+66, This is id 16 out of 24
+86, getRandom cost time = 1.04115
+66, This is id 17 out of 24
+86, getRandom cost time = 1.04027
+66, This is id 18 out of 24
+86, getRandom cost time = 1.03981
+66, This is id 19 out of 24
+86, getRandom cost time = 1.03912
+66, This is id 20 out of 24
+86, getRandom cost time = 1.03921
+66, This is id 21 out of 24
+86, getRandom cost time = 1.03815
+66, This is id 22 out of 24
+86, getRandom cost time = 1.03733
+86, getRandom cost time = 1.03712
+128I am 13, parallel cost time = 3.52622
+128I am 10, parallel cost time = 3.52858
+128I am 8, parallel cost time = 3.53144
+128I am 14, parallel cost time = 3.52946
+128I am 9, parallel cost time = 3.53191
+128I am 12, parallel cost time = 3.53064
+128I am 18, parallel cost time = 3.52835
+128I am 23, parallel cost time = 3.52633
+128I am 11, parallel cost time = 3.53423
+128I am 1, parallel cost time = 3.53846
+128I am 5, parallel cost time = 3.5399
+128I am 20, parallel cost time = 3.53264
+128I am 6, parallel cost time = 3.54221
+128I am 22, parallel cost time = 3.53395
+128I am 4, parallel cost time = 3.54279
+128I am 2, parallel cost time = 3.54494
+100I am 0, parallel cost time = 3.53996
+111, MPI_Recv from = 1, slaveInCircleSum = 16362316, sumInCircle = 32725071
+111, MPI_Recv from = 2, slaveInCircleSum = 16361871, sumInCircle = 49086942
+128I am 3, parallel cost time = 3.55324
+111, MPI_Recv from = 3, slaveInCircleSum = 16362861, sumInCircle = 65449803
+111, MPI_Recv from = 4, slaveInCircleSum = 16363529, sumInCircle = 81813332
+111, MPI_Recv from = 5, slaveInCircleSum = 16359587, sumInCircle = 98172919
+111, MPI_Recv from = 6, slaveInCircleSum = 16364182, sumInCircle = 114537101
+128I am 7, parallel cost time = 3.5561
+111, MPI_Recv from = 7, slaveInCircleSum = 16362935, sumInCircle = 130900036
+111, MPI_Recv from = 8, slaveInCircleSum = 16361345, sumInCircle = 147261381
+111, MPI_Recv from = 9, slaveInCircleSum = 16364136, sumInCircle = 163625517
+111, MPI_Recv from = 10, slaveInCircleSum = 16360841, sumInCircle = 179986358
+111, MPI_Recv from = 11, slaveInCircleSum = 16360082, sumInCircle = 196346440
+111, MPI_Recv from = 12, slaveInCircleSum = 16364214, sumInCircle = 212710654
+111, MPI_Recv from = 13, slaveInCircleSum = 16360833, sumInCircle = 229071487
+111, MPI_Recv from = 14, slaveInCircleSum = 16361994, sumInCircle = 245433481
+128I am 19, parallel cost time = 3.55123
+128I am 16, parallel cost time = 3.55339
+128I am 17, parallel cost time = 3.55597
+111, MPI_Recv from = 15, slaveInCircleSum = 16362765, sumInCircle = 261796246
+111, MPI_Recv from = 16, slaveInCircleSum = 16363282, sumInCircle = 278159528
+111, MPI_Recv from = 17, slaveInCircleSum = 16362168, sumInCircle = 294521696
+111, MPI_Recv from = 18, slaveInCircleSum = 16360744, sumInCircle = 310882440
+111, MPI_Recv from = 19, slaveInCircleSum = 16363384, sumInCircle = 327245824
+111, MPI_Recv from = 20, slaveInCircleSum = 16361938, sumInCircle = 343607762
+128I am 15, parallel cost time = 3.56868
+111, MPI_Recv from = 21, slaveInCircleSum = 16361660, sumInCircle = 359969422
+111, MPI_Recv from = 22, slaveInCircleSum = 16362700, sumInCircle = 376332122
+111, MPI_Recv from = 23, slaveInCircleSum = 16364748, sumInCircle = 392696870
+128I am 21, parallel cost time = 3.77138
+139, The pi is 0, cost time is 4.82321
+139, The pi is 0, cost time is 4.82063
+139, The pi is 0, cost time is 4.81854
+139, The pi is 0, cost time is 4.82114
+139, The pi is 0, cost time is 4.82176
+139, The pi is 0, cost time is 4.81941
+139, The pi is 0, cost time is 4.82248
+139, The pi is 0, cost time is 4.81942
+139, The pi is 0, cost time is 4.82255
+139, The pi is 0, cost time is 4.82342
+139, The pi is 0, cost time is 4.82154
+139, The pi is 0, cost time is 4.82201
+139, The pi is 0, cost time is 4.82054
+139, The pi is 0, cost time is 4.82164
+139, The pi is 0, cost time is 4.82107
+139, The pi is 0, cost time is 4.82302
+139, The pi is 0, cost time is 4.82095
+139, The pi is 0, cost time is 4.81893
+139, The pi is 0, cost time is 4.82203
+139, The pi is 0, cost time is 4.82166
+139, The pi is 0, cost time is 4.82089
+139, The pi is 3.14157, cost time is 4.82616
+139, The pi is 0, cost time is 4.82267
+139, The pi is 0, cost time is 4.82173
+this is p4-1 --------------------
+66, This is id 0 out of 4
+86, getRandom cost time = 1.0128
+66, This is id 1 out of 4
+86, getRandom cost time = 1.0122
+66, This is id 2 out of 4
+86, getRandom cost time = 1.01156
+66, This is id 3 out of 4
+86, getRandom cost time = 1.01096
+128I am 1, parallel cost time = 21.2287
+128I am 3, parallel cost time = 21.2406
+128I am 2, parallel cost time = 21.2948
+100I am 0, parallel cost time = 21.6402
+111, MPI_Recv from = 1, slaveInCircleSum = 98170700, sumInCircle = 196347763
+111, MPI_Recv from = 2, slaveInCircleSum = 98172332, sumInCircle = 294520095
+111, MPI_Recv from = 3, slaveInCircleSum = 98176775, sumInCircle = 392696870
+139, The pi is 3.14157, cost time is 22.6553
+139, The pi is 0, cost time is 22.654
+139, The pi is 0, cost time is 22.6547
+139, The pi is 0, cost time is 22.6537
+this is p4-2 --------------------
+66, This is id 0 out of 8
+86, getRandom cost time = 1.01885
+66, This is id 1 out of 8
+86, getRandom cost time = 1.01844
+66, This is id 2 out of 8
+86, getRandom cost time = 1.01922
+66, This is id 3 out of 8
+86, getRandom cost time = 1.01829
+66, This is id 4 out of 8
+86, getRandom cost time = 1.01938
+66, This is id 5 out of 8
+86, getRandom cost time = 1.0187
+66, This is id 6 out of 8
+86, getRandom cost time = 1.01678
+66, This is id 7 out of 8
+86, getRandom cost time = 1.01615
+100I am 0, parallel cost time = 10.586
+128I am 5, parallel cost time = 10.6018
+128I am 7, parallel cost time = 10.6026
+128I am 3, parallel cost time = 10.6069
+128I am 6, parallel cost time = 10.6343
+111, MPI_Recv from = 1, slaveInCircleSum = 49088620, sumInCircle = 98176002
+128I am 1, parallel cost time = 10.6473
+128I am 4, parallel cost time = 10.6935
+111, MPI_Recv from = 2, slaveInCircleSum = 49083456, sumInCircle = 147259458
+111, MPI_Recv from = 3, slaveInCircleSum = 49086327, sumInCircle = 196345785
+111, MPI_Recv from = 4, slaveInCircleSum = 49089681, sumInCircle = 245435466
+111, MPI_Recv from = 5, slaveInCircleSum = 49082080, sumInCircle = 294517546
+111, MPI_Recv from = 6, slaveInCircleSum = 49088876, sumInCircle = 343606422
+111, MPI_Recv from = 7, slaveInCircleSum = 49090448, sumInCircle = 392696870
+128I am 2, parallel cost time = 10.8006
+139, The pi is 3.14157, cost time is 11.8228
+139, The pi is 0, cost time is 11.8221
+139, The pi is 0, cost time is 11.8233
+139, The pi is 0, cost time is 11.8222
+139, The pi is 0, cost time is 11.8222
+139, The pi is 0, cost time is 11.8228
+139, The pi is 0, cost time is 11.8198
+139, The pi is 0, cost time is 11.8209
+this is p4-3 --------------------
+66, This is id 0 out of 12
+86, getRandom cost time = 1.0269
+66, This is id 1 out of 12
+86, getRandom cost time = 1.02647
+66, This is id 2 out of 12
+86, getRandom cost time = 1.02576
+66, This is id 3 out of 12
+86, getRandom cost time = 1.02645
+66, This is id 4 out of 12
+86, getRandom cost time = 1.02593
+66, This is id 9 out of 12
+86, getRandom cost time = 1.0229
+66, This is id 5 out of 12
+86, getRandom cost time = 1.02592
+66, This is id 10 out of 12
+86, getRandom cost time = 1.0222
+66, This is id 11 out of 12
+86, getRandom cost time = 1.02171
+66, This is id 7 out of 12
+86, getRandom cost time = 1.02617
+66, This is id 8 out of 12
+86, getRandom cost time = 1.02545
+66, This is id 6 out of 12
+86, getRandom cost time = 1.02664
+128I am 7, parallel cost time = 7.05173
+128I am 1, parallel cost time = 7.05929
+128I am 6, parallel cost time = 7.05986
+128I am 5, parallel cost time = 7.06193
+128I am 4, parallel cost time = 7.06526
+128I am 8, parallel cost time = 7.06484
+128I am 10, parallel cost time = 7.07725
+100I am 0, parallel cost time = 7.0776
+111, MPI_Recv from = 1, slaveInCircleSum = 32723149, sumInCircle = 65450118
+128I am 9, parallel cost time = 7.07926
+128I am 3, parallel cost time = 7.16617
+128I am 2, parallel cost time = 7.43394
+111, MPI_Recv from = 2, slaveInCircleSum = 32723865, sumInCircle = 98173983
+111, MPI_Recv from = 3, slaveInCircleSum = 32725626, sumInCircle = 130899609
+111, MPI_Recv from = 4, slaveInCircleSum = 32726811, sumInCircle = 163626420
+111, MPI_Recv from = 5, slaveInCircleSum = 32721755, sumInCircle = 196348175
+111, MPI_Recv from = 6, slaveInCircleSum = 32724926, sumInCircle = 229073101
+111, MPI_Recv from = 7, slaveInCircleSum = 32726319, sumInCircle = 261799420
+111, MPI_Recv from = 8, slaveInCircleSum = 32723283, sumInCircle = 294522703
+111, MPI_Recv from = 9, slaveInCircleSum = 32725796, sumInCircle = 327248499
+111, MPI_Recv from = 10, slaveInCircleSum = 32723541, sumInCircle = 359972040
+111, MPI_Recv from = 11, slaveInCircleSum = 32724830, sumInCircle = 392696870
+128I am 11, parallel cost time = 8.0742
+139, The pi is 3.14157, cost time is 9.10909
+139, The pi is 0, cost time is 9.10828
+139, The pi is 0, cost time is 9.10766
+139, The pi is 0, cost time is 9.10353
+139, The pi is 0, cost time is 9.10407
+139, The pi is 0, cost time is 9.10513
+139, The pi is 0, cost time is 9.10828
+139, The pi is 0, cost time is 9.10839
+139, The pi is 0, cost time is 9.10779
+139, The pi is 0, cost time is 9.1076
+139, The pi is 0, cost time is 9.10814
+139, The pi is 0, cost time is 9.10803
+this is p4-4 --------------------
+66, This is id 3 out of 16
+86, getRandom cost time = 1.02862
+66, This is id 0 out of 16
+86, getRandom cost time = 1.03074
+66, This is id 1 out of 16
+86, getRandom cost time = 1.02991
+66, This is id 2 out of 16
+86, getRandom cost time = 1.02928
+66, This is id 5 out of 16
+86, getRandom cost time = 1.02941
+66, This is id 6 out of 16
+86, getRandom cost time = 1.02893
+66, This is id 7 out of 16
+86, getRandom cost time = 1.02829
+66, This is id 4 out of 16
+86, getRandom cost time = 1.03003
+66, This is id 13 out of 16
+86, getRandom cost time = 1.02571
+66, This is id 14 out of 16
+86, getRandom cost time = 1.0252
+66, This is id 15 out of 16
+86, getRandom cost time = 1.02498
+66, This is id 12 out of 16
+86, getRandom cost time = 1.02644
+66, This is id 11 out of 16
+86, getRandom cost time = 1.02843
+66, This is id 8 out of 16
+86, getRandom cost time = 1.03028
+66, This is id 9 out of 16
+86, getRandom cost time = 1.02903
+66, This is id 10 out of 16
+86, getRandom cost time = 1.02913
+128I am 4, parallel cost time = 5.28558
+128I am 6, parallel cost time = 5.28735
+128I am 9, parallel cost time = 5.29485
+128I am 5, parallel cost time = 5.29936
+128I am 7, parallel cost time = 5.29938
+128I am 3, parallel cost time = 5.30835
+128I am 2, parallel cost time = 5.30846
+128I am 12, parallel cost time = 5.30337
+128I am 11, parallel cost time = 5.30747
+128I am 8, parallel cost time = 5.31101
+100I am 0, parallel cost time = 5.30901
+128I am 14, parallel cost time = 5.31075
+128I am 13, parallel cost time = 5.31152
+128I am 15, parallel cost time = 5.32724
+128I am 10, parallel cost time = 5.3689
+111, MPI_Recv from = 1, slaveInCircleSum = 24546049, sumInCircle = 49092230
+111, MPI_Recv from = 2, slaveInCircleSum = 24543680, sumInCircle = 73635910
+111, MPI_Recv from = 3, slaveInCircleSum = 24541020, sumInCircle = 98176930
+111, MPI_Recv from = 4, slaveInCircleSum = 24541832, sumInCircle = 122718762
+111, MPI_Recv from = 5, slaveInCircleSum = 24542235, sumInCircle = 147260997
+111, MPI_Recv from = 6, slaveInCircleSum = 24541429, sumInCircle = 171802426
+111, MPI_Recv from = 7, slaveInCircleSum = 24546814, sumInCircle = 196349240
+111, MPI_Recv from = 8, slaveInCircleSum = 24541201, sumInCircle = 220890441
+111, MPI_Recv from = 9, slaveInCircleSum = 24542571, sumInCircle = 245433012
+111, MPI_Recv from = 10, slaveInCircleSum = 24539776, sumInCircle = 269972788
+111, MPI_Recv from = 11, slaveInCircleSum = 24545307, sumInCircle = 294518095
+111, MPI_Recv from = 12, slaveInCircleSum = 24547849, sumInCircle = 319065944
+111, MPI_Recv from = 13, slaveInCircleSum = 24539845, sumInCircle = 343605789
+111, MPI_Recv from = 14, slaveInCircleSum = 24547447, sumInCircle = 368153236
+111, MPI_Recv from = 15, slaveInCircleSum = 24543634, sumInCircle = 392696870
+128I am 1, parallel cost time = 5.7319
+139, The pi is 0, cost time is 6.76423
+139, The pi is 0, cost time is 6.76302
+139, The pi is 0, cost time is 6.76364
+139, The pi is 3.14157, cost time is 6.76534
+139, The pi is 0, cost time is 6.75987
+139, The pi is 0, cost time is 6.76339
+139, The pi is 0, cost time is 6.75943
+139, The pi is 0, cost time is 6.76326
+139, The pi is 0, cost time is 6.76433
+139, The pi is 0, cost time is 6.76425
+139, The pi is 0, cost time is 6.75929
+139, The pi is 0, cost time is 6.76377
+139, The pi is 0, cost time is 6.76335
+139, The pi is 0, cost time is 6.76063
+139, The pi is 0, cost time is 6.76299
+139, The pi is 0, cost time is 6.76284
+this is p4-5 --------------------
+66, This is id 3 out of 20
+86, getRandom cost time = 1.03756
+66, This is id 4 out of 20
+86, getRandom cost time = 1.03709
+66, This is id 0 out of 20
+86, getRandom cost time = 1.03916
+66, This is id 1 out of 20
+86, getRandom cost time = 1.03865
+66, This is id 2 out of 20
+86, getRandom cost time = 1.03817
+66, This is id 17 out of 20
+86, getRandom cost time = 1.03154
+66, This is id 10 out of 20
+86, getRandom cost time = 1.03933
+66, This is id 5 out of 20
+86, getRandom cost time = 1.03901
+66, This is id 18 out of 20
+86, getRandom cost time = 1.03101
+66, This is id 11 out of 20
+86, getRandom cost time = 1.03868
+66, This is id 6 out of 20
+86, getRandom cost time = 1.03838
+66, This is id 19 out of 20
+86, getRandom cost time = 1.03076
+66, This is id 12 out of 20
+86, getRandom cost time = 1.03804
+66, This is id 7 out of 20
+86, getRandom cost time = 1.03755
+66, This is id 15 out of 20
+86, getRandom cost time = 1.033
+66, This is id 13 out of 20
+86, getRandom cost time = 1.03765
+66, This is id 8 out of 20
+86, getRandom cost time = 1.03747
+66, This is id 16 out of 20
+86, getRandom cost time = 1.03208
+66, This is id 14 out of 20
+86, getRandom cost time = 1.03767
+66, This is id 9 out of 20
+86, getRandom cost time = 1.03755
+128I am 6, parallel cost time = 4.23163
+128I am 8, parallel cost time = 4.23825
+128I am 11, parallel cost time = 4.237
+128I am 5, parallel cost time = 4.24071
+128I am 10, parallel cost time = 4.23883
+128I am 14, parallel cost time = 4.23773
+128I am 1, parallel cost time = 4.2436
+128I am 12, parallel cost time = 4.24004
+128I am 15, parallel cost time = 4.24773
+100I am 0, parallel cost time = 4.24674
+111, MPI_Recv from = 1, slaveInCircleSum = 19630366, sumInCircle = 39266862
+128I am 4, parallel cost time = 4.25569
+128I am 17, parallel cost time = 4.24852
+128I am 18, parallel cost time = 4.25018
+128I am 13, parallel cost time = 4.2536
+128I am 7, parallel cost time = 4.26511
+128I am 9, parallel cost time = 4.26808
+128I am 16, parallel cost time = 4.31135
+128I am 19, parallel cost time = 4.42881
+128I am 3, parallel cost time = 4.45741
+111, MPI_Recv from = 2, slaveInCircleSum = 19635364, sumInCircle = 58902226
+111, MPI_Recv from = 3, slaveInCircleSum = 19636320, sumInCircle = 78538546
+111, MPI_Recv from = 4, slaveInCircleSum = 19637442, sumInCircle = 98175988
+111, MPI_Recv from = 5, slaveInCircleSum = 19635894, sumInCircle = 117811882
+111, MPI_Recv from = 6, slaveInCircleSum = 19633977, sumInCircle = 137445859
+111, MPI_Recv from = 7, slaveInCircleSum = 19637556, sumInCircle = 157083415
+111, MPI_Recv from = 8, slaveInCircleSum = 19634126, sumInCircle = 176717541
+111, MPI_Recv from = 9, slaveInCircleSum = 19634695, sumInCircle = 196352236
+111, MPI_Recv from = 10, slaveInCircleSum = 19636438, sumInCircle = 215988674
+111, MPI_Recv from = 11, slaveInCircleSum = 19635666, sumInCircle = 235624340
+111, MPI_Recv from = 12, slaveInCircleSum = 19633861, sumInCircle = 255258201
+111, MPI_Recv from = 13, slaveInCircleSum = 19634682, sumInCircle = 274892883
+111, MPI_Recv from = 14, slaveInCircleSum = 19633041, sumInCircle = 294525924
+111, MPI_Recv from = 15, slaveInCircleSum = 19632098, sumInCircle = 314158022
+111, MPI_Recv from = 16, slaveInCircleSum = 19635138, sumInCircle = 333793160
+111, MPI_Recv from = 17, slaveInCircleSum = 19635063, sumInCircle = 353428223
+111, MPI_Recv from = 18, slaveInCircleSum = 19633512, sumInCircle = 373061735
+111, MPI_Recv from = 19, slaveInCircleSum = 19635135, sumInCircle = 392696870
+128I am 2, parallel cost time = 4.70613
+139, The pi is 0, cost time is 5.7459
+139, The pi is 0, cost time is 5.74675
+139, The pi is 0, cost time is 5.74632
+139, The pi is 0, cost time is 5.74743
+139, The pi is 0, cost time is 5.74668
+139, The pi is 0, cost time is 5.7465
+139, The pi is 3.14157, cost time is 5.74903
+139, The pi is 0, cost time is 5.74759
+139, The pi is 0, cost time is 5.74791
+139, The pi is 0, cost time is 5.73954
+139, The pi is 0, cost time is 5.74165
+139, The pi is 0, cost time is 5.74069
+139, The pi is 0, cost time is 5.74633
+139, The pi is 0, cost time is 5.73988
+139, The pi is 0, cost time is 5.74634
+139, The pi is 0, cost time is 5.74793
+139, The pi is 0, cost time is 5.74718
+139, The pi is 0, cost time is 5.74723
+139, The pi is 0, cost time is 5.74142
+139, The pi is 0, cost time is 5.74794
+this is p4-6 --------------------
+66, This is id 0 out of 24
+86, getRandom cost time = 1.04494
+66, This is id 1 out of 24
+86, getRandom cost time = 1.04428
+66, This is id 2 out of 24
+86, getRandom cost time = 1.04352
+66, This is id 3 out of 24
+86, getRandom cost time = 1.04291
+66, This is id 4 out of 24
+86, getRandom cost time = 1.04029
+66, This is id 5 out of 24
+86, getRandom cost time = 1.04168
+66, This is id 10 out of 24
+86, getRandom cost time = 1.04169
+66, This is id 12 out of 24
+86, getRandom cost time = 1.04357
+66, This is id 11 out of 24
+86, getRandom cost time = 1.0413
+66, This is id 13 out of 24
+86, getRandom cost time = 1.04455
+66, This is id 6 out of 24
+86, getRandom cost time = 1.04458
+66, This is id 14 out of 24
+86, getRandom cost time = 1.04383
+66, This is id 7 out of 24
+86, getRandom cost time = 1.04331
+66, This is id 15 out of 24
+86, getRandom cost time = 1.04348
+66, This is id 16 out of 24
+86, getRandom cost time = 1.04271
+66, This is id 8 out of 24
+86, getRandom cost time = 1.04268
+66, This is id 9 out of 24
+86, getRandom cost time = 1.04147
+66, This is id 17 out of 24
+86, getRandom cost time = 1.04266
+66, This is id 18 out of 24
+86, getRandom cost time = 1.03964
+66, This is id 19 out of 24
+86, getRandom cost time = 1.039
+66, This is id 20 out of 24
+86, getRandom cost time = 1.03847
+66, This is id 21 out of 24
+86, getRandom cost time = 1.03861
+66, This is id 22 out of 24
+86, getRandom cost time = 1.03685
+66, This is id 23 out of 24
+86, getRandom cost time = 1.04547
+128I am 7, parallel cost time = 3.53188
+128I am 8, parallel cost time = 3.53207
+128I am 12, parallel cost time = 3.53072
+128I am 11, parallel cost time = 3.53216
+128I am 3, parallel cost time = 3.53619
+128I am 10, parallel cost time = 3.53334
+128I am 6, parallel cost time = 3.53897
+128I am 5, parallel cost time = 3.54186
+128I am 9, parallel cost time = 3.54035
+128I am 4, parallel cost time = 3.54404
+128I am 20, parallel cost time = 3.53809
+128I am 1, parallel cost time = 3.54881
+128I am 18, parallel cost time = 3.54246
+128I am 23, parallel cost time = 3.542
+128I am 22, parallel cost time = 3.54923
+128I am 15, parallel cost time = 3.55374
+100I am 0, parallel cost time = 3.55073
+111, MPI_Recv from = 1, slaveInCircleSum = 16362316, sumInCircle = 32725071
+128I am 13, parallel cost time = 3.55838
+128I am 17, parallel cost time = 3.55922
+128I am 16, parallel cost time = 3.56501
+128I am 21, parallel cost time = 3.56288
+128I am 2, parallel cost time = 3.57317
+111, MPI_Recv from = 2, slaveInCircleSum = 16361871, sumInCircle = 49086942
+111, MPI_Recv from = 3, slaveInCircleSum = 16362861, sumInCircle = 65449803
+111, MPI_Recv from = 4, slaveInCircleSum = 16363529, sumInCircle = 81813332
+111, MPI_Recv from = 5, slaveInCircleSum = 16359587, sumInCircle = 98172919
+111, MPI_Recv from = 6, slaveInCircleSum = 16364182, sumInCircle = 114537101
+111, MPI_Recv from = 7, slaveInCircleSum = 16362935, sumInCircle = 130900036
+111, MPI_Recv from = 8, slaveInCircleSum = 16361345, sumInCircle = 147261381
+111, MPI_Recv from = 9, slaveInCircleSum = 16364136, sumInCircle = 163625517
+111, MPI_Recv from = 10, slaveInCircleSum = 16360841, sumInCircle = 179986358
+111, MPI_Recv from = 11, slaveInCircleSum = 16360082, sumInCircle = 196346440
+111, MPI_Recv from = 12, slaveInCircleSum = 16364214, sumInCircle = 212710654
+111, MPI_Recv from = 13, slaveInCircleSum = 16360833, sumInCircle = 229071487
+128I am 19, parallel cost time = 3.65994
+111, MPI_Recv from = 14, slaveInCircleSum = 16361994, sumInCircle = 245433481
+111, MPI_Recv from = 15, slaveInCircleSum = 16362765, sumInCircle = 261796246
+111, MPI_Recv from = 16, slaveInCircleSum = 16363282, sumInCircle = 278159528
+111, MPI_Recv from = 17, slaveInCircleSum = 16362168, sumInCircle = 294521696
+111, MPI_Recv from = 18, slaveInCircleSum = 16360744, sumInCircle = 310882440
+111, MPI_Recv from = 19, slaveInCircleSum = 16363384, sumInCircle = 327245824
+111, MPI_Recv from = 20, slaveInCircleSum = 16361938, sumInCircle = 343607762
+111, MPI_Recv from = 21, slaveInCircleSum = 16361660, sumInCircle = 359969422
+111, MPI_Recv from = 22, slaveInCircleSum = 16362700, sumInCircle = 376332122
+111, MPI_Recv from = 23, slaveInCircleSum = 16364748, sumInCircle = 392696870
+128I am 14, parallel cost time = 3.82684
+139, The pi is 0, cost time is 4.87464
+139, The pi is 0, cost time is 4.87886
+139, The pi is 0, cost time is 4.87621
+139, The pi is 3.14157, cost time is 4.87948
+139, The pi is 0, cost time is 4.87805
+139, The pi is 0, cost time is 4.87585
+139, The pi is 0, cost time is 4.87736
+139, The pi is 0, cost time is 4.87637
+139, The pi is 0, cost time is 4.87891
+139, The pi is 0, cost time is 4.87815
+139, The pi is 0, cost time is 4.8734
+139, The pi is 0, cost time is 4.87781
+139, The pi is 0, cost time is 4.87284
+139, The pi is 0, cost time is 4.87711
+139, The pi is 0, cost time is 4.87798
+139, The pi is 0, cost time is 4.87301
+139, The pi is 0, cost time is 4.87698
+139, The pi is 0, cost time is 4.87409
+139, The pi is 0, cost time is 4.87895
+139, The pi is 0, cost time is 4.87093
+139, The pi is 0, cost time is 4.87969
+139, The pi is 0, cost time is 4.87314
+139, The pi is 0, cost time is 4.87801
+139, The pi is 0, cost time is 4.88198
+this is p4-7 --------------------
+66, This is id 2 out of 28
+86, getRandom cost time = 1.05002
+66, This is id 3 out of 28
+86, getRandom cost time = 1.04929
+66, This is id 4 out of 28
+86, getRandom cost time = 1.04875
+66, This is id 5 out of 28
+86, getRandom cost time = 1.04712
+66, This is id 6 out of 28
+86, getRandom cost time = 1.0467
+66, This is id 0 out of 28
+86, getRandom cost time = 1.05144
+66, This is id 1 out of 28
+86, getRandom cost time = 1.0506
+66, This is id 11 out of 28
+86, getRandom cost time = 1.04802
+66, This is id 14 out of 28
+86, getRandom cost time = 1.05115
+66, This is id 12 out of 28
+86, getRandom cost time = 1.04695
+66, This is id 15 out of 28
+86, getRandom cost time = 1.05057
+66, This is id 13 out of 28
+66, This is id 16 out of 28
+86, getRandom cost time = 1.04993
+66, This is id 7 out of 28
+86, getRandom cost time = 1.05012
+66, This is id 17 out of 28
+86, getRandom cost time = 1.04954
+66, This is id 8 out of 28
+86, getRandom cost time = 1.04953
+66, This is id 18 out of 28
+86, getRandom cost time = 1.04885
+66, This is id 9 out of 28
+86, getRandom cost time = 1.04884
+66, This is id 19 out of 28
+86, getRandom cost time = 1.04766
+66, This is id 10 out of 28
+86, getRandom cost time = 1.04811
+66, This is id 20 out of 28
+86, getRandom cost time = 1.04724
+66, This is id 27 out of 28
+86, getRandom cost time = 1.04068
+66, This is id 21 out of 28
+86, getRandom cost time = 1.04479
+66, This is id 22 out of 28
+86, getRandom cost time = 1.04402
+66, This is id 23 out of 28
+86, getRandom cost time = 1.04346
+66, This is id 24 out of 28
+86, getRandom cost time = 1.04277
+66, This is id 25 out of 28
+86, getRandom cost time = 1.04231
+66, This is id 26 out of 28
+86, getRandom cost time = 1.0409
+86, getRandom cost time = 1.04661
+128I am 8, parallel cost time = 3.02388
+128I am 9, parallel cost time = 3.02512
+128I am 7, parallel cost time = 3.0261
+128I am 12, parallel cost time = 3.02482
+128I am 2, parallel cost time = 3.03135
+128I am 16, parallel cost time = 3.02674
+128I am 11, parallel cost time = 3.02995
+128I am 14, parallel cost time = 3.02885
+128I am 3, parallel cost time = 3.03388
+128I am 20, parallel cost time = 3.02705
+128I am 10, parallel cost time = 3.03255
+128I am 15, parallel cost time = 3.03047
+128I am 19, parallel cost time = 3.02955
+128I am 5, parallel cost time = 3.03623
+128I am 4, parallel cost time = 3.03881
+128I am 26, parallel cost time = 3.02939
+128I am 25, parallel cost time = 3.03084
+128I am 6, parallel cost time = 3.04062
+128I am 22, parallel cost time = 3.03388
+128I am 21, parallel cost time = 3.03648
+128I am 27, parallel cost time = 3.0372
+100I am 0, parallel cost time = 3.04863
+128I am 1, parallel cost time = 3.05938
+111, MPI_Recv from = 1, slaveInCircleSum = 14026261, sumInCircle = 28050415
+111, MPI_Recv from = 2, slaveInCircleSum = 14026465, sumInCircle = 42076880
+111, MPI_Recv from = 3, slaveInCircleSum = 14026308, sumInCircle = 56103188
+111, MPI_Recv from = 4, slaveInCircleSum = 14025181, sumInCircle = 70128369
+111, MPI_Recv from = 5, slaveInCircleSum = 14023744, sumInCircle = 84152113
+111, MPI_Recv from = 6, slaveInCircleSum = 14023682, sumInCircle = 98175795
+111, MPI_Recv from = 7, slaveInCircleSum = 14022236, sumInCircle = 112198031
+111, MPI_Recv from = 8, slaveInCircleSum = 14025405, sumInCircle = 126223436
+111, MPI_Recv from = 9, slaveInCircleSum = 14024996, sumInCircle = 140248432
+111, MPI_Recv from = 10, slaveInCircleSum = 14024316, sumInCircle = 154272748
+111, MPI_Recv from = 11, slaveInCircleSum = 14024562, sumInCircle = 168297310
+111, MPI_Recv from = 12, slaveInCircleSum = 14025596, sumInCircle = 182322906
+128I am 23, parallel cost time = 3.05549
+128I am 18, parallel cost time = 3.16541
+111, MPI_Recv from = 13, slaveInCircleSum = 14024343, sumInCircle = 196347249
+111, MPI_Recv from = 14, slaveInCircleSum = 14025722, sumInCircle = 210372971
+111, MPI_Recv from = 15, slaveInCircleSum = 14027757, sumInCircle = 224400728
+111, MPI_Recv from = 16, slaveInCircleSum = 14023197, sumInCircle = 238423925
+128I am 13, parallel cost time = 3.17775
+111, MPI_Recv from = 17, slaveInCircleSum = 14022574, sumInCircle = 252446499
+111, MPI_Recv from = 18, slaveInCircleSum = 14022860, sumInCircle = 266469359
+111, MPI_Recv from = 19, slaveInCircleSum = 14026547, sumInCircle = 280495906
+111, MPI_Recv from = 20, slaveInCircleSum = 14028043, sumInCircle = 294523949
+111, MPI_Recv from = 21, slaveInCircleSum = 14024690, sumInCircle = 308548639
+111, MPI_Recv from = 22, slaveInCircleSum = 14024530, sumInCircle = 322573169
+111, MPI_Recv from = 23, slaveInCircleSum = 14025497, sumInCircle = 336598666
+128I am 17, parallel cost time = 3.24377
+111, MPI_Recv from = 24, slaveInCircleSum = 14025487, sumInCircle = 350624153
+111, MPI_Recv from = 25, slaveInCircleSum = 14024092, sumInCircle = 364648245
+111, MPI_Recv from = 26, slaveInCircleSum = 14024757, sumInCircle = 378673002
+111, MPI_Recv from = 27, slaveInCircleSum = 14023868, sumInCircle = 392696870
+128I am 24, parallel cost time = 3.37914
+139, The pi is 0, cost time is 4.44103
+139, The pi is 0, cost time is 4.44053
+139, The pi is 0, cost time is 4.43991
+139, The pi is 3.14157, cost time is 4.44213
+139, The pi is 0, cost time is 4.43742
+139, The pi is 0, cost time is 4.43788
+139, The pi is 0, cost time is 4.44168
+139, The pi is 0, cost time is 4.43398
+139, The pi is 0, cost time is 4.43143
+139, The pi is 0, cost time is 4.43287
+139, The pi is 0, cost time is 4.43126
+139, The pi is 0, cost time is 4.43547
+139, The pi is 0, cost time is 4.43927
+139, The pi is 0, cost time is 4.43357
+139, The pi is 0, cost time is 4.44071
+139, The pi is 0, cost time is 4.44043
+139, The pi is 0, cost time is 4.44028
+139, The pi is 0, cost time is 4.43761
+139, The pi is 0, cost time is 4.43969
+139, The pi is 0, cost time is 4.43795
+139, The pi is 0, cost time is 4.43848
+139, The pi is 0, cost time is 4.44122
+139, The pi is 0, cost time is 4.4414
+139, The pi is 0, cost time is 4.43909
+139, The pi is 0, cost time is 4.44205
+139, The pi is 0, cost time is 4.44084
+139, The pi is 0, cost time is 4.43974
+139, The pi is 0, cost time is 4.43671
+this is p4-8 --------------------
+66, This is id 2 out of 32
+86, getRandom cost time = 1.05624
+66, This is id 3 out of 32
+86, getRandom cost time = 1.05542
+66, This is id 4 out of 32
+86, getRandom cost time = 1.05542
+66, This is id 5 out of 32
+86, getRandom cost time = 1.05407
+66, This is id 6 out of 32
+86, getRandom cost time = 1.05329
+66, This is id 7 out of 32
+86, getRandom cost time = 1.05266
+66, This is id 0 out of 32
+86, getRandom cost time = 1.05762
+66, This is id 1 out of 32
+86, getRandom cost time = 1.05691
+66, This is id 16 out of 32
+86, getRandom cost time = 1.05735
+66, This is id 17 out of 32
+86, getRandom cost time = 1.05681
+66, This is id 18 out of 32
+86, getRandom cost time = 1.0561
+66, This is id 19 out of 32
+86, getRandom cost time = 1.05549
+66, This is id 20 out of 32
+86, getRandom cost time = 1.05542
+66, This is id 21 out of 32
+86, getRandom cost time = 1.05427
+66, This is id 22 out of 32
+86, getRandom cost time = 1.05357
+66, This is id 23 out of 32
+86, getRandom cost time = 1.05323
+66, This is id 8 out of 32
+86, getRandom cost time = 1.05736
+66, This is id 9 out of 32
+86, getRandom cost time = 1.05658
+66, This is id 10 out of 32
+86, getRandom cost time = 1.05567
+66, This is id 11 out of 32
+86, getRandom cost time = 1.05546
+66, This is id 12 out of 32
+86, getRandom cost time = 1.05519
+66, This is id 13 out of 32
+86, getRandom cost time = 1.0538
+66, This is id 14 out of 32
+86, getRandom cost time = 1.05297
+66, This is id 15 out of 32
+86, getRandom cost time = 1.05283
+66, This is id 24 out of 32
+86, getRandom cost time = 1.05039
+66, This is id 25 out of 32
+86, getRandom cost time = 1.04986
+66, This is id 26 out of 32
+86, getRandom cost time = 1.04922
+66, This is id 27 out of 32
+86, getRandom cost time = 1.04833
+66, This is id 28 out of 32
+86, getRandom cost time = 1.04833
+66, This is id 29 out of 32
+86, getRandom cost time = 1.04708
+66, This is id 30 out of 32
+86, getRandom cost time = 1.04643
+66, This is id 31 out of 32
+86, getRandom cost time = 1.04607
+128I am 10, parallel cost time = 2.64692
+128I am 11, parallel cost time = 2.64827
+128I am 18, parallel cost time = 2.64525
+128I am 12, parallel cost time = 2.6485
+128I am 13, parallel cost time = 2.6481
+128I am 14, parallel cost time = 2.64799
+128I am 17, parallel cost time = 2.6474
+128I am 19, parallel cost time = 2.64663
+128I am 3, parallel cost time = 2.65377
+128I am 6, parallel cost time = 2.65572
+128I am 20, parallel cost time = 2.64974
+128I am 4, parallel cost time = 2.65698
+128I am 22, parallel cost time = 2.65063
+128I am 16, parallel cost time = 2.65555
+128I am 30, parallel cost time = 2.65014
+128I am 23, parallel cost time = 2.65363
+128I am 25, parallel cost time = 2.65279
+128I am 26, parallel cost time = 2.65251
+128I am 7, parallel cost time = 2.6617
+128I am 21, parallel cost time = 2.65516
+128I am 28, parallel cost time = 2.65561
+128I am 29, parallel cost time = 2.65673
+128I am 1, parallel cost time = 2.6744
+128I am 2, parallel cost time = 2.67544
+128I am 9, parallel cost time = 2.67732
+128I am 27, parallel cost time = 2.67532
+128I am 31, parallel cost time = 2.67543
+100I am 0, parallel cost time = 2.67781
+111, MPI_Recv from = 1, slaveInCircleSum = 12271737, sumInCircle = 24546947
+111, MPI_Recv from = 2, slaveInCircleSum = 12269186, sumInCircle = 36816133
+111, MPI_Recv from = 3, slaveInCircleSum = 12269469, sumInCircle = 49085602
+111, MPI_Recv from = 4, slaveInCircleSum = 12267617, sumInCircle = 61353219
+128I am 15, parallel cost time = 2.69432
+128I am 5, parallel cost time = 2.73644
+111, MPI_Recv from = 5, slaveInCircleSum = 12269751, sumInCircle = 73622970
+111, MPI_Recv from = 6, slaveInCircleSum = 12272309, sumInCircle = 85895279
+111, MPI_Recv from = 7, slaveInCircleSum = 12274925, sumInCircle = 98170204
+111, MPI_Recv from = 8, slaveInCircleSum = 12272010, sumInCircle = 110442214
+111, MPI_Recv from = 9, slaveInCircleSum = 12269371, sumInCircle = 122711585
+111, MPI_Recv from = 10, slaveInCircleSum = 12267507, sumInCircle = 134979092
+111, MPI_Recv from = 11, slaveInCircleSum = 12273124, sumInCircle = 147252216
+111, MPI_Recv from = 12, slaveInCircleSum = 12276143, sumInCircle = 159528359
+111, MPI_Recv from = 13, slaveInCircleSum = 12267882, sumInCircle = 171796241
+111, MPI_Recv from = 14, slaveInCircleSum = 12272150, sumInCircle = 184068391
+111, MPI_Recv from = 15, slaveInCircleSum = 12273198, sumInCircle = 196341589
+111, MPI_Recv from = 16, slaveInCircleSum = 12270971, sumInCircle = 208612560
+111, MPI_Recv from = 17, slaveInCircleSum = 12274312, sumInCircle = 220886872
+111, MPI_Recv from = 18, slaveInCircleSum = 12274494, sumInCircle = 233161366
+111, MPI_Recv from = 19, slaveInCircleSum = 12271551, sumInCircle = 245432917
+111, MPI_Recv from = 20, slaveInCircleSum = 12274215, sumInCircle = 257707132
+111, MPI_Recv from = 21, slaveInCircleSum = 12272484, sumInCircle = 269979616
+111, MPI_Recv from = 22, slaveInCircleSum = 12269120, sumInCircle = 282248736
+111, MPI_Recv from = 23, slaveInCircleSum = 12271889, sumInCircle = 294520625
+128I am 8, parallel cost time = 2.76377
+111, MPI_Recv from = 24, slaveInCircleSum = 12269191, sumInCircle = 306789816
+111, MPI_Recv from = 25, slaveInCircleSum = 12273200, sumInCircle = 319063016
+111, MPI_Recv from = 26, slaveInCircleSum = 12272269, sumInCircle = 331335285
+111, MPI_Recv from = 27, slaveInCircleSum = 12272183, sumInCircle = 343607468
+111, MPI_Recv from = 28, slaveInCircleSum = 12271706, sumInCircle = 355879174
+111, MPI_Recv from = 29, slaveInCircleSum = 12271963, sumInCircle = 368151137
+111, MPI_Recv from = 30, slaveInCircleSum = 12275297, sumInCircle = 380426434
+111, MPI_Recv from = 31, slaveInCircleSum = 12270436, sumInCircle = 392696870
+128I am 24, parallel cost time = 2.77893
+139, The pi is 3.14157, cost time is 3.84818
+139, The pi is 0, cost time is 3.84745
+139, The pi is 0, cost time is 3.8438
+139, The pi is 0, cost time is 3.84458
+139, The pi is 0, cost time is 3.84594
+139, The pi is 0, cost time is 3.84594
+139, The pi is 0, cost time is 3.84675
+139, The pi is 0, cost time is 3.84705
+139, The pi is 0, cost time is 3.84373
+139, The pi is 0, cost time is 3.84635
+139, The pi is 0, cost time is 3.84343
+139, The pi is 0, cost time is 3.84717
+139, The pi is 0, cost time is 3.84573
+139, The pi is 0, cost time is 3.84566
+139, The pi is 0, cost time is 3.84313
+139, The pi is 0, cost time is 3.84685
+139, The pi is 0, cost time is 3.8458
+139, The pi is 0, cost time is 3.84561
+139, The pi is 0, cost time is 3.84546
+139, The pi is 0, cost time is 3.84724
+139, The pi is 0, cost time is 3.84003
+139, The pi is 0, cost time is 3.83605
+139, The pi is 0, cost time is 3.84001
+139, The pi is 0, cost time is 3.8372
+139, The pi is 0, cost time is 3.83885
+139, The pi is 0, cost time is 3.83813
+139, The pi is 0, cost time is 3.83821
+139, The pi is 0, cost time is 3.8455
+139, The pi is 0, cost time is 3.84488
+139, The pi is 0, cost time is 3.84678
+139, The pi is 0, cost time is 3.84127
+139, The pi is 0, cost time is 3.84682
+this is p5-1 --------------------
+66, This is id 1 out of 5
+86, getRandom cost time = 1.01365
+66, This is id 2 out of 5
+86, getRandom cost time = 1.01351
+66, This is id 0 out of 5
+86, getRandom cost time = 1.01409
+66, This is id 3 out of 5
+86, getRandom cost time = 1.01342
+66, This is id 4 out of 5
+86, getRandom cost time = 1.01313
+128I am 4, parallel cost time = 16.9344
+128I am 3, parallel cost time = 16.9659
+100I am 0, parallel cost time = 17.0027
+128I am 1, parallel cost time = 17.0348
+111, MPI_Recv from = 1, slaveInCircleSum = 78535147, sumInCircle = 157076073
+111, MPI_Recv from = 2, slaveInCircleSum = 78541844, sumInCircle = 235617917
+111, MPI_Recv from = 3, slaveInCircleSum = 78538640, sumInCircle = 314156557
+111, MPI_Recv from = 4, slaveInCircleSum = 78540313, sumInCircle = 392696870
+128I am 2, parallel cost time = 17.0409
+139, The pi is 0, cost time is 18.0572
+139, The pi is 0, cost time is 18.0567
+139, The pi is 3.14157, cost time is 18.0573
+139, The pi is 0, cost time is 18.0566
+139, The pi is 0, cost time is 18.0566
+this is p5-2 --------------------
+66, This is id 0 out of 10
+86, getRandom cost time = 1.01949
+66, This is id 1 out of 10
+86, getRandom cost time = 1.01863
+66, This is id 2 out of 10
+86, getRandom cost time = 1.01916
+66, This is id 3 out of 10
+86, getRandom cost time = 1.01826
+66, This is id 6 out of 10
+86, getRandom cost time = 1.01729
+66, This is id 7 out of 10
+86, getRandom cost time = 1.01661
+66, This is id 8 out of 10
+86, getRandom cost time = 1.01863
+66, This is id 9 out of 10
+86, getRandom cost time = 1.01813
+66, This is id 4 out of 10
+86, getRandom cost time = 1.01947
+66, This is id 5 out of 10
+86, getRandom cost time = 1.01869
+128I am 4, parallel cost time = 8.46737
+128I am 2, parallel cost time = 8.47831
+128I am 7, parallel cost time = 8.49066
+128I am 9, parallel cost time = 8.49259
+128I am 1, parallel cost time = 8.49756
+128I am 8, parallel cost time = 8.49576
+100I am 0, parallel cost time = 8.5025
+111, MPI_Recv from = 1, slaveInCircleSum = 39266032, sumInCircle = 78538966
+111, MPI_Recv from = 2, slaveInCircleSum = 39269225, sumInCircle = 117808191
+128I am 5, parallel cost time = 8.58839
+111, MPI_Recv from = 3, slaveInCircleSum = 39271002, sumInCircle = 157079193
+111, MPI_Recv from = 4, slaveInCircleSum = 39270483, sumInCircle = 196349676
+111, MPI_Recv from = 5, slaveInCircleSum = 39267992, sumInCircle = 235617668
+128I am 3, parallel cost time = 9.05911
+111, MPI_Recv from = 6, slaveInCircleSum = 39269115, sumInCircle = 274886783
+111, MPI_Recv from = 7, slaveInCircleSum = 39272619, sumInCircle = 314159402
+111, MPI_Recv from = 8, slaveInCircleSum = 39267638, sumInCircle = 353427040
+111, MPI_Recv from = 9, slaveInCircleSum = 39269830, sumInCircle = 392696870
+128I am 6, parallel cost time = 9.55666
+139, The pi is 3.14157, cost time is 10.5816
+139, The pi is 0, cost time is 10.5805
+139, The pi is 0, cost time is 10.5783
+139, The pi is 0, cost time is 10.5793
+139, The pi is 0, cost time is 10.5804
+139, The pi is 0, cost time is 10.5802
+139, The pi is 0, cost time is 10.5915
+139, The pi is 0, cost time is 10.5904
+139, The pi is 0, cost time is 10.5915
+139, The pi is 0, cost time is 10.592
+this is p5-3 --------------------
+66, This is id 2 out of 15
+86, getRandom cost time = 1.02654
+66, This is id 0 out of 15
+86, getRandom cost time = 1.02773
+66, This is id 1 out of 15
+86, getRandom cost time = 1.02729
+66, This is id 9 out of 15
+86, getRandom cost time = 1.02496
+66, This is id 10 out of 15
+86, getRandom cost time = 1.02449
+66, This is id 11 out of 15
+86, getRandom cost time = 1.02404
+66, This is id 13 out of 15
+86, getRandom cost time = 1.0268
+66, This is id 14 out of 15
+86, getRandom cost time = 1.02607
+66, This is id 12 out of 15
+86, getRandom cost time = 1.02728
+66, This is id 7 out of 15
+86, getRandom cost time = 1.02738
+66, This is id 8 out of 15
+86, getRandom cost time = 1.02675
+66, This is id 6 out of 15
+86, getRandom cost time = 1.0277
+66, This is id 3 out of 15
+86, getRandom cost time = 1.02746
+66, This is id 4 out of 15
+86, getRandom cost time = 1.02665
+66, This is id 5 out of 15
+86, getRandom cost time = 1.02635
+128I am 7, parallel cost time = 5.64856
+128I am 3, parallel cost time = 5.65313
+128I am 5, parallel cost time = 5.65306
+100I am 0, parallel cost time = 5.64862
+128I am 4, parallel cost time = 5.65579
+128I am 6, parallel cost time = 5.6558
+128I am 2, parallel cost time = 5.65866
+111, MPI_Recv from = 1, slaveInCircleSum = 26179782, sumInCircle = 52361374
+111, MPI_Recv from = 2, slaveInCircleSum = 26180490, sumInCircle = 78541864
+111, MPI_Recv from = 3, slaveInCircleSum = 26181419, sumInCircle = 104723283
+111, MPI_Recv from = 4, slaveInCircleSum = 26180142, sumInCircle = 130903425
+111, MPI_Recv from = 5, slaveInCircleSum = 26176060, sumInCircle = 157079485
+111, MPI_Recv from = 6, slaveInCircleSum = 26178564, sumInCircle = 183258049
+111, MPI_Recv from = 7, slaveInCircleSum = 26177289, sumInCircle = 209435338
+128I am 1, parallel cost time = 5.65899
+111, MPI_Recv from = 8, slaveInCircleSum = 26177888, sumInCircle = 235613226
+128I am 8, parallel cost time = 5.65572
+128I am 10, parallel cost time = 5.65661
+111, MPI_Recv from = 9, slaveInCircleSum = 26177677, sumInCircle = 261790903
+111, MPI_Recv from = 10, slaveInCircleSum = 26183274, sumInCircle = 287974177
+128I am 9, parallel cost time = 5.65908
+111, MPI_Recv from = 11, slaveInCircleSum = 26176801, sumInCircle = 314150978
+128I am 11, parallel cost time = 5.65994
+128I am 13, parallel cost time = 5.66266
+128I am 14, parallel cost time = 5.66897
+111, MPI_Recv from = 12, slaveInCircleSum = 26184065, sumInCircle = 340335043
+111, MPI_Recv from = 13, slaveInCircleSum = 26179333, sumInCircle = 366514376
+111, MPI_Recv from = 14, slaveInCircleSum = 26182494, sumInCircle = 392696870
+128I am 12, parallel cost time = 5.68911
+139, The pi is 0, cost time is 6.72345
+139, The pi is 0, cost time is 6.72418
+139, The pi is 3.14157, cost time is 6.72509
+139, The pi is 0, cost time is 6.72449
+139, The pi is 0, cost time is 6.7233
+139, The pi is 0, cost time is 6.72398
+139, The pi is 0, cost time is 6.72128
+139, The pi is 0, cost time is 6.72145
+139, The pi is 0, cost time is 6.7219
+139, The pi is 0, cost time is 6.72387
+139, The pi is 0, cost time is 6.72471
+139, The pi is 0, cost time is 6.72397
+139, The pi is 0, cost time is 6.72439
+139, The pi is 0, cost time is 6.72436
+139, The pi is 0, cost time is 6.72336
+this is p5-4 --------------------
+66, This is id 2 out of 20
+86, getRandom cost time = 1.03056
+66, This is id 3 out of 20
+86, getRandom cost time = 1.02988
+66, This is id 0 out of 20
+86, getRandom cost time = 1.03195
+66, This is id 1 out of 20
+86, getRandom cost time = 1.03123
+66, This is id 5 out of 20
+86, getRandom cost time = 1.03084
+66, This is id 6 out of 20
+86, getRandom cost time = 1.02983
+66, This is id 7 out of 20
+86, getRandom cost time = 1.02961
+66, This is id 4 out of 20
+86, getRandom cost time = 1.03121
+66, This is id 16 out of 20
+86, getRandom cost time = 1.03125
+66, This is id 17 out of 20
+86, getRandom cost time = 1.03089
+66, This is id 18 out of 20
+86, getRandom cost time = 1.03022
+66, This is id 19 out of 20
+86, getRandom cost time = 1.02947
+66, This is id 8 out of 20
+86, getRandom cost time = 1.03158
+66, This is id 9 out of 20
+86, getRandom cost time = 1.03101
+66, This is id 10 out of 20
+86, getRandom cost time = 1.0304
+66, This is id 11 out of 20
+86, getRandom cost time = 1.02961
+66, This is id 13 out of 20
+86, getRandom cost time = 1.0334
+66, This is id 14 out of 20
+86, getRandom cost time = 1.03254
+66, This is id 15 out of 20
+86, getRandom cost time = 1.03207
+66, This is id 12 out of 20
+86, getRandom cost time = 1.02829
+128I am 4, parallel cost time = 4.23681
+128I am 5, parallel cost time = 4.23785
+128I am 7, parallel cost time = 4.23761
+128I am 6, parallel cost time = 4.23909
+128I am 8, parallel cost time = 4.23809
+128I am 3, parallel cost time = 4.24949
+128I am 12, parallel cost time = 4.24454
+128I am 11, parallel cost time = 4.24576
+128I am 2, parallel cost time = 4.25169
+128I am 16, parallel cost time = 4.24419
+128I am 14, parallel cost time = 4.24612
+128I am 13, parallel cost time = 4.24764
+128I am 19, parallel cost time = 4.24684
+128I am 9, parallel cost time = 4.25332
+128I am 15, parallel cost time = 4.25014
+100I am 0, parallel cost time = 4.24947
+128I am 18, parallel cost time = 4.25014
+111, MPI_Recv from = 1, slaveInCircleSum = 19630366, sumInCircle = 39266862
+111, MPI_Recv from = 2, slaveInCircleSum = 19635364, sumInCircle = 58902226
+111, MPI_Recv from = 3, slaveInCircleSum = 19636320, sumInCircle = 78538546
+111, MPI_Recv from = 4, slaveInCircleSum = 19637442, sumInCircle = 98175988
+111, MPI_Recv from = 5, slaveInCircleSum = 19635894, sumInCircle = 117811882
+111, MPI_Recv from = 6, slaveInCircleSum = 19633977, sumInCircle = 137445859
+111, MPI_Recv from = 7, slaveInCircleSum = 19637556, sumInCircle = 157083415
+111, MPI_Recv from = 8, slaveInCircleSum = 19634126, sumInCircle = 176717541
+111, MPI_Recv from = 9, slaveInCircleSum = 19634695, sumInCircle = 196352236
+128I am 1, parallel cost time = 4.26753
+128I am 17, parallel cost time = 4.27087
+111, MPI_Recv from = 10, slaveInCircleSum = 19636438, sumInCircle = 215988674
+111, MPI_Recv from = 11, slaveInCircleSum = 19635666, sumInCircle = 235624340
+111, MPI_Recv from = 12, slaveInCircleSum = 19633861, sumInCircle = 255258201
+111, MPI_Recv from = 13, slaveInCircleSum = 19634682, sumInCircle = 274892883
+111, MPI_Recv from = 14, slaveInCircleSum = 19633041, sumInCircle = 294525924
+111, MPI_Recv from = 15, slaveInCircleSum = 19632098, sumInCircle = 314158022
+111, MPI_Recv from = 16, slaveInCircleSum = 19635138, sumInCircle = 333793160
+128I am 10, parallel cost time = 4.42413
+111, MPI_Recv from = 17, slaveInCircleSum = 19635063, sumInCircle = 353428223
+111, MPI_Recv from = 18, slaveInCircleSum = 19633512, sumInCircle = 373061735
+111, MPI_Recv from = 19, slaveInCircleSum = 19635135, sumInCircle = 392696870
+139, The pi is 0, cost time is 5.4617
+139, The pi is 0, cost time is 5.4611
+139, The pi is 0, cost time is 5.4607
+139, The pi is 0, cost time is 5.46228
+139, The pi is 0, cost time is 5.46058
+139, The pi is 0, cost time is 5.4616
+139, The pi is 0, cost time is 5.46097
+139, The pi is 0, cost time is 5.46175
+139, The pi is 0, cost time is 5.46081
+139, The pi is 0, cost time is 5.4615
+139, The pi is 0, cost time is 5.46036
+139, The pi is 0, cost time is 5.45851
+139, The pi is 0, cost time is 5.45777
+139, The pi is 0, cost time is 5.45775
+139, The pi is 0, cost time is 5.45927
+139, The pi is 0, cost time is 5.46204
+139, The pi is 0, cost time is 5.46188
+139, The pi is 0, cost time is 5.4609
+139, The pi is 0, cost time is 5.46018
+139, The pi is 3.14157, cost time is 5.46561
+this is p5-5 --------------------
+66, This is id 0 out of 25
+86, getRandom cost time = 1.03859
+66, This is id 1 out of 25
+86, getRandom cost time = 1.03819
+66, This is id 2 out of 25
+86, getRandom cost time = 1.03743
+66, This is id 3 out of 25
+86, getRandom cost time = 1.03673
+66, This is id 4 out of 25
+86, getRandom cost time = 1.03626
+66, This is id 5 out of 25
+86, getRandom cost time = 1.03833
+66, This is id 20 out of 25
+86, getRandom cost time = 1.03874
+66, This is id 10 out of 25
+86, getRandom cost time = 1.03887
+66, This is id 6 out of 25
+86, getRandom cost time = 1.03774
+66, This is id 21 out of 25
+86, getRandom cost time = 1.03796
+66, This is id 11 out of 25
+86, getRandom cost time = 1.03821
+66, This is id 7 out of 25
+86, getRandom cost time = 1.03704
+66, This is id 22 out of 25
+86, getRandom cost time = 1.03796
+66, This is id 12 out of 25
+86, getRandom cost time = 1.03751
+66, This is id 8 out of 25
+86, getRandom cost time = 1.03659
+66, This is id 23 out of 25
+86, getRandom cost time = 1.03696
+66, This is id 13 out of 25
+86, getRandom cost time = 1.03732
+66, This is id 9 out of 25
+86, getRandom cost time = 1.03647
+66, This is id 24 out of 25
+86, getRandom cost time = 1.03645
+66, This is id 14 out of 25
+66, This is id 15 out of 25
+86, getRandom cost time = 1.03412
+66, This is id 16 out of 25
+86, getRandom cost time = 1.03358
+66, This is id 17 out of 25
+86, getRandom cost time = 1.03298
+66, This is id 18 out of 25
+86, getRandom cost time = 1.03229
+66, This is id 19 out of 25
+86, getRandom cost time = 1.03209
+86, getRandom cost time = 1.03737
+128I am 7, parallel cost time = 3.38614
+128I am 8, parallel cost time = 3.38763
+128I am 13, parallel cost time = 3.38638
+128I am 9, parallel cost time = 3.39173
+128I am 10, parallel cost time = 3.39159
+128I am 6, parallel cost time = 3.3939
+128I am 12, parallel cost time = 3.39155
+128I am 3, parallel cost time = 3.39668
+128I am 11, parallel cost time = 3.39345
+128I am 1, parallel cost time = 3.39735
+128I am 2, parallel cost time = 3.40062
+128I am 19, parallel cost time = 3.39399
+128I am 14, parallel cost time = 3.39673
+128I am 15, parallel cost time = 3.39843
+128I am 17, parallel cost time = 3.39795
+128I am 16, parallel cost time = 3.40002
+128I am 18, parallel cost time = 3.39907
+128I am 24, parallel cost time = 3.39703
+128I am 5, parallel cost time = 3.40859
+128I am 21, parallel cost time = 3.40647
+128I am 20, parallel cost time = 3.41459
+128I am 23, parallel cost time = 3.42748
+100I am 0, parallel cost time = 3.60866
+111, MPI_Recv from = 1, slaveInCircleSum = 15708371, sumInCircle = 31418633
+111, MPI_Recv from = 2, slaveInCircleSum = 15708707, sumInCircle = 47127340
+111, MPI_Recv from = 3, slaveInCircleSum = 15707381, sumInCircle = 62834721
+128I am 22, parallel cost time = 3.65003
+128I am 4, parallel cost time = 3.78247
+111, MPI_Recv from = 4, slaveInCircleSum = 15709034, sumInCircle = 78543755
+111, MPI_Recv from = 5, slaveInCircleSum = 15706535, sumInCircle = 94250290
+111, MPI_Recv from = 6, slaveInCircleSum = 15707093, sumInCircle = 109957383
+111, MPI_Recv from = 7, slaveInCircleSum = 15707053, sumInCircle = 125664436
+111, MPI_Recv from = 8, slaveInCircleSum = 15710284, sumInCircle = 141374720
+111, MPI_Recv from = 9, slaveInCircleSum = 15707526, sumInCircle = 157082246
+111, MPI_Recv from = 10, slaveInCircleSum = 15708610, sumInCircle = 172790856
+111, MPI_Recv from = 11, slaveInCircleSum = 15707006, sumInCircle = 188497862
+111, MPI_Recv from = 12, slaveInCircleSum = 15708539, sumInCircle = 204206401
+111, MPI_Recv from = 13, slaveInCircleSum = 15705722, sumInCircle = 219912123
+111, MPI_Recv from = 14, slaveInCircleSum = 15705684, sumInCircle = 235617807
+111, MPI_Recv from = 15, slaveInCircleSum = 15708347, sumInCircle = 251326154
+111, MPI_Recv from = 16, slaveInCircleSum = 15708776, sumInCircle = 267034930
+111, MPI_Recv from = 17, slaveInCircleSum = 15710064, sumInCircle = 282744994
+111, MPI_Recv from = 18, slaveInCircleSum = 15708065, sumInCircle = 298453059
+111, MPI_Recv from = 19, slaveInCircleSum = 15708047, sumInCircle = 314161106
+111, MPI_Recv from = 20, slaveInCircleSum = 15707172, sumInCircle = 329868278
+111, MPI_Recv from = 21, slaveInCircleSum = 15703901, sumInCircle = 345572179
+111, MPI_Recv from = 22, slaveInCircleSum = 15707481, sumInCircle = 361279660
+111, MPI_Recv from = 23, slaveInCircleSum = 15707188, sumInCircle = 376986848
+111, MPI_Recv from = 24, slaveInCircleSum = 15710022, sumInCircle = 392696870
+139, The pi is 0, cost time is 4.82233
+139, The pi is 0, cost time is 4.82165
+139, The pi is 0, cost time is 4.82327
+139, The pi is 0, cost time is 4.82126
+139, The pi is 0, cost time is 4.81886
+139, The pi is 0, cost time is 4.82169
+139, The pi is 0, cost time is 4.81879
+139, The pi is 0, cost time is 4.82219
+139, The pi is 3.14157, cost time is 4.82493
+139, The pi is 0, cost time is 4.81743
+139, The pi is 0, cost time is 4.82352
+139, The pi is 0, cost time is 4.82356
+139, The pi is 0, cost time is 4.82296
+139, The pi is 0, cost time is 4.81693
+139, The pi is 0, cost time is 4.82334
+139, The pi is 0, cost time is 4.82224
+139, The pi is 0, cost time is 4.82215
+139, The pi is 0, cost time is 4.82242
+139, The pi is 0, cost time is 4.82343
+139, The pi is 0, cost time is 4.8226
+139, The pi is 0, cost time is 4.8223
+139, The pi is 0, cost time is 4.8243
+139, The pi is 0, cost time is 4.82319
+139, The pi is 0, cost time is 4.82334
+139, The pi is 0, cost time is 4.81981
+this is p5-6 --------------------
+66, This is id 0 out of 30
+86, getRandom cost time = 1.04596
+66, This is id 1 out of 30
+86, getRandom cost time = 1.04532
+66, This is id 2 out of 30
+86, getRandom cost time = 1.04475
+66, This is id 3 out of 30
+86, getRandom cost time = 1.04402
+66, This is id 4 out of 30
+86, getRandom cost time = 1.04342
+66, This is id 5 out of 30
+86, getRandom cost time = 1.04297
+66, This is id 18 out of 30
+86, getRandom cost time = 1.04128
+66, This is id 19 out of 30
+86, getRandom cost time = 1.04047
+66, This is id 20 out of 30
+86, getRandom cost time = 1.03985
+66, This is id 24 out of 30
+86, getRandom cost time = 1.04553
+66, This is id 21 out of 30
+86, getRandom cost time = 1.03929
+66, This is id 25 out of 30
+86, getRandom cost time = 1.04516
+66, This is id 22 out of 30
+86, getRandom cost time = 1.03877
+66, This is id 26 out of 30
+86, getRandom cost time = 1.04431
+66, This is id 23 out of 30
+86, getRandom cost time = 1.0386
+66, This is id 27 out of 30
+86, getRandom cost time = 1.04365
+66, This is id 28 out of 30
+86, getRandom cost time = 1.04365
+66, This is id 29 out of 30
+86, getRandom cost time = 1.04294
+66, This is id 12 out of 30
+86, getRandom cost time = 1.04559
+66, This is id 13 out of 30
+86, getRandom cost time = 1.04508
+66, This is id 14 out of 30
+86, getRandom cost time = 1.04432
+66, This is id 15 out of 30
+86, getRandom cost time = 1.04346
+66, This is id 16 out of 30
+86, getRandom cost time = 1.04324
+66, This is id 17 out of 30
+86, getRandom cost time = 1.0428
+66, This is id 10 out of 30
+86, getRandom cost time = 1.04332
+66, This is id 11 out of 30
+86, getRandom cost time = 1.04309
+66, This is id 6 out of 30
+86, getRandom cost time = 1.04563
+66, This is id 7 out of 30
+86, getRandom cost time = 1.04499
+66, This is id 8 out of 30
+86, getRandom cost time = 1.04427
+66, This is id 9 out of 30
+86, getRandom cost time = 1.04404
+128I am 6, parallel cost time = 2.82486
+128I am 5, parallel cost time = 2.82631
+128I am 13, parallel cost time = 2.82256
+128I am 12, parallel cost time = 2.82453
+128I am 10, parallel cost time = 2.82611
+128I am 2, parallel cost time = 2.82902
+128I am 9, parallel cost time = 2.82709
+128I am 14, parallel cost time = 2.82626
+128I am 11, parallel cost time = 2.82812
+128I am 16, parallel cost time = 2.82661
+128I am 17, parallel cost time = 2.82664
+128I am 3, parallel cost time = 2.83351
+128I am 18, parallel cost time = 2.82701
+128I am 21, parallel cost time = 2.82958
+128I am 24, parallel cost time = 2.8287
+128I am 19, parallel cost time = 2.83266
+128I am 20, parallel cost time = 2.83355
+128I am 22, parallel cost time = 2.83299
+128I am 23, parallel cost time = 2.83356
+128I am 28, parallel cost time = 2.83148
+128I am 26, parallel cost time = 2.83293
+100I am 0, parallel cost time = 2.8335
+128I am 27, parallel cost time = 2.83408
+128I am 29, parallel cost time = 2.83351
+128I am 25, parallel cost time = 2.83577
+128I am 1, parallel cost time = 2.87182
+111, MPI_Recv from = 1, slaveInCircleSum = 13089611, sumInCircle = 26182216
+111, MPI_Recv from = 2, slaveInCircleSum = 13090504, sumInCircle = 39272720
+111, MPI_Recv from = 3, slaveInCircleSum = 13091501, sumInCircle = 52364221
+128I am 4, parallel cost time = 2.96046
+111, MPI_Recv from = 4, slaveInCircleSum = 13091611, sumInCircle = 65455832
+111, MPI_Recv from = 5, slaveInCircleSum = 13087701, sumInCircle = 78543533
+111, MPI_Recv from = 6, slaveInCircleSum = 13089905, sumInCircle = 91633438
+111, MPI_Recv from = 7, slaveInCircleSum = 13089417, sumInCircle = 104722855
+128I am 7, parallel cost time = 2.96132
+111, MPI_Recv from = 8, slaveInCircleSum = 13088992, sumInCircle = 117811847
+111, MPI_Recv from = 9, slaveInCircleSum = 13089059, sumInCircle = 130900906
+111, MPI_Recv from = 10, slaveInCircleSum = 13091970, sumInCircle = 143992876
+111, MPI_Recv from = 11, slaveInCircleSum = 13087762, sumInCircle = 157080638
+111, MPI_Recv from = 12, slaveInCircleSum = 13090849, sumInCircle = 170171487
+111, MPI_Recv from = 13, slaveInCircleSum = 13090605, sumInCircle = 183262092
+111, MPI_Recv from = 14, slaveInCircleSum = 13090254, sumInCircle = 196352346
+128I am 8, parallel cost time = 2.96789
+111, MPI_Recv from = 15, slaveInCircleSum = 13088987, sumInCircle = 209441333
+111, MPI_Recv from = 16, slaveInCircleSum = 13090171, sumInCircle = 222531504
+111, MPI_Recv from = 17, slaveInCircleSum = 13089986, sumInCircle = 235621490
+111, MPI_Recv from = 18, slaveInCircleSum = 13089918, sumInCircle = 248711408
+111, MPI_Recv from = 19, slaveInCircleSum = 13088531, sumInCircle = 261799939
+111, MPI_Recv from = 20, slaveInCircleSum = 13088359, sumInCircle = 274888298
+111, MPI_Recv from = 21, slaveInCircleSum = 13088659, sumInCircle = 287976957
+111, MPI_Recv from = 22, slaveInCircleSum = 13087872, sumInCircle = 301064829
+111, MPI_Recv from = 23, slaveInCircleSum = 13088896, sumInCircle = 314153725
+111, MPI_Recv from = 24, slaveInCircleSum = 13088618, sumInCircle = 327242343
+111, MPI_Recv from = 25, slaveInCircleSum = 13091304, sumInCircle = 340333647
+111, MPI_Recv from = 26, slaveInCircleSum = 13089039, sumInCircle = 353422686
+111, MPI_Recv from = 27, slaveInCircleSum = 13093216, sumInCircle = 366515902
+111, MPI_Recv from = 28, slaveInCircleSum = 13088728, sumInCircle = 379604630
+111, MPI_Recv from = 29, slaveInCircleSum = 13092240, sumInCircle = 392696870
+128I am 15, parallel cost time = 2.98161
+139, The pi is 0, cost time is 4.03384
+139, The pi is 0, cost time is 4.03449
+139, The pi is 0, cost time is 4.03244
+139, The pi is 3.14157, cost time is 4.03549
+139, The pi is 0, cost time is 4.03304
+139, The pi is 0, cost time is 4.03463
+139, The pi is 0, cost time is 4.03043
+139, The pi is 0, cost time is 4.02877
+139, The pi is 0, cost time is 4.02992
+139, The pi is 0, cost time is 4.02808
+139, The pi is 0, cost time is 4.02936
+139, The pi is 0, cost time is 4.03488
+139, The pi is 0, cost time is 4.03295
+139, The pi is 0, cost time is 4.0334
+139, The pi is 0, cost time is 4.03235
+139, The pi is 0, cost time is 4.0327
+139, The pi is 0, cost time is 4.03457
+139, The pi is 0, cost time is 4.03364
+139, The pi is 0, cost time is 4.03255
+139, The pi is 0, cost time is 4.03543
+139, The pi is 0, cost time is 4.03453
+139, The pi is 0, cost time is 4.03395
+139, The pi is 0, cost time is 4.03519
+139, The pi is 0, cost time is 4.03303
+139, The pi is 0, cost time is 4.03271
+139, The pi is 0, cost time is 4.0352
+139, The pi is 0, cost time is 4.03578
+139, The pi is 0, cost time is 4.0348
+139, The pi is 0, cost time is 4.03546
+139, The pi is 0, cost time is 4.03
+this is p5-7 --------------------
+66, This is id 1 out of 35
+86, getRandom cost time = 1.05186
+66, This is id 2 out of 35
+86, getRandom cost time = 1.05127
+66, This is id 3 out of 35
+86, getRandom cost time = 1.05055
+66, This is id 4 out of 35
+86, getRandom cost time = 1.05055
+66, This is id 5 out of 35
+86, getRandom cost time = 1.04884
+66, This is id 6 out of 35
+86, getRandom cost time = 1.04855
+66, This is id 0 out of 35
+86, getRandom cost time = 1.05251
+66, This is id 11 out of 35
+86, getRandom cost time = 1.05033
+66, This is id 31 out of 35
+86, getRandom cost time = 1.05018
+66, This is id 27 out of 35
+86, getRandom cost time = 1.04266
+66, This is id 17 out of 35
+86, getRandom cost time = 1.0508
+66, This is id 12 out of 35
+86, getRandom cost time = 1.04928
+66, This is id 32 out of 35
+86, getRandom cost time = 1.05018
+66, This is id 21 out of 35
+86, getRandom cost time = 1.04642
+66, This is id 18 out of 35
+86, getRandom cost time = 1.05061
+66, This is id 13 out of 35
+66, This is id 33 out of 35
+86, getRandom cost time = 1.04938
+66, This is id 22 out of 35
+86, getRandom cost time = 1.04574
+66, This is id 19 out of 35
+86, getRandom cost time = 1.04952
+66, This is id 7 out of 35
+86, getRandom cost time = 1.05207
+66, This is id 34 out of 35
+86, getRandom cost time = 1.04886
+66, This is id 23 out of 35
+86, getRandom cost time = 1.04509
+66, This is id 20 out of 35
+86, getRandom cost time = 1.04914
+66, This is id 8 out of 35
+86, getRandom cost time = 1.05129
+66, This is id 28 out of 35
+86, getRandom cost time = 1.05213
+66, This is id 24 out of 35
+86, getRandom cost time = 1.04444
+66, This is id 14 out of 35
+86, getRandom cost time = 1.05238
+66, This is id 9 out of 35
+86, getRandom cost time = 1.05061
+66, This is id 29 out of 35
+86, getRandom cost time = 1.05163
+66, This is id 25 out of 35
+86, getRandom cost time = 1.04432
+66, This is id 15 out of 35
+86, getRandom cost time = 1.05178
+66, This is id 10 out of 35
+86, getRandom cost time = 1.05033
+66, This is id 30 out of 35
+86, getRandom cost time = 1.05085
+66, This is id 26 out of 35
+86, getRandom cost time = 1.04314
+66, This is id 16 out of 35
+86, getRandom cost time = 1.05121
+86, getRandom cost time = 1.04892
+128I am 8, parallel cost time = 2.41886
+128I am 9, parallel cost time = 2.41848
+128I am 10, parallel cost time = 2.42012
+128I am 4, parallel cost time = 2.42455
+128I am 14, parallel cost time = 2.42077
+128I am 17, parallel cost time = 2.41932
+128I am 1, parallel cost time = 2.42766
+128I am 5, parallel cost time = 2.42855
+128I am 19, parallel cost time = 2.42237
+128I am 7, parallel cost time = 2.42814
+128I am 20, parallel cost time = 2.42425
+128I am 6, parallel cost time = 2.43115
+128I am 22, parallel cost time = 2.42651
+128I am 28, parallel cost time = 2.42517
+128I am 24, parallel cost time = 2.4277
+128I am 15, parallel cost time = 2.43313
+128I am 27, parallel cost time = 2.42854
+128I am 12, parallel cost time = 2.43603
+128I am 30, parallel cost time = 2.42776
+128I am 32, parallel cost time = 2.42799
+128I am 26, parallel cost time = 2.43079
+128I am 31, parallel cost time = 2.42909
+128I am 29, parallel cost time = 2.43066
+128I am 3, parallel cost time = 2.4419
+128I am 34, parallel cost time = 2.43007
+128I am 13, parallel cost time = 2.4405
+128I am 33, parallel cost time = 2.43264
+128I am 18, parallel cost time = 2.43959
+128I am 25, parallel cost time = 2.43686
+100I am 0, parallel cost time = 2.4451
+111, MPI_Recv from = 1, slaveInCircleSum = 11220683, sumInCircle = 22441576
+128I am 16, parallel cost time = 2.5285
+128I am 11, parallel cost time = 2.53104
+111, MPI_Recv from = 2, slaveInCircleSum = 11220297, sumInCircle = 33661873
+111, MPI_Recv from = 3, slaveInCircleSum = 11219378, sumInCircle = 44881251
+111, MPI_Recv from = 4, slaveInCircleSum = 11219340, sumInCircle = 56100591
+111, MPI_Recv from = 5, slaveInCircleSum = 11219607, sumInCircle = 67320198
+111, MPI_Recv from = 6, slaveInCircleSum = 11217649, sumInCircle = 78537847
+111, MPI_Recv from = 7, slaveInCircleSum = 11220965, sumInCircle = 89758812
+111, MPI_Recv from = 8, slaveInCircleSum = 11221489, sumInCircle = 100980301
+111, MPI_Recv from = 9, slaveInCircleSum = 11220329, sumInCircle = 112200630
+111, MPI_Recv from = 10, slaveInCircleSum = 11220674, sumInCircle = 123421304
+111, MPI_Recv from = 11, slaveInCircleSum = 11218019, sumInCircle = 134639323
+111, MPI_Recv from = 12, slaveInCircleSum = 11218114, sumInCircle = 145857437
+111, MPI_Recv from = 13, slaveInCircleSum = 11220459, sumInCircle = 157077896
+111, MPI_Recv from = 14, slaveInCircleSum = 11217801, sumInCircle = 168295697
+111, MPI_Recv from = 15, slaveInCircleSum = 11220019, sumInCircle = 179515716
+111, MPI_Recv from = 16, slaveInCircleSum = 11220460, sumInCircle = 190736176
+111, MPI_Recv from = 17, slaveInCircleSum = 11218670, sumInCircle = 201954846
+111, MPI_Recv from = 18, slaveInCircleSum = 11219923, sumInCircle = 213174769
+111, MPI_Recv from = 19, slaveInCircleSum = 11221923, sumInCircle = 224396692
+111, MPI_Recv from = 20, slaveInCircleSum = 11219465, sumInCircle = 235616157
+128I am 2, parallel cost time = 2.54827
+111, MPI_Recv from = 21, slaveInCircleSum = 11218817, sumInCircle = 246834974
+111, MPI_Recv from = 22, slaveInCircleSum = 11221501, sumInCircle = 258056475
+128I am 21, parallel cost time = 2.57801
+111, MPI_Recv from = 23, slaveInCircleSum = 11218316, sumInCircle = 269274791
+111, MPI_Recv from = 24, slaveInCircleSum = 11220695, sumInCircle = 280495486
+111, MPI_Recv from = 25, slaveInCircleSum = 11219515, sumInCircle = 291715001
+111, MPI_Recv from = 26, slaveInCircleSum = 11220251, sumInCircle = 302935252
+111, MPI_Recv from = 27, slaveInCircleSum = 11222399, sumInCircle = 314157651
+111, MPI_Recv from = 28, slaveInCircleSum = 11218326, sumInCircle = 325375977
+111, MPI_Recv from = 29, slaveInCircleSum = 11220261, sumInCircle = 336596238
+111, MPI_Recv from = 30, slaveInCircleSum = 11220753, sumInCircle = 347816991
+111, MPI_Recv from = 31, slaveInCircleSum = 11219268, sumInCircle = 359036259
+111, MPI_Recv from = 32, slaveInCircleSum = 11219898, sumInCircle = 370256157
+111, MPI_Recv from = 33, slaveInCircleSum = 11220749, sumInCircle = 381476906
+111, MPI_Recv from = 34, slaveInCircleSum = 11219964, sumInCircle = 392696870
+128I am 23, parallel cost time = 2.5951
+139, The pi is 0, cost time is 3.65635
+139, The pi is 0, cost time is 3.65698
+139, The pi is 0, cost time is 3.65635
+139, The pi is 0, cost time is 3.65799
+139, The pi is 3.14157, cost time is 3.65859
+139, The pi is 0, cost time is 3.65503
+139, The pi is 0, cost time is 3.65798
+139, The pi is 0, cost time is 3.65123
+139, The pi is 0, cost time is 3.6565
+139, The pi is 0, cost time is 3.65055
+139, The pi is 0, cost time is 3.65532
+139, The pi is 0, cost time is 3.65242
+139, The pi is 0, cost time is 3.65806
+139, The pi is 0, cost time is 3.65166
+139, The pi is 0, cost time is 3.65583
+139, The pi is 0, cost time is 3.64933
+139, The pi is 0, cost time is 3.6565
+139, The pi is 0, cost time is 3.65762
+139, The pi is 0, cost time is 3.65659
+139, The pi is 0, cost time is 3.65855
+139, The pi is 0, cost time is 3.65691
+139, The pi is 0, cost time is 3.65651
+139, The pi is 0, cost time is 3.65566
+139, The pi is 0, cost time is 3.65685
+139, The pi is 0, cost time is 3.65055
+139, The pi is 0, cost time is 3.65708
+139, The pi is 0, cost time is 3.65923
+139, The pi is 0, cost time is 3.65299
+139, The pi is 0, cost time is 3.67342
+139, The pi is 0, cost time is 3.67461
+139, The pi is 0, cost time is 3.67407
+139, The pi is 0, cost time is 3.67299
+139, The pi is 0, cost time is 3.67174
+139, The pi is 0, cost time is 3.6728
+139, The pi is 0, cost time is 3.67137
+this is p5-8 --------------------
+66, This is id 7 out of 40
+86, getRandom cost time = 1.05605
+66, This is id 0 out of 40
+86, getRandom cost time = 1.06091
+66, This is id 1 out of 40
+86, getRandom cost time = 1.06022
+66, This is id 2 out of 40
+86, getRandom cost time = 1.05954
+66, This is id 3 out of 40
+86, getRandom cost time = 1.05875
+66, This is id 4 out of 40
+86, getRandom cost time = 1.05863
+66, This is id 5 out of 40
+86, getRandom cost time = 1.05743
+66, This is id 6 out of 40
+86, getRandom cost time = 1.05676
+66, This is id 8 out of 40
+86, getRandom cost time = 1.06087
+66, This is id 9 out of 40
+86, getRandom cost time = 1.06006
+66, This is id 10 out of 40
+86, getRandom cost time = 1.05911
+66, This is id 11 out of 40
+86, getRandom cost time = 1.05893
+66, This is id 12 out of 40
+86, getRandom cost time = 1.05885
+66, This is id 23 out of 40
+86, getRandom cost time = 1.05726
+66, This is id 13 out of 40
+86, getRandom cost time = 1.05785
+66, This is id 16 out of 40
+86, getRandom cost time = 1.06124
+66, This is id 14 out of 40
+86, getRandom cost time = 1.0571
+66, This is id 17 out of 40
+86, getRandom cost time = 1.06051
+66, This is id 15 out of 40
+86, getRandom cost time = 1.05677
+66, This is id 18 out of 40
+86, getRandom cost time = 1.05979
+66, This is id 19 out of 40
+86, getRandom cost time = 1.05946
+66, This is id 39 out of 40
+86, getRandom cost time = 1.05545
+66, This is id 24 out of 40
+86, getRandom cost time = 1.05484
+66, This is id 20 out of 40
+86, getRandom cost time = 1.05924
+66, This is id 32 out of 40
+86, getRandom cost time = 1.06051
+66, This is id 25 out of 40
+86, getRandom cost time = 1.05403
+66, This is id 21 out of 40
+86, getRandom cost time = 1.0582
+66, This is id 33 out of 40
+86, getRandom cost time = 1.05994
+66, This is id 26 out of 40
+86, getRandom cost time = 1.05341
+66, This is id 22 out of 40
+86, getRandom cost time = 1.05758
+66, This is id 34 out of 40
+86, getRandom cost time = 1.0594
+66, This is id 27 out of 40
+86, getRandom cost time = 1.0528
+66, This is id 28 out of 40
+86, getRandom cost time = 1.0528
+66, This is id 35 out of 40
+86, getRandom cost time = 1.05892
+66, This is id 29 out of 40
+86, getRandom cost time = 1.05157
+66, This is id 36 out of 40
+86, getRandom cost time = 1.05892
+66, This is id 30 out of 40
+86, getRandom cost time = 1.05078
+66, This is id 37 out of 40
+86, getRandom cost time = 1.05772
+66, This is id 31 out of 40
+86, getRandom cost time = 1.05057
+66, This is id 38 out of 40
+86, getRandom cost time = 1.05708
+128I am 9, parallel cost time = 2.11621
+128I am 11, parallel cost time = 2.11718
+128I am 12, parallel cost time = 2.11701
+128I am 8, parallel cost time = 2.12082
+128I am 3, parallel cost time = 2.12232
+128I am 20, parallel cost time = 2.11603
+128I am 15, parallel cost time = 2.11965
+128I am 6, parallel cost time = 2.12414
+128I am 5, parallel cost time = 2.12464
+128I am 18, parallel cost time = 2.11871
+128I am 4, parallel cost time = 2.12532
+128I am 1, parallel cost time = 2.12559
+128I am 16, parallel cost time = 2.12198
+128I am 22, parallel cost time = 2.12084
+128I am 14, parallel cost time = 2.12583
+128I am 7, parallel cost time = 2.12987
+128I am 28, parallel cost time = 2.11961
+128I am 10, parallel cost time = 2.12974
+128I am 27, parallel cost time = 2.12193
+128I am 26, parallel cost time = 2.12365
+128I am 24, parallel cost time = 2.12547
+128I am 30, parallel cost time = 2.12331
+128I am 29, parallel cost time = 2.12456
+128I am 13, parallel cost time = 2.13344
+128I am 32, parallel cost time = 2.12415
+128I am 35, parallel cost time = 2.12297
+100I am 0, parallel cost time = 2.12161
+111, MPI_Recv from = 1, slaveInCircleSum = 9815203, sumInCircle = 19632080
+128I am 39, parallel cost time = 2.12163
+128I am 36, parallel cost time = 2.12492
+128I am 38, parallel cost time = 2.12566
+128I am 37, parallel cost time = 2.12645
+128I am 23, parallel cost time = 2.13478
+128I am 33, parallel cost time = 2.13168
+128I am 31, parallel cost time = 2.13948
+111, MPI_Recv from = 2, slaveInCircleSum = 9816206, sumInCircle = 29448286
+111, MPI_Recv from = 3, slaveInCircleSum = 9818131, sumInCircle = 39266417
+111, MPI_Recv from = 4, slaveInCircleSum = 9817869, sumInCircle = 49084286
+111, MPI_Recv from = 5, slaveInCircleSum = 9818373, sumInCircle = 58902659
+111, MPI_Recv from = 6, slaveInCircleSum = 9816761, sumInCircle = 68719420
+111, MPI_Recv from = 7, slaveInCircleSum = 9819905, sumInCircle = 78539325
+111, MPI_Recv from = 8, slaveInCircleSum = 9816942, sumInCircle = 88356267
+111, MPI_Recv from = 9, slaveInCircleSum = 9818649, sumInCircle = 98174916
+111, MPI_Recv from = 10, slaveInCircleSum = 9817677, sumInCircle = 107992593
+111, MPI_Recv from = 11, slaveInCircleSum = 9817416, sumInCircle = 117810009
+111, MPI_Recv from = 12, slaveInCircleSum = 9816699, sumInCircle = 127626708
+111, MPI_Recv from = 13, slaveInCircleSum = 9815912, sumInCircle = 137442620
+111, MPI_Recv from = 14, slaveInCircleSum = 9817562, sumInCircle = 147260182
+111, MPI_Recv from = 15, slaveInCircleSum = 9816534, sumInCircle = 157076716
+111, MPI_Recv from = 16, slaveInCircleSum = 9816828, sumInCircle = 166893544
+128I am 2, parallel cost time = 2.15472
+128I am 25, parallel cost time = 2.15344
+128I am 19, parallel cost time = 2.20015
+128I am 21, parallel cost time = 2.22588
+128I am 34, parallel cost time = 2.22708
+111, MPI_Recv from = 17, slaveInCircleSum = 9818477, sumInCircle = 176712021
+111, MPI_Recv from = 18, slaveInCircleSum = 9816878, sumInCircle = 186528899
+111, MPI_Recv from = 19, slaveInCircleSum = 9817565, sumInCircle = 196346464
+111, MPI_Recv from = 20, slaveInCircleSum = 9819619, sumInCircle = 206166083
+111, MPI_Recv from = 21, slaveInCircleSum = 9815163, sumInCircle = 215981246
+111, MPI_Recv from = 22, slaveInCircleSum = 9819158, sumInCircle = 225800404
+111, MPI_Recv from = 23, slaveInCircleSum = 9818189, sumInCircle = 235618593
+111, MPI_Recv from = 24, slaveInCircleSum = 9819573, sumInCircle = 245438166
+111, MPI_Recv from = 25, slaveInCircleSum = 9817521, sumInCircle = 255255687
+111, MPI_Recv from = 26, slaveInCircleSum = 9817216, sumInCircle = 265072903
+111, MPI_Recv from = 27, slaveInCircleSum = 9817651, sumInCircle = 274890554
+111, MPI_Recv from = 28, slaveInCircleSum = 9817184, sumInCircle = 284707738
+111, MPI_Recv from = 29, slaveInCircleSum = 9816046, sumInCircle = 294523784
+111, MPI_Recv from = 30, slaveInCircleSum = 9818761, sumInCircle = 304342545
+111, MPI_Recv from = 31, slaveInCircleSum = 9818250, sumInCircle = 314160795
+111, MPI_Recv from = 32, slaveInCircleSum = 9817162, sumInCircle = 323977957
+111, MPI_Recv from = 33, slaveInCircleSum = 9818770, sumInCircle = 333796727
+111, MPI_Recv from = 34, slaveInCircleSum = 9815479, sumInCircle = 343612206
+111, MPI_Recv from = 35, slaveInCircleSum = 9815564, sumInCircle = 353427770
+111, MPI_Recv from = 36, slaveInCircleSum = 9818310, sumInCircle = 363246080
+111, MPI_Recv from = 37, slaveInCircleSum = 9816586, sumInCircle = 373062666
+111, MPI_Recv from = 38, slaveInCircleSum = 9816634, sumInCircle = 382879300
+111, MPI_Recv from = 39, slaveInCircleSum = 9817570, sumInCircle = 392696870
+128I am 17, parallel cost time = 2.25089
+139, The pi is 0, cost time is 3.31673
+139, The pi is 0, cost time is 3.31896
+139, The pi is 0, cost time is 3.31625
+139, The pi is 0, cost time is 3.32036
+139, The pi is 0, cost time is 3.31857
+139, The pi is 0, cost time is 3.31739
+139, The pi is 0, cost time is 3.31666
+139, The pi is 0, cost time is 3.32019
+139, The pi is 0, cost time is 3.31601
+139, The pi is 0, cost time is 3.31859
+139, The pi is 0, cost time is 3.3187
+139, The pi is 0, cost time is 3.30985
+139, The pi is 0, cost time is 3.31375
+139, The pi is 0, cost time is 3.31306
+139, The pi is 0, cost time is 3.31267
+139, The pi is 0, cost time is 3.30976
+139, The pi is 0, cost time is 3.31196
+139, The pi is 3.14157, cost time is 3.32145
+139, The pi is 0, cost time is 3.31966
+139, The pi is 0, cost time is 3.32059
+139, The pi is 0, cost time is 3.3188
+139, The pi is 0, cost time is 3.32133
+139, The pi is 0, cost time is 3.31912
+139, The pi is 0, cost time is 3.31439
+139, The pi is 0, cost time is 3.31284
+139, The pi is 0, cost time is 3.32978
+139, The pi is 0, cost time is 3.32584
+139, The pi is 0, cost time is 3.32721
+139, The pi is 0, cost time is 3.3293
+139, The pi is 0, cost time is 3.32929
+139, The pi is 0, cost time is 3.328
+139, The pi is 0, cost time is 3.33035
+139, The pi is 0, cost time is 3.34103
+139, The pi is 0, cost time is 3.34129
+139, The pi is 0, cost time is 3.33995
+139, The pi is 0, cost time is 3.341
+139, The pi is 0, cost time is 3.34335
+139, The pi is 0, cost time is 3.33957
+139, The pi is 0, cost time is 3.3424
+139, The pi is 0, cost time is 3.34148
