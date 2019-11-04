@@ -211,7 +211,7 @@ bool pointIsInCircle (U_LL_INT randomNumber){
 //    std::cout << __LINE__ << ", randomNumber = " << randomNumber << ", radius = " << radius << ", x = " << x << ", y = " << y << std::endl;
 
 //    if ((x / radius) ** 2 + (y / radius) ** 2 <= 1
-    if (x * x + y * y < (radius + 0.5) * (radius + 0.5))
+    if (x * x + y * y < radius * radius)//(radius + 0.5) * (radius + 0.5))
         return true;
 
     return false;
