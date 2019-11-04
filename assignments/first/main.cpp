@@ -97,7 +97,9 @@ int main(int argc,char* argv[]) {
         double startTime = MPI_Wtime();
 
         // do master's task
+        double pTimeStart = MPI_Wtime();
         sumInCircle = countInCircleNumber(randomArray[0], myid, numproc, loopNumber);
+        std::cout << __LINE__ << "I am " << myid << ", parallel cost time = " << (MPI_Wtime() - pTimeStart) << std::endl;
 
         std::cout << __LINE__ << ", myid = 0, sumInCircle = " << sumInCircle << ", N = " << N << std::endl;
 
