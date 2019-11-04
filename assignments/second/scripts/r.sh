@@ -1,11 +1,13 @@
 #mpic++ $1 -o $2
 
-for nodeNum in 1 2 3 4
+for nodeNum in 1 2 3 4 5
 do
     for pNum in 1 2 3 4 5 6 7 8
-    do 
+    do
+      > p$nodeNum-$pNum.stdout
+      > p$nodeNum-$pNum.pbs
 	echo "#PBS -j oe -o p$nodeNum-$pNum.stdout -l nodes=$nodeNum:ppn=$pNum -q pp
- 	mpiexec -machinefile $PBS_NODEFILE /home/s19026416/parall/assignments/second/sort 64000" >>  p$nodeNum-$pNum.pbs
+	mpiexec -machinefile \$PBS_NODEFILE /home/s19026416/parall/assignments/second/sort 9999999999" >>  p$nodeNum-$pNum.pbs
  	qsub p$nodeNum-$pNum.pbs
     done
 done
