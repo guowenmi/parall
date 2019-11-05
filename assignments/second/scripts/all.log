@@ -1,685 +1,252 @@
 this is p1-1 --------------------
-Generating 6400000 numbers to be sorted on 1 processors
-sum=204714923429093.156250, sorted=1
-total time: 2.932757, parallel time: 2.679506
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 1 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.407476, parallel time: 1.275998
+The sorted data array from 1.000001 to 31999994.000000
 this is p1-2 --------------------
-Generating 6400000 numbers to be sorted on 2 processors
-sum=204714923429093.156250, sorted=1
-total time: 2.674631, parallel time: 1.332220
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 2 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.920391, parallel time: 0.634847
+The sorted data array from 1.000001 to 31999994.000000
 this is p1-3 --------------------
-Generating 6400000 numbers to be sorted on 3 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 3 processors
+sum=51165957267811.203125, sorted=0
 this is p1-4 --------------------
-Generating 6400000 numbers to be sorted on 4 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.929600, parallel time: 0.639741
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.464091, parallel time: 0.310534
+The sorted data array from 1.000001 to 31999994.000000
 this is p1-5 --------------------
-Generating 6400000 numbers to be sorted on 5 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.820479, parallel time: 0.514073
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 5 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.428167, parallel time: 0.250087
+The sorted data array from 1.000001 to 31999994.000000
 this is p1-6 --------------------
-Generating 6400000 numbers to be sorted on 6 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
 this is p1-7 --------------------
-Generating 6400000 numbers to be sorted on 7 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 7 processors
+sum=51165957267811.203125, sorted=0
 this is p1-8 --------------------
-Generating 6400000 numbers to be sorted on 8 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.668033, parallel time: 0.362847
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.331702, parallel time: 0.168810
+The sorted data array from 1.000001 to 31999994.000000
 this is p2-1 --------------------
-Generating 6400000 numbers to be sorted on 2 processors
-sum=204714923429093.156250, sorted=1
-total time: 2.642983, parallel time: 1.303864
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 2 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.896557, parallel time: 0.620686
+The sorted data array from 1.000001 to 31999994.000000
 this is p2-2 --------------------
-Generating 6400000 numbers to be sorted on 4 processors
-sum=204714923429093.156250, sorted=1
-total time: 2.119879, parallel time: 0.628342
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.598335, parallel time: 0.304396
+The sorted data array from 1.000001 to 31999994.000000
 this is p2-3 --------------------
-Generating 6400000 numbers to be sorted on 6 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
 this is p2-4 --------------------
-Generating 6400000 numbers to be sorted on 8 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.833415, parallel time: 0.314067
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.441277, parallel time: 0.152123
+The sorted data array from 1.000001 to 31999994.000000
 this is p2-5 --------------------
-Generating 6400000 numbers to be sorted on 10 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.788374, parallel time: 0.266984
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 10 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.402957, parallel time: 0.123096
+The sorted data array from 1.000001 to 31999994.000000
 this is p2-6 --------------------
-Generating 6400000 numbers to be sorted on 12 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
 this is p2-7 --------------------
-Generating 6400000 numbers to be sorted on 14 processors
-[compute-0-3:04607] *** Process received signal ***
-[compute-0-3:04607] Signal: Segmentation fault (11)
-[compute-0-3:04607] Signal code: Address not mapped (1)
-[compute-0-3:04607] Failing at address: 0x2ba08fd58000
-[compute-0-3:04607] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:04607] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-3:04607] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:04607] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:04607] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 4607 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 3200000 numbers to be sorted on 14 processors
+sum=51165957267811.203125, sorted=0
 this is p2-8 --------------------
-Generating 6400000 numbers to be sorted on 16 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.808709, parallel time: 0.168449
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 16 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.442713, parallel time: 0.080386
+The sorted data array from 1.000001 to 31999994.000000
 this is p3-1 --------------------
-Generating 6400000 numbers to be sorted on 3 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 3 processors
+sum=51165957267811.203125, sorted=0
 this is p3-2 --------------------
-Generating 6400000 numbers to be sorted on 6 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
 this is p3-3 --------------------
-Generating 6400000 numbers to be sorted on 9 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 9 processors
+sum=51165957267811.203125, sorted=0
 this is p3-4 --------------------
-Generating 6400000 numbers to be sorted on 12 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
 this is p3-5 --------------------
-Generating 6400000 numbers to be sorted on 15 processors
-[compute-0-4:25830] *** Process received signal ***
-[compute-0-4:25830] Signal: Segmentation fault (11)
-[compute-0-4:25830] Signal code: Address not mapped (1)
-[compute-0-4:25830] Failing at address: 0x2abf8d1a0000
-[compute-0-4:25830] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:25830] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:25830] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:25830] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:25830] *** End of error message ***
-[compute-0-4:25831] *** Process received signal ***
-[compute-0-4:25831] Signal: Segmentation fault (11)
-[compute-0-4:25831] Signal code: Address not mapped (1)
-[compute-0-4:25831] Failing at address: 0x2aab73ef5000
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 25830 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-[compute-0-3.local][[28039,1],7][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+Generating 3200000 numbers to be sorted on 15 processors
+sum=51165957267811.203125, sorted=0
 this is p3-6 --------------------
-Generating 6400000 numbers to be sorted on 18 processors
-[compute-0-4:25943] *** Process received signal ***
-[compute-0-4:25943] Signal: Segmentation fault (11)
-[compute-0-4:25943] Signal code: Address not mapped (1)
-[compute-0-4:25943] Failing at address: 0x2b8db6d7e000
-[compute-0-4:25943] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:25943] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:25943] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:25943] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:25943] *** End of error message ***
-[compute-0-4:25947] *** Process received signal ***
-[compute-0-4:25947] Signal: Segmentation fault (11)
-[compute-0-4:25947] Signal code: Address not mapped (1)
-[compute-0-4:25947] Failing at address: 0x2acd0a7c3000
-[compute-0-4:25947] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:25947] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:25947] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:25947] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:25947] *** End of error message ***
+Generating 3200000 numbers to be sorted on 18 processors
+[compute-0-4:05940] *** Process received signal ***
+[compute-0-4:05940] Signal: Segmentation fault (11)
+[compute-0-4:05940] Signal code: Address not mapped (1)
+[compute-0-4:05940] Failing at address: 0x2b89f2fab000
+[compute-0-4:05940] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05940] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05940] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05940] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05940] *** End of error message ***
+[compute-0-4:05939] *** Process received signal ***
+[compute-0-4:05939] Signal: Segmentation fault (11)
+[compute-0-4:05939] Signal code: Address not mapped (1)
+[compute-0-4:05939] Failing at address: 0x2b00d3b73000
+[compute-0-4:05939] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05939] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05939] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05939] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05939] *** End of error message ***
+[compute-0-4:05942] *** Process received signal ***
+[compute-0-4:05942] Signal: Segmentation fault (11)
+[compute-0-4:05942] Signal code: Address not mapped (1)
+[compute-0-4:05942] Failing at address: 0x2b96d3da7000
+[compute-0-4:05942] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05942] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05942] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05942] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05942] *** End of error message ***
 --------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 25943 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 2 with PID 5940 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-3.local][[27701,1],9][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(10) failed: Connection reset by peer (104)
 this is p3-7 --------------------
-Generating 6400000 numbers to be sorted on 21 processors
-[compute-0-4:26008] *** Process received signal ***
-[compute-0-4:26008] Signal: Segmentation fault (11)
-[compute-0-4:26008] Signal code: Address not mapped (1)
-[compute-0-4:26008] Failing at address: 0x2b30b7909000
-[compute-0-4:26008] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26008] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26008] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26008] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26008] *** End of error message ***
+Generating 3200000 numbers to be sorted on 21 processors
+[compute-0-4:06003] *** Process received signal ***
+[compute-0-4:06003] Signal: Segmentation fault (11)
+[compute-0-4:06003] Signal code: Address not mapped (1)
+[compute-0-4:06003] Failing at address: 0x2b53d23df000
+[compute-0-4:06003] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06003] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06003] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06003] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06003] *** End of error message ***
+[compute-0-4:06004] *** Process received signal ***
+[compute-0-4:06004] Signal: Segmentation fault (11)
+[compute-0-4:06004] Signal code: Address not mapped (1)
+[compute-0-4:06004] Failing at address: 0x2ae33842f000
+[compute-0-4:06007] *** Process received signal ***
+[compute-0-4:06007] Signal: Segmentation fault (11)
+[compute-0-4:06007] Signal code: Address not mapped (1)
+[compute-0-4:06007] Failing at address: 0x2b241e1e9000
+[compute-0-4:06004] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06004] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06004] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06004] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06004] *** End of error message ***
+[compute-0-3:14847] *** Process received signal ***
+[compute-0-3:14847] Signal: Segmentation fault (11)
+[compute-0-3:14847] Signal code: Address not mapped (1)
+[compute-0-3:14847] Failing at address: 0x2ab01fae0000
+[compute-0-3:14847] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:14847] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:14847] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-4:06007] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06007] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06007] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06007] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06007] *** End of error message ***
+[compute-0-3:14847] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:14847] *** End of error message ***
+[compute-0-4:06006] *** Process received signal ***
+[compute-0-4:06006] Signal: Segmentation fault (11)
+[compute-0-4:06006] Signal code: Address not mapped (1)
+[compute-0-4:06006] Failing at address: 0x2aeaddf65000
+[compute-0-4:06006] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06006] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06006] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06006] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06006] *** End of error message ***
 --------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 26008 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 1 with PID 6003 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
+2 total processes killed (some possibly by mpiexec during cleanup)
 this is p3-8 --------------------
-Generating 6400000 numbers to be sorted on 24 processors
-[compute-0-3:04907] *** Process received signal ***
-[compute-0-3:04907] Signal: Segmentation fault (11)
-[compute-0-3:04907] Signal code: Address not mapped (1)
-[compute-0-3:04907] Failing at address: 0x2b19ece7e000
-[compute-0-3:04907] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:04907] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-3:04907] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:04907] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:04907] *** End of error message ***
-[compute-0-4:26068] *** Process received signal ***
-[compute-0-4:26068] Signal: Segmentation fault (11)
-[compute-0-4:26068] Signal code: Address not mapped (1)
-[compute-0-4:26068] Failing at address: 0x2b943b292000
-[compute-0-4:26068] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26068] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26068] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26068] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26068] *** End of error message ***
-[compute-0-4:26069] *** Process received signal ***
-[compute-0-4:26069] Signal: Segmentation fault (11)
-[compute-0-4:26069] Signal code: Address not mapped (1)
-[compute-0-4:26069] Failing at address: 0x2b0aa3ffc000
-[compute-0-4:26069] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26069] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26069] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26069] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26069] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 8 with PID 4907 on node compute-0-3 exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 3200000 numbers to be sorted on 24 processors
+sum=51165957267811.203125, sorted=0
 this is p4-1 --------------------
-Generating 6400000 numbers to be sorted on 4 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.989295, parallel time: 0.666983
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.464832, parallel time: 0.308884
+The sorted data array from 1.000001 to 31999994.000000
 this is p4-2 --------------------
-Generating 6400000 numbers to be sorted on 8 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.915346, parallel time: 0.315523
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.562017, parallel time: 0.152586
+The sorted data array from 1.000001 to 31999994.000000
 this is p4-3 --------------------
-Generating 6400000 numbers to be sorted on 12 processors
-sum=204714923429093.156250, sorted=0
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
 this is p4-4 --------------------
-Generating 6400000 numbers to be sorted on 16 processors
-sum=204714923429093.156250, sorted=1
-total time: 2.001963, parallel time: 0.176501
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 16 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.546406, parallel time: 0.081388
+The sorted data array from 1.000001 to 31999994.000000
 this is p4-5 --------------------
-Generating 6400000 numbers to be sorted on 20 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.915903, parallel time: 0.137948
-The sorted data array from 1.000003 to 63999992.000000
+Generating 3200000 numbers to be sorted on 20 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.613026, parallel time: 0.071292
+The sorted data array from 1.000001 to 31999994.000000
 this is p4-6 --------------------
-Generating 6400000 numbers to be sorted on 24 processors
-[compute-0-4:26356] *** Process received signal ***
-[compute-0-4:26356] Signal: Segmentation fault (11)
-[compute-0-4:26356] Signal code: Address not mapped (1)
-[compute-0-4:26356] Failing at address: 0x2b74ec0e6000
-[compute-0-4:26356] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26356] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26356] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26356] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26356] *** End of error message ***
-[compute-0-4:26359] *** Process received signal ***
-[compute-0-4:26359] Signal: Segmentation fault (11)
-[compute-0-4:26359] Signal code: Address not mapped (1)
-[compute-0-4:26359] Failing at address: 0x2b03a3998000
-[compute-0-4:26359] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26359] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26359] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26359] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26359] *** End of error message ***
-[compute-0-4:26357] *** Process received signal ***
-[compute-0-4:26357] Signal: Segmentation fault (11)
-[compute-0-4:26357] Signal code: Address not mapped (1)
-[compute-0-4:26357] Failing at address: 0x2b59db773000
-[compute-0-4:26357] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26357] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26357] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26357] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26357] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 26356 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 3200000 numbers to be sorted on 24 processors
+sum=51165957267811.203125, sorted=0
 this is p4-7 --------------------
-Generating 6400000 numbers to be sorted on 28 processors
-[compute-0-3:05158] *** Process received signal ***
-[compute-0-3:05158] Signal: Segmentation fault (11)
-[compute-0-3:05158] Signal code: Address not mapped (1)
-[compute-0-3:05158] Failing at address: 0x2b4a67e75000
-[compute-0-3:05158] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:05158] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-3:05158] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:05158] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:05158] *** End of error message ***
-[compute-0-4:26417] *** Process received signal ***
-[compute-0-4:26417] Signal: Segmentation fault (11)
-[compute-0-4:26417] Signal code: Address not mapped (1)
-[compute-0-4:26417] Failing at address: 0x2ae64ec52000
-[compute-0-4:26417] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26417] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26417] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26417] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26417] *** End of error message ***
-[compute-0-4:26418] *** Process received signal ***
-[compute-0-4:26418] Signal: Segmentation fault (11)
-[compute-0-4:26418] Signal code: Address not mapped (1)
-[compute-0-4:26418] Failing at address: 0x2adcc2a8c000
-[compute-0-4:26418] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26418] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26418] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26418] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26418] *** End of error message ***
-[compute-0-4:26419] *** Process received signal ***
-[compute-0-4:26419] Signal: Segmentation fault (11)
-[compute-0-4:26419] Signal code: Address not mapped (1)
-[compute-0-4:26419] Failing at address: 0x2b6ff105b000
-[compute-0-4:26419] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:26419] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
-[compute-0-4:26419] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:26419] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:26419] *** End of error message ***
+Generating 3200000 numbers to be sorted on 28 processors
+[compute-0-3:15142] *** Process received signal ***
+[compute-0-3:15142] Signal: Segmentation fault (11)
+[compute-0-3:15142] Signal code: Address not mapped (1)
+[compute-0-3:15142] Failing at address: 0x2b7149166000
+[compute-0-3:15142] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:15142] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:15142] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-3:15142] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:15142] *** End of error message ***
+[compute-0-4:06411] *** Process received signal ***
+[compute-0-4:06415] *** Process received signal ***
+[compute-0-4:06415] Signal: Segmentation fault (11)
+[compute-0-4:06415] Signal code: Address not mapped (1)
+[compute-0-4:06415] Failing at address: 0x2af8649f1000
+[compute-0-4:06415] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06415] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06415] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06415] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06415] *** End of error message ***
+[compute-0-4:06412] *** Process received signal ***
+[compute-0-4:06412] Signal: Segmentation fault (11)
+[compute-0-4:06412] Signal code: Address not mapped (1)
+[compute-0-4:06412] Failing at address: 0x2af997374000
+[compute-0-4:06412] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06412] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06412] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06412] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06412] *** End of error message ***
+[compute-0-4:06413] *** Process received signal ***
+[compute-0-4:06414] *** Process received signal ***
+[compute-0-4:06414] Signal: Segmentation fault (11)
+[compute-0-4:06414] Signal code: Address not mapped (1)
+[compute-0-4:06414] Failing at address: 0x2b303c48a000
+[compute-0-4:06414] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06414] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06414] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06414] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06414] *** End of error message ***
+[compute-0-4:06411] Signal: Segmentation fault (11)
+[compute-0-4:06411] Signal code: Address not mapped (1)
+[compute-0-4:06411] Failing at address: 0x2b69c26a5000
+[compute-0-4:06411] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06411] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06411] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06411] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06411] *** End of error message ***
 --------------------------------------------------------------------------
-mpiexec noticed that process rank 7 with PID 5158 on node compute-0-3 exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 7 with PID 15142 on node compute-0-3 exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-3.local][[28171,1],12][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(10) failed: Connection reset by peer (104)
-[compute-0-3.local][[28171,1],12][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[compute-0-3.local][[4136,1],12][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
 this is p4-8 --------------------
-Generating 6400000 numbers to be sorted on 32 processors
-sum=204714923429093.156250, sorted=1
-total time: 1.927651, parallel time: 0.094889
-The sorted data array from 1.000003 to 63999992.000000
-this is p1-1 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 2.922790. The amount of time that parallel work takes is 2.656340
-this is p1-2 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 1.607960. The amount of time that parallel work takes is 1.305423
-this is p1-3 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p1-4 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.931657. The amount of time that parallel work takes is 0.633395
-this is p1-5 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.823389. The amount of time that parallel work takes is 0.510073
-this is p1-6 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p1-7 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p1-8 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.889478. The amount of time that parallel work takes is 0.307560
-this is p2-1 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 1.619725. The amount of time that parallel work takes is 1.309991
-this is p2-2 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 1.104060. The amount of time that parallel work takes is 0.625586
-this is p2-3 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p2-4 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.881447. The amount of time that parallel work takes is 0.304994
-this is p2-5 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.762223. The amount of time that parallel work takes is 0.241343
-this is p2-6 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p2-7 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p2-8 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.718133. The amount of time that parallel work takes is 0.154337
-this is p3-1 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-2 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-3 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-4 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-5 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-6 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-7 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p3-8 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p4-1 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.934708. The amount of time that parallel work takes is 0.640600
-this is p4-2 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.912581. The amount of time that parallel work takes is 0.303387
-this is p4-3 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p4-4 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.818574. The amount of time that parallel work takes is 0.150539
-this is p4-5 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.837942. The amount of time that parallel work takes is 0.121432
-this is p4-6 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p4-7 --------------------
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-The number of random numbers to be generated must be divisible by that of processors
-this is p4-8 --------------------
-Before sorting, calculate the sum of the random numbers:
-sum=799696459257.999023, sorted=0
-
-Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
-sum=799696459257.995117, sorted=1
-
-Is the sum of the numbers equal to the original sum?
- If not, there must be a bug in the program.
-Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
-Total time is 0.865080. The amount of time that parallel work takes is 0.079265
+Generating 3200000 numbers to be sorted on 32 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.488606, parallel time: 0.046433
+The sorted data array from 1.000001 to 31999994.000000
