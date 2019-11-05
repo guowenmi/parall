@@ -281,3 +281,405 @@ Generating 6400000 numbers to be sorted on 32 processors
 sum=204714923429093.156250, sorted=1
 total time: 1.927651, parallel time: 0.094889
 The sorted data array from 1.000003 to 63999992.000000
+this is p1-1 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 2.922790. The amount of time that parallel work takes is 2.656340
+this is p1-2 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 1.607960. The amount of time that parallel work takes is 1.305423
+this is p1-3 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p1-4 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.931657. The amount of time that parallel work takes is 0.633395
+this is p1-5 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.823389. The amount of time that parallel work takes is 0.510073
+this is p1-6 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p1-7 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p1-8 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.889478. The amount of time that parallel work takes is 0.307560
+this is p2-1 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 1.619725. The amount of time that parallel work takes is 1.309991
+this is p2-2 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 1.104060. The amount of time that parallel work takes is 0.625586
+this is p2-3 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p2-4 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.881447. The amount of time that parallel work takes is 0.304994
+this is p2-5 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.762223. The amount of time that parallel work takes is 0.241343
+this is p2-6 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p2-7 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p2-8 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.718133. The amount of time that parallel work takes is 0.154337
+this is p3-1 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-2 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-3 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-4 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-5 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-6 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-7 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p3-8 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p4-1 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.934708. The amount of time that parallel work takes is 0.640600
+this is p4-2 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.912581. The amount of time that parallel work takes is 0.303387
+this is p4-3 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p4-4 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.818574. The amount of time that parallel work takes is 0.150539
+this is p4-5 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.837942. The amount of time that parallel work takes is 0.121432
+this is p4-6 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p4-7 --------------------
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+The number of random numbers to be generated must be divisible by that of processors
+this is p4-8 --------------------
+Before sorting, calculate the sum of the random numbers:
+sum=799696459257.999023, sorted=0
+
+Sorting finished. Now, calculate the sum again to check if they are sorted without an error:
+sum=799696459257.995117, sorted=1
+
+Is the sum of the numbers equal to the original sum?
+ If not, there must be a bug in the program.
+Note that they need not be exactly the same, due to finite precision of floating-point arithmetic
+Total time is 0.865080. The amount of time that parallel work takes is 0.079265
