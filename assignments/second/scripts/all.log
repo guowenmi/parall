@@ -1,896 +1,283 @@
 this is p1-1 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:21940] [[23708,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:21940] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:21940] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 1 processors
+sum=204714923429093.156250, sorted=1
+total time: 2.932757, parallel time: 2.679506
+The sorted data array from 1.000003 to 63999992.000000
 this is p1-2 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:21957] [[23789,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:21957] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:21957] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 2 processors
+sum=204714923429093.156250, sorted=1
+total time: 2.674631, parallel time: 1.332220
+The sorted data array from 1.000003 to 63999992.000000
 this is p1-3 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:21965] [[23781,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:21965] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:21965] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 3 processors
+sum=204714923429093.156250, sorted=0
 this is p1-4 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04300] [[12696,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04300] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04300] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 4 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.929600, parallel time: 0.639741
+The sorted data array from 1.000003 to 63999992.000000
 this is p1-5 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-2.local:27045] [[28445,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-2.local:27045] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-2.local:27045] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 5 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.820479, parallel time: 0.514073
+The sorted data array from 1.000003 to 63999992.000000
 this is p1-6 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-1.local:30046] [[30526,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-1.local:30046] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-1.local:30046] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 6 processors
+sum=204714923429093.156250, sorted=0
 this is p1-7 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-0.local:12592] [[54511,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-0.local:12592] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-0.local:12592] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 7 processors
+sum=204714923429093.156250, sorted=0
 this is p1-8 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22063] [[24327,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22063] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22063] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 8 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.668033, parallel time: 0.362847
+The sorted data array from 1.000003 to 63999992.000000
 this is p2-1 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22014] [[23766,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22014] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22014] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 2 processors
+sum=204714923429093.156250, sorted=1
+total time: 2.642983, parallel time: 1.303864
+The sorted data array from 1.000003 to 63999992.000000
 this is p2-2 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04342] [[12706,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04342] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04342] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 4 processors
+sum=204714923429093.156250, sorted=1
+total time: 2.119879, parallel time: 0.628342
+The sorted data array from 1.000003 to 63999992.000000
 this is p2-3 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04483] [[12503,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04483] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04483] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 6 processors
+sum=204714923429093.156250, sorted=0
 this is p2-4 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04494] [[12506,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04494] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04494] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 8 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.833415, parallel time: 0.314067
+The sorted data array from 1.000003 to 63999992.000000
 this is p2-5 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-1.local:30090] [[30698,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-1.local:30090] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-1.local:30090] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 10 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.788374, parallel time: 0.266984
+The sorted data array from 1.000003 to 63999992.000000
 this is p2-6 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22133] [[24413,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22133] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22133] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 12 processors
+sum=204714923429093.156250, sorted=0
 this is p2-7 --------------------
+Generating 6400000 numbers to be sorted on 14 processors
+[compute-0-3:04607] *** Process received signal ***
+[compute-0-3:04607] Signal: Segmentation fault (11)
+[compute-0-3:04607] Signal code: Address not mapped (1)
+[compute-0-3:04607] Failing at address: 0x2ba08fd58000
+[compute-0-3:04607] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:04607] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:04607] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-3:04607] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:04607] *** End of error message ***
 --------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
+mpiexec noticed that process rank 2 with PID 4607 on node compute-0-3.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-2.local:27089] [[28521,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-2.local:27089] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-2.local:27089] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
 this is p2-8 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22195] [[24475,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22195] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22195] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 16 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.808709, parallel time: 0.168449
+The sorted data array from 1.000003 to 63999992.000000
 this is p3-1 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04386] [[12406,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04386] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04386] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 3 processors
+sum=204714923429093.156250, sorted=0
 this is p3-2 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22145] [[24489,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22145] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22145] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 6 processors
+sum=204714923429093.156250, sorted=0
 this is p3-3 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-2.local:27165] [[27813,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-2.local:27165] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-2.local:27165] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 9 processors
+sum=204714923429093.156250, sorted=0
 this is p3-4 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-2.local:27171] [[27803,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-2.local:27171] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-2.local:27171] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Generating 6400000 numbers to be sorted on 12 processors
+sum=204714923429093.156250, sorted=0
 this is p3-5 --------------------
+Generating 6400000 numbers to be sorted on 15 processors
+[compute-0-4:25830] *** Process received signal ***
+[compute-0-4:25830] Signal: Segmentation fault (11)
+[compute-0-4:25830] Signal code: Address not mapped (1)
+[compute-0-4:25830] Failing at address: 0x2abf8d1a0000
+[compute-0-4:25830] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:25830] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:25830] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:25830] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:25830] *** End of error message ***
+[compute-0-4:25831] *** Process received signal ***
+[compute-0-4:25831] Signal: Segmentation fault (11)
+[compute-0-4:25831] Signal code: Address not mapped (1)
+[compute-0-4:25831] Failing at address: 0x2aab73ef5000
 --------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
+mpiexec noticed that process rank 1 with PID 25830 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22270] [[24534,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22270] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22270] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[compute-0-3.local][[28039,1],7][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
 this is p3-6 --------------------
+Generating 6400000 numbers to be sorted on 18 processors
+[compute-0-4:25943] *** Process received signal ***
+[compute-0-4:25943] Signal: Segmentation fault (11)
+[compute-0-4:25943] Signal code: Address not mapped (1)
+[compute-0-4:25943] Failing at address: 0x2b8db6d7e000
+[compute-0-4:25943] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:25943] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:25943] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:25943] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:25943] *** End of error message ***
+[compute-0-4:25947] *** Process received signal ***
+[compute-0-4:25947] Signal: Segmentation fault (11)
+[compute-0-4:25947] Signal code: Address not mapped (1)
+[compute-0-4:25947] Failing at address: 0x2acd0a7c3000
+[compute-0-4:25947] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:25947] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:25947] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:25947] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:25947] *** End of error message ***
 --------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
+mpiexec noticed that process rank 1 with PID 25943 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22328] [[24080,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22328] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22328] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[compute-0-3.local][[27701,1],9][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(10) failed: Connection reset by peer (104)
 this is p3-7 --------------------
+Generating 6400000 numbers to be sorted on 21 processors
+[compute-0-4:26008] *** Process received signal ***
+[compute-0-4:26008] Signal: Segmentation fault (11)
+[compute-0-4:26008] Signal code: Address not mapped (1)
+[compute-0-4:26008] Failing at address: 0x2b30b7909000
+[compute-0-4:26008] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26008] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26008] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26008] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26008] *** End of error message ***
 --------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22372] [[24140,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22372] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22372] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p3-8 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22416] [[24248,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22416] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22416] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-1 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-3.local:04508] [[12488,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-3.local:04508] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-3.local:04508] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-2 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22278] [[24110,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22278] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22278] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-3 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22460] [[24212,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22460] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22460] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-4 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22500] [[24268,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22500] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22500] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-5 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22548] [[20796,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22548] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22548] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-6 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22592] [[20840,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22592] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22592] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-7 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22636] [[20804,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22636] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22636] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p4-8 --------------------
---------------------------------------------------------------------------
-Open RTE detected a parse error in the hostfile:
-    /home/s19026416/parall/assignments/second/sort
-It occured on line number 1 on token 1.
---------------------------------------------------------------------------
-[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 83
-[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file rmaps_rr.c at line 82
-[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_map_job.c at line 88
-[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 105
-[compute-0-4.local:22680] [[20912,0],0] ORTE_ERROR_LOG: Error in file plm_rsh_module.c at line 1167
-[compute-0-4.local:22680] 1 more process has sent help message help-hostfile.txt / parse_error
-[compute-0-4.local:22680] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-this is p1-1 --------------------
-Generating 99999999 numbers to be sorted on 1 processors
-[compute-0-4:19010] *** Process received signal ***
-[compute-0-4:19010] Signal: Segmentation fault (11)
-[compute-0-4:19010] Signal code: Address not mapped (1)
-[compute-0-4:19010] Failing at address: 0x2b174c7ed068
-[compute-0-4:19010] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19010] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19010] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19010] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19010] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 0 with PID 19010 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p1-2 --------------------
-Generating 99999999 numbers to be sorted on 2 processors
-[compute-0-4:19014] *** Process received signal ***
-[compute-0-4:19014] Signal: Segmentation fault (11)
-[compute-0-4:19014] Signal code: Address not mapped (1)
-[compute-0-4:19014] Failing at address: 0x2b0632098108
-[compute-0-4:19014] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19014] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19014] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19014] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19014] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 19014 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p1-3 --------------------
-Generating 99999999 numbers to be sorted on 3 processors
-sum=49997288136529376.000000, sorted=0
-this is p1-4 --------------------
-Generating 99999999 numbers to be sorted on 4 processors
-[compute-0-3:30450] *** Process received signal ***
-[compute-0-3:30450] Signal: Segmentation fault (11)
-[compute-0-3:30450] Signal code: Address not mapped (1)
-[compute-0-3:30450] Failing at address: 0x2b5bace20640
-[compute-0-3:30450] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30450] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-3:30450] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30450] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30450] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 30450 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p1-5 --------------------
-Generating 99999999 numbers to be sorted on 5 processors
-[compute-0-2:20528] *** Process received signal ***
-[compute-0-2:20528] Signal: Segmentation fault (11)
-[compute-0-2:20528] Signal code: Address not mapped (1)
-[compute-0-2:20528] Failing at address: 0x2adae11acf64
-[compute-0-2:20528] [ 0] /lib64/libpthread.so.0() [0x358480f710]
-[compute-0-2:20528] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-2:20528] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x358401ed5d]
-[compute-0-2:20528] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-2:20528] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 20528 on node compute-0-2.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p1-6 --------------------
-Generating 99999999 numbers to be sorted on 6 processors
-sum=49997287925196192.000000, sorted=0
-[compute-0-1:20859] *** Process received signal ***
-[compute-0-1:20859] Signal: Segmentation fault (11)
-[compute-0-1:20859] Signal code:  (128)
-[compute-0-1:20859] Failing at address: (nil)
-[compute-0-1:20859] [ 0] /lib64/libpthread.so.0() [0x3c3220f710]
-[compute-0-1:20859] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x2db) [0x2b863d9e07db]
-[compute-0-1:20859] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b863d9e0bc3]
-[compute-0-1:20859] [ 3] /opt/openmpi/lib/libmpi.so.1(+0xff719) [0x2b863d8c5719]
-[compute-0-1:20859] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_coll_base_comm_unselect+0x399) [0x2b863d8b4559]
-[compute-0-1:20859] [ 5] /opt/openmpi/lib/libmpi.so.1(+0x7e6c9) [0x2b863d8446c9]
-[compute-0-1:20859] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x69) [0x2b863d844a49]
-[compute-0-1:20859] [ 7] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2b863d856115]
-[compute-0-1:20859] [ 8] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-1:20859] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3c31a1ed5d]
-[compute-0-1:20859] [10] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-1:20859] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 0 with PID 20859 on node compute-0-1.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p1-7 --------------------
-Generating 99999999 numbers to be sorted on 7 processors
-sum=49997283198829512.000000, sorted=0
-this is p1-8 --------------------
-Generating 99999999 numbers to be sorted on 8 processors
-sum=49997287852510056.000000, sorted=0
-this is p2-1 --------------------
-Generating 99999999 numbers to be sorted on 2 processors
-[compute-0-4:19012] *** Process received signal ***
-[compute-0-4:19012] Signal: Segmentation fault (11)
-[compute-0-4:19012] Signal code: Address not mapped (1)
-[compute-0-4:19012] Failing at address: 0x2ab79e128108
-[compute-0-4:19012] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19012] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19012] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19012] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19012] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 19012 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p2-2 --------------------
-Generating 99999999 numbers to be sorted on 4 processors
-[compute-0-3:30457] *** Process received signal ***
-[compute-0-3:30457] Signal: Segmentation fault (11)
-[compute-0-3:30457] Signal code: Address not mapped (1)
-[compute-0-3:30457] Failing at address: 0x2b1d85998640
-[compute-0-3:30457] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30457] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-3:30457] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30457] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30457] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 30457 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p2-3 --------------------
-Generating 99999999 numbers to be sorted on 6 processors
-sum=49997287925196192.000000, sorted=0
-[compute-0-3:30553] *** Process received signal ***
-[compute-0-3:30553] Signal: Segmentation fault (11)
-[compute-0-3:30553] Signal code:  (128)
-[compute-0-3:30553] Failing at address: (nil)
-[compute-0-3:30554] *** Process received signal ***
-[compute-0-3:30554] Signal: Segmentation fault (11)
-[compute-0-3:30554] Signal code:  (128)
-[compute-0-3:30554] Failing at address: (nil)
-[compute-0-3:30553] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30553] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2ab9f0ac9853]
-[compute-0-3:30553] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2ab9f0aca8f8]
-[compute-0-3:30553] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2ab9f0acabc3]
-[compute-0-3:30553] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2ab9f0ad47f5]
-[compute-0-3:30553] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2ab9f0ae010c]
-[compute-0-3:30553] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2ab9f09402c5]
-[compute-0-3:30553] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-3:30553] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30553] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30553] *** End of error message ***
-[compute-0-3:30554] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30554] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2b2685a32853]
-[compute-0-3:30554] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2b2685a338f8]
-[compute-0-3:30554] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b2685a33bc3]
-[compute-0-3:30554] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2b2685a3d7f5]
-[compute-0-3:30554] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2b2685a4910c]
-[compute-0-3:30554] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2b26858a92c5]
-[compute-0-3:30554] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-3:30554] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30554] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30554] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 30553 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-2 total processes killed (some possibly by mpiexec during cleanup)
-this is p2-4 --------------------
-Generating 99999999 numbers to be sorted on 8 processors
-[compute-0-3:30614] *** Process received signal ***
-[compute-0-3:30614] Signal: Segmentation fault (11)
-[compute-0-3:30614] Signal code: Address not mapped (1)
-[compute-0-3:30614] Failing at address: 0x2ae47a1eebf0
-[compute-0-3:30614] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30614] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-3:30614] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30614] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30614] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 30614 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p2-5 --------------------
-Generating 99999999 numbers to be sorted on 10 processors
-sum=49997288183605640.000000, sorted=0
-this is p2-6 --------------------
-Generating 99999999 numbers to be sorted on 12 processors
-sum=49997287925196192.000000, sorted=0
-this is p2-7 --------------------
-Generating 99999999 numbers to be sorted on 14 processors
-sum=49997283198829512.000000, sorted=0
-[compute-0-4:19135] *** Process received signal ***
-[compute-0-4:19135] Signal: Segmentation fault (11)
-[compute-0-4:19135] Signal code: Address not mapped (1)
-[compute-0-4:19135] Failing at address: (nil)
-[compute-0-1:21004] *** Process received signal ***
-[compute-0-1:21004] Signal: Segmentation fault (11)
-[compute-0-1:21004] Signal code:  (128)
-[compute-0-1:21004] Failing at address: (nil)
-[compute-0-1:20999] *** Process received signal ***
-[compute-0-1:20999] Signal: Segmentation fault (11)
-[compute-0-1:20999] Signal code:  (128)
-[compute-0-1:20999] Failing at address: (nil)
-[compute-0-1:21001] *** Process received signal ***
-[compute-0-1:21001] Signal: Segmentation fault (11)
-[compute-0-1:21001] Signal code:  (128)
-[compute-0-1:21001] Failing at address: (nil)
-[compute-0-4:19135] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19135] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0x52) [0x2b7475f6db42]
-[compute-0-4:19135] [ 2] /opt/openmpi/lib/libmpi.so.1(mca_coll_base_comm_unselect+0x3b1) [0x2b7475e41571]
-[compute-0-4:19135] [ 3] /opt/openmpi/lib/libmpi.so.1(+0x7e6c9) [0x2b7475dd16c9]
-[compute-0-4:19135] [ 4] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x31) [0x2b7475dd1a11]
-[compute-0-4:19135] [ 5] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2b7475de3115]
-[compute-0-4:19135] [ 6] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-4:19135] [ 7] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19135] [ 8] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19135] *** End of error message ***
-[compute-0-1:20999] [ 0] /lib64/libpthread.so.0() [0x3c3220f710]
-[compute-0-1:20999] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x2db) [0x2b7a63b847db]
-[compute-0-1:20999] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b7a63b84bc3]
-[compute-0-1:20999] [ 3] /opt/openmpi/lib/libmpi.so.1(+0x15c94e) [0x2b7a63ac694e]
-[compute-0-1:20999] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_pml_ob1_del_comm+0x101) [0x2b7a63ac56a1]
-[compute-0-1:20999] [ 5] /opt/openmpi/lib/libmpi.so.1(+0x7e965) [0x2b7a639e8965]
-[compute-0-1:20999] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x31) [0x2b7a639e8a11]
-[compute-0-1:21001] [ 0] /lib64/libpthread.so.0() [0x3c3220f710]
-[compute-0-1:21001] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x2db) [0x2b85d148a7db]
-[compute-0-1:21001] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b85d148abc3]
-[compute-0-1:21001] [ 3] /opt/openmpi/lib/libmpi.so.1(+0x15c94e) [0x2b85d13cc94e]
-[compute-0-1:21001] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_pml_ob1_del_comm+0x101) [0x2b85d13cb6a1]
-[compute-0-1:21001] [ 5] /opt/openmpi/lib/libmpi.so.1(+0x7e965) [0x2b85d12ee965]
-[compute-0-1:21001] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x31) [0x2b85d12eea11]
-[compute-0-1:21001] [ 7] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2b85d1300115]
-[compute-0-1:21001] [ 8] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-1:21001] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3c31a1ed5d]
-[compute-0-1:21001] [10] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-1:21001] *** End of error message ***
-[compute-0-1:20999] [ 7] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2b7a639fa115]
-[compute-0-1:20999] [ 8] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-1:20999] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3c31a1ed5d]
-[compute-0-1:20999] [10] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-1:20999] *** End of error message ***
-[compute-0-1:21004] [ 0] /lib64/libpthread.so.0() [0x3c3220f710]
-[compute-0-1:21004] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x2db) [0x2ab69bcc97db]
-[compute-0-1:21004] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2ab69bcc9bc3]
-[compute-0-1:21004] [ 3] /opt/openmpi/lib/libmpi.so.1(+0x15c94e) [0x2ab69bc0b94e]
-[compute-0-1:21004] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_pml_ob1_del_comm+0x101) [0x2ab69bc0a6a1]
-[compute-0-1:21004] [ 5] /opt/openmpi/lib/libmpi.so.1(+0x7e965) [0x2ab69bb2d965]
-[compute-0-1:21004] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x31) [0x2ab69bb2da11]
-[compute-0-1:21004] [ 7] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2ab69bb3f115]
-[compute-0-1:21004] [ 8] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-1:21004] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3c31a1ed5d]
-[compute-0-1:21004] [10] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-1:21004] *** End of error message ***
-[compute-0-1:21003] *** Process received signal ***
-[compute-0-1:21003] Signal: Segmentation fault (11)
-[compute-0-1:21003] Signal code:  (128)
-[compute-0-1:21003] Failing at address: (nil)
-[compute-0-1:21003] [ 0] /lib64/libpthread.so.0() [0x3c3220f710]
-[compute-0-1:21003] [ 1] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x2db) [0x2ab3c71cd7db]
-[compute-0-1:21003] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2ab3c71cdbc3]
-[compute-0-1:21003] [ 3] /opt/openmpi/lib/libmpi.so.1(+0x15c94e) [0x2ab3c710f94e]
-[compute-0-1:21003] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_pml_ob1_del_comm+0x101) [0x2ab3c710e6a1]
-[compute-0-1:21003] [ 5] /opt/openmpi/lib/libmpi.so.1(+0x7e965) [0x2ab3c7031965]
-[compute-0-1:21003] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_comm_finalize+0x31) [0x2ab3c7031a11]
-[compute-0-1:21003] [ 7] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x285) [0x2ab3c7043115]
-[compute-0-1:21003] [ 8] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-1:21003] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3c31a1ed5d]
-[compute-0-1:21003] [10] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-1:21003] *** End of error message ***
-[compute-0-4:19139] *** Process received signal ***
-[compute-0-4:19139] Signal: Segmentation fault (11)
-[compute-0-4:19139] Signal code:  (128)
-[compute-0-4:19139] Failing at address: (nil)
-[compute-0-4:19139] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19139] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2b0ec76f3853]
-[compute-0-4:19139] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2b0ec76f48f8]
-[compute-0-4:19139] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b0ec76f4bc3]
-[compute-0-4:19139] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2b0ec76fe7f5]
-[compute-0-4:19139] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2b0ec770a10c]
-[compute-0-4:19139] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2b0ec756a2c5]
-[compute-0-4:19139] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-4:19139] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19139] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19139] *** End of error message ***
-[compute-0-4:19140] *** Process received signal ***
-[compute-0-4:19140] Signal: Segmentation fault (11)
-[compute-0-4:19140] Signal code:  (128)
-[compute-0-4:19140] Failing at address: (nil)
-[compute-0-4:19140] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19140] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2b491e03a853]
-[compute-0-4:19140] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2b491e03b8f8]
-[compute-0-4:19140] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b491e03bbc3]
-[compute-0-4:19140] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2b491e0457f5]
-[compute-0-4:19140] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2b491e05110c]
-[compute-0-4:19140] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2b491deb12c5]
-[compute-0-4:19140] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-4:19140] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19140] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19140] *** End of error message ***
-[compute-0-4:19136] *** Process received signal ***
-[compute-0-4:19136] Signal: Segmentation fault (11)
-[compute-0-4:19136] Signal code:  (128)
-[compute-0-4:19136] Failing at address: (nil)
-[compute-0-4:19136] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19136] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2b247f157853]
-[compute-0-4:19136] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2b247f1588f8]
-[compute-0-4:19136] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b247f158bc3]
-[compute-0-4:19136] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2b247f1627f5]
-[compute-0-4:19136] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2b247f16e10c]
-[compute-0-4:19136] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2b247efce2c5]
-[compute-0-4:19136] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-4:19136] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19136] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19136] *** End of error message ***
-[compute-0-4:19137] *** Process received signal ***
-[compute-0-4:19137] Signal: Segmentation fault (11)
-[compute-0-4:19137] Signal code:  (128)
-[compute-0-4:19137] Failing at address: (nil)
-[compute-0-4:19137] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19137] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2b5bae59d853]
-[compute-0-4:19137] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2b5bae59e8f8]
-[compute-0-4:19137] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2b5bae59ebc3]
-[compute-0-4:19137] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2b5bae5a87f5]
-[compute-0-4:19137] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2b5bae5b410c]
-[compute-0-4:19137] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2b5bae4142c5]
-[compute-0-4:19137] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-4:19137] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19137] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19137] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 10 with PID 21001 on node compute-0-1 exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-4 total processes killed (some possibly by mpiexec during cleanup)
-this is p2-8 --------------------
-Generating 99999999 numbers to be sorted on 16 processors
-sum=49997288087742256.000000, sorted=0
-this is p3-1 --------------------
-Generating 99999999 numbers to be sorted on 3 processors
-[compute-0-2:20607] *** Process received signal ***
-[compute-0-2:20607] Signal: Segmentation fault (11)
-[compute-0-2:20607] Signal code: Address not mapped (1)
-[compute-0-2:20607] Failing at address: 0x2ae4a0fd6f9c
-[compute-0-2:20607] [ 0] /lib64/libpthread.so.0() [0x358480f710]
-[compute-0-2:20607] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-2:20607] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x358401ed5d]
-[compute-0-2:20607] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-2:20607] *** End of error message ***
-[compute-0-3.local][[22456,1],1][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(9) failed: Connection reset by peer (104)
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 20607 on node compute-0-2 exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p3-2 --------------------
-Generating 99999999 numbers to be sorted on 6 processors
-sum=49997287925196192.000000, sorted=0
-[compute-0-3:30721] *** Process received signal ***
-[compute-0-3:30721] Signal: Segmentation fault (11)
-[compute-0-3:30721] Signal code:  (128)
-[compute-0-3:30721] Failing at address: (nil)
-[compute-0-3:30721] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30721] [ 1] /opt/openmpi/lib/libmpi.so.1(+0x219853) [0x2ae3ae743853]
-[compute-0-3:30721] [ 2] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_int_free+0x3f8) [0x2ae3ae7448f8]
-[compute-0-3:30721] [ 3] /opt/openmpi/lib/libmpi.so.1(opal_memory_ptmalloc2_free+0xd3) [0x2ae3ae744bc3]
-[compute-0-3:30721] [ 4] /opt/openmpi/lib/libmpi.so.1(mca_base_param_finalize+0xb5) [0x2ae3ae74e7f5]
-[compute-0-3:30721] [ 5] /opt/openmpi/lib/libmpi.so.1(opal_finalize_util+0x1c) [0x2ae3ae75a10c]
-[compute-0-3:30721] [ 6] /opt/openmpi/lib/libmpi.so.1(ompi_mpi_finalize+0x435) [0x2ae3ae5ba2c5]
-[compute-0-3:30721] [ 7] /home/s19026416/parall/assignments/second/sort(main+0x77c) [0x4099ea]
-[compute-0-3:30721] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30721] [ 9] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30721] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 30721 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p3-3 --------------------
-Generating 99999999 numbers to be sorted on 9 processors
-sum=49997288136529376.000000, sorted=0
-this is p3-4 --------------------
-Generating 99999999 numbers to be sorted on 12 processors
-sum=49997287925196192.000000, sorted=0
-this is p3-5 --------------------
-Generating 99999999 numbers to be sorted on 15 processors
-[compute-0-3:30877] *** Process received signal ***
-[compute-0-3:30877] Signal: Segmentation fault (11)
-[compute-0-3:30877] Signal code: Address not mapped (1)
-[compute-0-3:30877] Failing at address: 0x2b76c65f61c0
-[compute-0-3:30877] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30877] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-3:30877] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30877] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30877] *** End of error message ***
-[compute-0-4.local][[17021,1],4][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(10) failed: Connection reset by peer (104)
---------------------------------------------------------------------------
-mpiexec noticed that process rank 6 with PID 30877 on node compute-0-3 exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-this is p3-6 --------------------
-Generating 99999999 numbers to be sorted on 18 processors
-sum=49997288183605640.000000, sorted=0
-this is p3-7 --------------------
-Generating 99999999 numbers to be sorted on 21 processors
-[compute-0-4:19481] *** Process received signal ***
-[compute-0-4:19481] Signal: Segmentation fault (11)
-[compute-0-4:19481] Signal code: Address not mapped (1)
-[compute-0-4:19481] Failing at address: 0x2af321e8bf98
-[compute-0-4:19481] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19481] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19481] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19481] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19481] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 19481 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 2 with PID 26008 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
 this is p3-8 --------------------
-Generating 99999999 numbers to be sorted on 24 processors
-sum=49997288087742256.000000, sorted=0
+Generating 6400000 numbers to be sorted on 24 processors
+[compute-0-3:04907] *** Process received signal ***
+[compute-0-3:04907] Signal: Segmentation fault (11)
+[compute-0-3:04907] Signal code: Address not mapped (1)
+[compute-0-3:04907] Failing at address: 0x2b19ece7e000
+[compute-0-3:04907] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:04907] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:04907] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-3:04907] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:04907] *** End of error message ***
+[compute-0-4:26068] *** Process received signal ***
+[compute-0-4:26068] Signal: Segmentation fault (11)
+[compute-0-4:26068] Signal code: Address not mapped (1)
+[compute-0-4:26068] Failing at address: 0x2b943b292000
+[compute-0-4:26068] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26068] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26068] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26068] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26068] *** End of error message ***
+[compute-0-4:26069] *** Process received signal ***
+[compute-0-4:26069] Signal: Segmentation fault (11)
+[compute-0-4:26069] Signal code: Address not mapped (1)
+[compute-0-4:26069] Failing at address: 0x2b0aa3ffc000
+[compute-0-4:26069] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26069] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26069] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26069] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26069] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 8 with PID 4907 on node compute-0-3 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
 this is p4-1 --------------------
-Generating 99999999 numbers to be sorted on 4 processors
-[compute-0-2:20653] *** Process received signal ***
-[compute-0-2:20653] Signal: Segmentation fault (11)
-[compute-0-2:20653] Signal code: Address not mapped (1)
-[compute-0-2:20653] Failing at address: 0x2b3ff56dd640
-[compute-0-2:20653] [ 0] /lib64/libpthread.so.0() [0x358480f710]
-[compute-0-2:20653] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-2:20653] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x358401ed5d]
-[compute-0-2:20653] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-2:20653] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 20653 on node compute-0-2.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 6400000 numbers to be sorted on 4 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.989295, parallel time: 0.666983
+The sorted data array from 1.000003 to 63999992.000000
 this is p4-2 --------------------
-Generating 99999999 numbers to be sorted on 8 processors
-[compute-0-3:30840] *** Process received signal ***
-[compute-0-3:30840] Signal: Segmentation fault (11)
-[compute-0-3:30840] Signal code: Address not mapped (1)
-[compute-0-3:30840] Failing at address: 0x2af36b24b4f0
-[compute-0-3:30840] [ 0] /lib64/libpthread.so.0() [0x305760f710]
-[compute-0-3:30840] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-3:30840] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
-[compute-0-3:30840] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-3:30840] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 1 with PID 30840 on node compute-0-3.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 6400000 numbers to be sorted on 8 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.915346, parallel time: 0.315523
+The sorted data array from 1.000003 to 63999992.000000
 this is p4-3 --------------------
-Generating 99999999 numbers to be sorted on 12 processors
-sum=49997287925196192.000000, sorted=0
+Generating 6400000 numbers to be sorted on 12 processors
+sum=204714923429093.156250, sorted=0
 this is p4-4 --------------------
-Generating 99999999 numbers to be sorted on 16 processors
-sum=49997288087742256.000000, sorted=0
+Generating 6400000 numbers to be sorted on 16 processors
+sum=204714923429093.156250, sorted=1
+total time: 2.001963, parallel time: 0.176501
+The sorted data array from 1.000003 to 63999992.000000
 this is p4-5 --------------------
-Generating 99999999 numbers to be sorted on 20 processors
-sum=49997287657727200.000000, sorted=0
+Generating 6400000 numbers to be sorted on 20 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.915903, parallel time: 0.137948
+The sorted data array from 1.000003 to 63999992.000000
 this is p4-6 --------------------
-Generating 99999999 numbers to be sorted on 24 processors
-[compute-0-2:21339] *** Process received signal ***
-[compute-0-2:21339] Signal: Segmentation fault (11)
-[compute-0-2:21339] Signal code: Address not mapped (1)
-[compute-0-2:21339] Failing at address: 0x2af38a8a9b10
-[compute-0-2:21339] [ 0] /lib64/libpthread.so.0() [0x358480f710]
-[compute-0-2:21339] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-2:21339] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x358401ed5d]
-[compute-0-2:21339] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-2:21339] *** End of error message ***
-[compute-0-3.local][[17477,1],10][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] [compute-0-3.local][[17477,1],11][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(11) failed: Connection reset by peer (104)
-[compute-0-3.local][[17477,1],8][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(12) failed: Connection reset by peer (104)
-recv(11) failed: Connection reset by peer (104)
+Generating 6400000 numbers to be sorted on 24 processors
+[compute-0-4:26356] *** Process received signal ***
+[compute-0-4:26356] Signal: Segmentation fault (11)
+[compute-0-4:26356] Signal code: Address not mapped (1)
+[compute-0-4:26356] Failing at address: 0x2b74ec0e6000
+[compute-0-4:26356] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26356] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26356] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26356] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26356] *** End of error message ***
+[compute-0-4:26359] *** Process received signal ***
+[compute-0-4:26359] Signal: Segmentation fault (11)
+[compute-0-4:26359] Signal code: Address not mapped (1)
+[compute-0-4:26359] Failing at address: 0x2b03a3998000
+[compute-0-4:26359] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26359] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26359] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26359] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26359] *** End of error message ***
+[compute-0-4:26357] *** Process received signal ***
+[compute-0-4:26357] Signal: Segmentation fault (11)
+[compute-0-4:26357] Signal code: Address not mapped (1)
+[compute-0-4:26357] Failing at address: 0x2b59db773000
+[compute-0-4:26357] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26357] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26357] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26357] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26357] *** End of error message ***
 --------------------------------------------------------------------------
-mpiexec noticed that process rank 12 with PID 21339 on node compute-0-2 exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 2 with PID 26356 on node compute-0-4.local exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
-[compute-0-3.local][[17477,1],9][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(12) failed: Connection reset by peer (104)
 this is p4-7 --------------------
-Generating 99999999 numbers to be sorted on 28 processors
-[compute-0-4:19892] *** Process received signal ***
-[compute-0-4:19892] Signal: Segmentation fault (11)
-[compute-0-4:19892] Signal code: Address not mapped (1)
-[compute-0-4:19892] Failing at address: 0x2b4a9bea0f90
-[compute-0-4:19892] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19892] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19892] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19892] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19892] *** End of error message ***
+Generating 6400000 numbers to be sorted on 28 processors
+[compute-0-3:05158] *** Process received signal ***
+[compute-0-3:05158] Signal: Segmentation fault (11)
+[compute-0-3:05158] Signal code: Address not mapped (1)
+[compute-0-3:05158] Failing at address: 0x2b4a67e75000
+[compute-0-3:05158] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:05158] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:05158] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-3:05158] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:05158] *** End of error message ***
+[compute-0-4:26417] *** Process received signal ***
+[compute-0-4:26417] Signal: Segmentation fault (11)
+[compute-0-4:26417] Signal code: Address not mapped (1)
+[compute-0-4:26417] Failing at address: 0x2ae64ec52000
+[compute-0-4:26417] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26417] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26417] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26417] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26417] *** End of error message ***
+[compute-0-4:26418] *** Process received signal ***
+[compute-0-4:26418] Signal: Segmentation fault (11)
+[compute-0-4:26418] Signal code: Address not mapped (1)
+[compute-0-4:26418] Failing at address: 0x2adcc2a8c000
+[compute-0-4:26418] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26418] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26418] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26418] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26418] *** End of error message ***
+[compute-0-4:26419] *** Process received signal ***
+[compute-0-4:26419] Signal: Segmentation fault (11)
+[compute-0-4:26419] Signal code: Address not mapped (1)
+[compute-0-4:26419] Failing at address: 0x2b6ff105b000
+[compute-0-4:26419] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:26419] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:26419] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:26419] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:26419] *** End of error message ***
 --------------------------------------------------------------------------
-mpiexec noticed that process rank 2 with PID 19892 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+mpiexec noticed that process rank 7 with PID 5158 on node compute-0-3 exited on signal 11 (Segmentation fault).
 --------------------------------------------------------------------------
+[compute-0-3.local][[28171,1],12][btl_tcp_endpoint.c:455:mca_btl_tcp_endpoint_recv_blocking] recv(10) failed: Connection reset by peer (104)
+[compute-0-3.local][[28171,1],12][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
 this is p4-8 --------------------
-Generating 99999999 numbers to be sorted on 32 processors
-[compute-0-4:19953] *** Process received signal ***
-[compute-0-4:19953] Signal: Segmentation fault (11)
-[compute-0-4:19953] Signal code: Address not mapped (1)
-[compute-0-4:19953] Failing at address: 0x2b98277c0ed0
-[compute-0-4:19953] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
-[compute-0-4:19953] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x357) [0x4095c5]
-[compute-0-4:19953] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
-[compute-0-4:19953] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
-[compute-0-4:19953] *** End of error message ***
---------------------------------------------------------------------------
-mpiexec noticed that process rank 3 with PID 19953 on node compute-0-4.local exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
+Generating 6400000 numbers to be sorted on 32 processors
+sum=204714923429093.156250, sorted=1
+total time: 1.927651, parallel time: 0.094889
+The sorted data array from 1.000003 to 63999992.000000
