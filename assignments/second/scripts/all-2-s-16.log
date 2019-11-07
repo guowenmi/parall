@@ -1,0 +1,160 @@
+this is p1-1 --------------------
+Generating 1600000 numbers to be sorted on 1 processors
+sum=12792713690419.962891, sorted=1
+total time: 0.673016, parallel time: 0.604758
+The sorted data array from 1.000001 to 15999995.000000
+this is p1-2 --------------------
+Generating 1600000 numbers to be sorted on 2 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.377314, parallel time: 0.295309
+The sorted data array from 1.000001 to 15999995.000000
+this is p1-3 --------------------
+Generating 1600000 numbers to be sorted on 3 processors
+sum=12792713690419.962891, sorted=0
+this is p1-4 --------------------
+Generating 1600000 numbers to be sorted on 4 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.224200, parallel time: 0.145227
+The sorted data array from 1.000001 to 15999995.000000
+this is p1-5 --------------------
+Generating 1600000 numbers to be sorted on 5 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.199905, parallel time: 0.117947
+The sorted data array from 1.000001 to 15999995.000000
+this is p1-6 --------------------
+Generating 1600000 numbers to be sorted on 6 processors
+sum=12792713690419.962891, sorted=0
+this is p1-7 --------------------
+Generating 1600000 numbers to be sorted on 7 processors
+sum=12792713690419.962891, sorted=0
+this is p1-8 --------------------
+Generating 1600000 numbers to be sorted on 8 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.171161, parallel time: 0.079255
+The sorted data array from 1.000001 to 15999995.000000
+this is p2-1 --------------------
+Generating 1600000 numbers to be sorted on 2 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.378338, parallel time: 0.298546
+The sorted data array from 1.000001 to 15999995.000000
+this is p2-2 --------------------
+Generating 1600000 numbers to be sorted on 4 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.280748, parallel time: 0.142436
+The sorted data array from 1.000001 to 15999995.000000
+this is p2-3 --------------------
+Generating 1600000 numbers to be sorted on 6 processors
+sum=12792713690419.962891, sorted=0
+this is p2-4 --------------------
+Generating 1600000 numbers to be sorted on 8 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.301478, parallel time: 0.072829
+The sorted data array from 1.000001 to 15999995.000000
+this is p2-5 --------------------
+Generating 1600000 numbers to be sorted on 10 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.250783, parallel time: 0.063972
+The sorted data array from 1.000001 to 15999995.000000
+this is p2-6 --------------------
+Generating 1600000 numbers to be sorted on 12 processors
+sum=12792713690419.962891, sorted=0
+this is p2-7 --------------------
+Generating 1600000 numbers to be sorted on 14 processors
+sum=12792713690419.962891, sorted=0
+this is p2-8 --------------------
+Generating 1600000 numbers to be sorted on 16 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.253012, parallel time: 0.038652
+The sorted data array from 1.000001 to 15999995.000000
+this is p3-1 --------------------
+Generating 1600000 numbers to be sorted on 3 processors
+sum=12792713690419.962891, sorted=0
+this is p3-2 --------------------
+Generating 1600000 numbers to be sorted on 6 processors
+sum=12792713690419.962891, sorted=0
+this is p3-3 --------------------
+Generating 1600000 numbers to be sorted on 9 processors
+sum=12792713690419.962891, sorted=0
+this is p3-4 --------------------
+Generating 1600000 numbers to be sorted on 12 processors
+sum=12792713690419.962891, sorted=0
+this is p3-5 --------------------
+Generating 1600000 numbers to be sorted on 15 processors
+sum=12792713690419.962891, sorted=0
+this is p3-6 --------------------
+Generating 1600000 numbers to be sorted on 18 processors
+sum=12792713690419.962891, sorted=0
+this is p3-7 --------------------
+Generating 1600000 numbers to be sorted on 21 processors
+sum=12792713690419.962891, sorted=0
+this is p3-8 --------------------
+Generating 1600000 numbers to be sorted on 24 processors
+sum=12792713690419.962891, sorted=0
+this is p4-1 --------------------
+Generating 1600000 numbers to be sorted on 4 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.380467, parallel time: 0.147312
+The sorted data array from 1.000001 to 15999995.000000
+this is p4-2 --------------------
+Generating 1600000 numbers to be sorted on 8 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.357483, parallel time: 0.072614
+The sorted data array from 1.000001 to 15999995.000000
+this is p4-3 --------------------
+Generating 1600000 numbers to be sorted on 12 processors
+sum=12792713690419.962891, sorted=0
+this is p4-4 --------------------
+Generating 1600000 numbers to be sorted on 16 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.277499, parallel time: 0.043549
+The sorted data array from 1.000001 to 15999995.000000
+this is p4-5 --------------------
+Generating 1600000 numbers to be sorted on 20 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.270867, parallel time: 0.032331
+The sorted data array from 1.000001 to 15999995.000000
+this is p4-6 --------------------
+Generating 1600000 numbers to be sorted on 24 processors
+sum=12792713690419.962891, sorted=0
+this is p4-7 --------------------
+Generating 1600000 numbers to be sorted on 28 processors
+sum=12792713690419.962891, sorted=0
+this is p4-8 --------------------
+Generating 1600000 numbers to be sorted on 32 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.287466, parallel time: 0.022795
+The sorted data array from 1.000001 to 15999995.000000
+this is p5-1 --------------------
+Generating 1600000 numbers to be sorted on 5 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.291204, parallel time: 0.123882
+The sorted data array from 1.000001 to 15999995.000000
+this is p5-2 --------------------
+Generating 1600000 numbers to be sorted on 10 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.338613, parallel time: 0.073676
+The sorted data array from 1.000001 to 15999995.000000
+this is p5-3 --------------------
+Generating 1600000 numbers to be sorted on 15 processors
+sum=12792713690419.962891, sorted=0
+this is p5-4 --------------------
+Generating 1600000 numbers to be sorted on 20 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.246613, parallel time: 0.032094
+The sorted data array from 1.000001 to 15999995.000000
+this is p5-5 --------------------
+Generating 1600000 numbers to be sorted on 25 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.268103, parallel time: 0.027023
+The sorted data array from 1.000001 to 15999995.000000
+this is p5-6 --------------------
+Generating 1600000 numbers to be sorted on 30 processors
+sum=12792713690419.962891, sorted=0
+this is p5-7 --------------------
+Generating 1600000 numbers to be sorted on 35 processors
+sum=12792713690419.962891, sorted=0
+this is p5-8 --------------------
+Generating 1600000 numbers to be sorted on 40 processors
+sum=12792713690419.962891, sorted=1
+total time: 1.321516, parallel time: 0.019556
+The sorted data array from 1.000001 to 15999995.000000
