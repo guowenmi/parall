@@ -1,0 +1,252 @@
+this is p1-1 --------------------
+Generating 3200000 numbers to be sorted on 1 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.407476, parallel time: 1.275998
+The sorted data array from 1.000001 to 31999994.000000
+this is p1-2 --------------------
+Generating 3200000 numbers to be sorted on 2 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.920391, parallel time: 0.634847
+The sorted data array from 1.000001 to 31999994.000000
+this is p1-3 --------------------
+Generating 3200000 numbers to be sorted on 3 processors
+sum=51165957267811.203125, sorted=0
+this is p1-4 --------------------
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.464091, parallel time: 0.310534
+The sorted data array from 1.000001 to 31999994.000000
+this is p1-5 --------------------
+Generating 3200000 numbers to be sorted on 5 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.428167, parallel time: 0.250087
+The sorted data array from 1.000001 to 31999994.000000
+this is p1-6 --------------------
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
+this is p1-7 --------------------
+Generating 3200000 numbers to be sorted on 7 processors
+sum=51165957267811.203125, sorted=0
+this is p1-8 --------------------
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.331702, parallel time: 0.168810
+The sorted data array from 1.000001 to 31999994.000000
+this is p2-1 --------------------
+Generating 3200000 numbers to be sorted on 2 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.896557, parallel time: 0.620686
+The sorted data array from 1.000001 to 31999994.000000
+this is p2-2 --------------------
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.598335, parallel time: 0.304396
+The sorted data array from 1.000001 to 31999994.000000
+this is p2-3 --------------------
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
+this is p2-4 --------------------
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.441277, parallel time: 0.152123
+The sorted data array from 1.000001 to 31999994.000000
+this is p2-5 --------------------
+Generating 3200000 numbers to be sorted on 10 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.402957, parallel time: 0.123096
+The sorted data array from 1.000001 to 31999994.000000
+this is p2-6 --------------------
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
+this is p2-7 --------------------
+Generating 3200000 numbers to be sorted on 14 processors
+sum=51165957267811.203125, sorted=0
+this is p2-8 --------------------
+Generating 3200000 numbers to be sorted on 16 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.442713, parallel time: 0.080386
+The sorted data array from 1.000001 to 31999994.000000
+this is p3-1 --------------------
+Generating 3200000 numbers to be sorted on 3 processors
+sum=51165957267811.203125, sorted=0
+this is p3-2 --------------------
+Generating 3200000 numbers to be sorted on 6 processors
+sum=51165957267811.203125, sorted=0
+this is p3-3 --------------------
+Generating 3200000 numbers to be sorted on 9 processors
+sum=51165957267811.203125, sorted=0
+this is p3-4 --------------------
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
+this is p3-5 --------------------
+Generating 3200000 numbers to be sorted on 15 processors
+sum=51165957267811.203125, sorted=0
+this is p3-6 --------------------
+Generating 3200000 numbers to be sorted on 18 processors
+[compute-0-4:05940] *** Process received signal ***
+[compute-0-4:05940] Signal: Segmentation fault (11)
+[compute-0-4:05940] Signal code: Address not mapped (1)
+[compute-0-4:05940] Failing at address: 0x2b89f2fab000
+[compute-0-4:05940] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05940] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05940] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05940] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05940] *** End of error message ***
+[compute-0-4:05939] *** Process received signal ***
+[compute-0-4:05939] Signal: Segmentation fault (11)
+[compute-0-4:05939] Signal code: Address not mapped (1)
+[compute-0-4:05939] Failing at address: 0x2b00d3b73000
+[compute-0-4:05939] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05939] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05939] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05939] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05939] *** End of error message ***
+[compute-0-4:05942] *** Process received signal ***
+[compute-0-4:05942] Signal: Segmentation fault (11)
+[compute-0-4:05942] Signal code: Address not mapped (1)
+[compute-0-4:05942] Failing at address: 0x2b96d3da7000
+[compute-0-4:05942] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:05942] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:05942] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:05942] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:05942] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 2 with PID 5940 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+this is p3-7 --------------------
+Generating 3200000 numbers to be sorted on 21 processors
+[compute-0-4:06003] *** Process received signal ***
+[compute-0-4:06003] Signal: Segmentation fault (11)
+[compute-0-4:06003] Signal code: Address not mapped (1)
+[compute-0-4:06003] Failing at address: 0x2b53d23df000
+[compute-0-4:06003] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06003] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06003] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06003] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06003] *** End of error message ***
+[compute-0-4:06004] *** Process received signal ***
+[compute-0-4:06004] Signal: Segmentation fault (11)
+[compute-0-4:06004] Signal code: Address not mapped (1)
+[compute-0-4:06004] Failing at address: 0x2ae33842f000
+[compute-0-4:06007] *** Process received signal ***
+[compute-0-4:06007] Signal: Segmentation fault (11)
+[compute-0-4:06007] Signal code: Address not mapped (1)
+[compute-0-4:06007] Failing at address: 0x2b241e1e9000
+[compute-0-4:06004] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06004] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06004] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06004] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06004] *** End of error message ***
+[compute-0-3:14847] *** Process received signal ***
+[compute-0-3:14847] Signal: Segmentation fault (11)
+[compute-0-3:14847] Signal code: Address not mapped (1)
+[compute-0-3:14847] Failing at address: 0x2ab01fae0000
+[compute-0-3:14847] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:14847] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:14847] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-4:06007] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06007] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06007] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06007] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06007] *** End of error message ***
+[compute-0-3:14847] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:14847] *** End of error message ***
+[compute-0-4:06006] *** Process received signal ***
+[compute-0-4:06006] Signal: Segmentation fault (11)
+[compute-0-4:06006] Signal code: Address not mapped (1)
+[compute-0-4:06006] Failing at address: 0x2aeaddf65000
+[compute-0-4:06006] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06006] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06006] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06006] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06006] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 6003 on node compute-0-4.local exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+2 total processes killed (some possibly by mpiexec during cleanup)
+this is p3-8 --------------------
+Generating 3200000 numbers to be sorted on 24 processors
+sum=51165957267811.203125, sorted=0
+this is p4-1 --------------------
+Generating 3200000 numbers to be sorted on 4 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.464832, parallel time: 0.308884
+The sorted data array from 1.000001 to 31999994.000000
+this is p4-2 --------------------
+Generating 3200000 numbers to be sorted on 8 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.562017, parallel time: 0.152586
+The sorted data array from 1.000001 to 31999994.000000
+this is p4-3 --------------------
+Generating 3200000 numbers to be sorted on 12 processors
+sum=51165957267811.203125, sorted=0
+this is p4-4 --------------------
+Generating 3200000 numbers to be sorted on 16 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.546406, parallel time: 0.081388
+The sorted data array from 1.000001 to 31999994.000000
+this is p4-5 --------------------
+Generating 3200000 numbers to be sorted on 20 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.613026, parallel time: 0.071292
+The sorted data array from 1.000001 to 31999994.000000
+this is p4-6 --------------------
+Generating 3200000 numbers to be sorted on 24 processors
+sum=51165957267811.203125, sorted=0
+this is p4-7 --------------------
+Generating 3200000 numbers to be sorted on 28 processors
+[compute-0-3:15142] *** Process received signal ***
+[compute-0-3:15142] Signal: Segmentation fault (11)
+[compute-0-3:15142] Signal code: Address not mapped (1)
+[compute-0-3:15142] Failing at address: 0x2b7149166000
+[compute-0-3:15142] [ 0] /lib64/libpthread.so.0() [0x305760f710]
+[compute-0-3:15142] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-3:15142] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3056e1ed5d]
+[compute-0-3:15142] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-3:15142] *** End of error message ***
+[compute-0-4:06411] *** Process received signal ***
+[compute-0-4:06415] *** Process received signal ***
+[compute-0-4:06415] Signal: Segmentation fault (11)
+[compute-0-4:06415] Signal code: Address not mapped (1)
+[compute-0-4:06415] Failing at address: 0x2af8649f1000
+[compute-0-4:06415] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06415] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06415] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06415] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06415] *** End of error message ***
+[compute-0-4:06412] *** Process received signal ***
+[compute-0-4:06412] Signal: Segmentation fault (11)
+[compute-0-4:06412] Signal code: Address not mapped (1)
+[compute-0-4:06412] Failing at address: 0x2af997374000
+[compute-0-4:06412] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06412] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06412] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06412] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06412] *** End of error message ***
+[compute-0-4:06413] *** Process received signal ***
+[compute-0-4:06414] *** Process received signal ***
+[compute-0-4:06414] Signal: Segmentation fault (11)
+[compute-0-4:06414] Signal code: Address not mapped (1)
+[compute-0-4:06414] Failing at address: 0x2b303c48a000
+[compute-0-4:06414] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06414] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06414] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06414] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06414] *** End of error message ***
+[compute-0-4:06411] Signal: Segmentation fault (11)
+[compute-0-4:06411] Signal code: Address not mapped (1)
+[compute-0-4:06411] Failing at address: 0x2b69c26a5000
+[compute-0-4:06411] [ 0] /lib64/libpthread.so.0() [0x3b20c0f710]
+[compute-0-4:06411] [ 1] /home/s19026416/parall/assignments/second/sort(main+0x24c) [0x4094ba]
+[compute-0-4:06411] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3b2041ed5d]
+[compute-0-4:06411] [ 3] /home/s19026416/parall/assignments/second/sort() [0x4090a9]
+[compute-0-4:06411] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 7 with PID 15142 on node compute-0-3 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[compute-0-3.local][[4136,1],12][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+this is p4-8 --------------------
+Generating 3200000 numbers to be sorted on 32 processors
+sum=51165957267811.203125, sorted=1
+total time: 1.488606, parallel time: 0.046433
+The sorted data array from 1.000001 to 31999994.000000
